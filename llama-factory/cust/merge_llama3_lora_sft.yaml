@@ -1,0 +1,13 @@
+### Note: DO NOT use quantized model or quantization_bit when merging lora adapters
+
+### model
+model_name_or_path: /root/autodl-tmp/models/Llama3-8B-Chinese-Chat/
+adapter_name_or_path: /root/code/LLaMA-Factory/saves/LLaMA3-8B-Chinese-Chat/lora/train_2024-05-25-20-27-47
+template: llama3
+finetuning_type: lora
+
+### export
+export_dir: /root/autodl-tmp/models/LLaMA3-8B-Chinese-Chat-merged
+export_size: 4
+export_device: cuda
+export_legacy_format:   
