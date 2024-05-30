@@ -1,7 +1,5 @@
-```markdown
-# 【大模型量化】使用llama.cpp进行量化和部署
 
-## 🦙 Llama.cpp
+# 【大模型量化】使用llama.cpp进行量化和部署
 
 ## 📝 1. 准备模型文件
 - [shenzhi-wang/Llama3-8B-Chinese-Chat](https://huggingface.co/shenzhi-wang/Llama3-8B-Chinese-Chat)
