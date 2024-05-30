@@ -5,7 +5,7 @@
 
 cd /root/code/llama.cpp/build_cuda/bin/
 
-./main -m /root/autodl-tmp/models/Llama3-8B-Chinese-Chat-GGUF/Llama3-8B-Chinese-Chat-f16-v1.gguf \
+./main -m /root/autodl-tmp/models/Llama3-8B-Chinese-Chat-GGUF/Llama3-8B-Chinese-Chat-q8_0-v2_1.gguf \
     -n -1 \
     -ngl 256 \
     -t 12 \
@@ -21,7 +21,7 @@ AI: 你想聊聊什么话题呢？
 User:'
 
 
-# ./main -m /root/autodl-tmp/models/Llama3-8B-Chinese-Chat-GGUF/Llama3-8B-Chinese-Chat-f16-v1.gguf \
+# ./main -m /root/autodl-tmp/models/Llama3-8B-Chinese-Chat-GGUF/Llama3-8B-Chinese-Chat-q8_0-v2_1.gguf \
 #     -n 256 \
 #     -ngl 256 \
 #     -t 12 \
