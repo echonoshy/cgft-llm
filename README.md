@@ -6,22 +6,11 @@
 1. 🎯 运行环境
 2. 🧩 对应的代码、日志和报错截图
 
-## 1. 使用llama-factory微调llama3
-📒 [代码文档](llama-factory/README.md)    
-🎥 视频教程
-- [Bilibili](https://www.bilibili.com/video/BV1uw4m1S7Cd)
-- [YouTube](https://youtu.be/Hpc4QQQuLWM)
 
+## 🎨 视频及文档合集
 
-## 2. llama.cpp进行轻量化部署和量化
-📒 [代码文档](llama-cpp/README.md)   
-🎥 视频教程  
-- [Bilibili](https://www.bilibili.com/video/BV1et421N7TK)
-- [YouTube](https://youtu.be/2MYsfe0pc9A)
-
-
-## 3. ChatTTS实现语音生成
-📒 [代码文档](chat-tts/README.md)   
-🎥 视频教程
-- [YouTube](https://youtu.be/ECAbuAMu_uI)
-- [Bilibili](https://www.bilibili.com/video/BV1ib421i7oS/)
+| 序号 | 项目                           | 代码文档                        | 视频教程                                                    |
+|------|--------------------------------|---------------------------------|-------------------------------------------------------------|
+| 1    | 使用llama-factory微调llama3    | [🏂 llama-factory](llama-factory/README.md) | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1uw4m1S7Cd) <br> [🏊‍♀️ YouTube](https://youtu.be/Hpc4QQQuLWM) |
+| 2    | llama.cpp进行轻量化部署和量化  | [🏂 llama-cpp](llama-cpp/README.md) | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1et421N7TK) <br> [🏊‍♀️ YouTube](https://youtu.be/2MYsfe0pc9A) |
+| 3    | ChatTTS实现语音生成            | [🏂 chat-tts](chat-tts/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1ib421i7oS/) <br> [🏊‍♀️ YouTube](https://youtu.be/ECAbuAMu_uI) |
