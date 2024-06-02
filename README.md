@@ -14,7 +14,7 @@
 
 
 ## 2. llama.cpp进行轻量化部署和量化
-📒 [代码文档](llama-cpp/README.md) 
-🎥 视频教程
+📒 [代码文档](llama-cpp/README.md)   
+🎥 视频教程  
 - [Bilibili](https://www.bilibili.com/video/BV1et421N7TK)
 - [YouTube](https://youtu.be/2MYsfe0pc9A)
