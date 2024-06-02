@@ -9,11 +9,12 @@
 ## 1. 使用llama-factory微调llama3
 📒 [代码文档](llama-factory/README.md)    
 🎥 视频教程
+- [Bilibili](https://www.bilibili.com/video/BV1uw4m1S7Cd)
 - [YouTube](https://youtu.be/Hpc4QQQuLWM)
-- [Bilibili](https://www.bilibili.com/video/BV1uw4m1S7Cd/?vd_source=2acabf9b10c0b70274da02f31cf31368)
 
 
 ## 2. llama.cpp进行轻量化部署和量化
 📒 [代码文档](llama-cpp/README.md) 
 🎥 视频教程
-- [Bilibili]
+- [Bilibili](https://www.bilibili.com/video/BV1et421N7TK)
+- [YouTube](https://youtu.be/2MYsfe0pc9A)
