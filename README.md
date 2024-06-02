@@ -18,3 +18,10 @@
 🎥 视频教程  
 - [Bilibili](https://www.bilibili.com/video/BV1et421N7TK)
 - [YouTube](https://youtu.be/2MYsfe0pc9A)
+
+
+## 3. ChatTTS实现语音生成
+📒 [代码文档](chat-tts/README.md)   
+🎥 视频教程
+- [YouTube](https://youtu.be/ECAbuAMu_uI)
+- [Bilibili](https://www.bilibili.com/video/BV1ib421i7oS/)
