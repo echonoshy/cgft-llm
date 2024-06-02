@@ -1,6 +1,10 @@
 
 # 【大模型量化】使用llama.cpp进行量化和部署
 
+🎥 视频教程
+- [YouTube](https://youtu.be/2MYsfe0pc9A)
+- [Bilibili](https://www.bilibili.com/video/BV1et421N7TK/)
+
 ## 📝 1. 准备模型文件
 - [shenzhi-wang/Llama3-8B-Chinese-Chat](https://huggingface.co/shenzhi-wang/Llama3-8B-Chinese-Chat)
 - [shenzhi-wang/Llama3-8B-Chinese-Chat-GGUF-8bit](https://huggingface.co/shenzhi-wang/Llama3-8B-Chinese-Chat-GGUF-8bit)
