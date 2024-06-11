@@ -12,5 +12,6 @@
 | 序号 | 项目                           | 代码文档                        | 视频教程                                                    |
 |------|--------------------------------|---------------------------------|-------------------------------------------------------------|
 | 1    | 使用llama-factory微调llama3    | [🏂 llama-factory](llama-factory/README.md) | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1uw4m1S7Cd) <br> [🏊‍♀️ YouTube](https://youtu.be/Hpc4QQQuLWM) |
-| 2    | llama.cpp进行轻量化部署和量化  | [🏂 llama-cpp](llama-cpp/README.md) | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1et421N7TK) <br> [🏊‍♀️ YouTube](https://youtu.be/2MYsfe0pc9A) |
-| 3    | ChatTTS实现语音生成            | [🏂 chat-tts](chat-tts/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1ib421i7oS/) <br> [🏊‍♀️ YouTube](https://youtu.be/ECAbuAMu_uI) |
+| 2    | llama.cpp进行轻量化部署和量化    | [🏂 llama-cpp](llama-cpp/README.md) | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1et421N7TK) <br> [🏊‍♀️ YouTube](https://youtu.be/2MYsfe0pc9A) |
+| 3    | ChatTTS实现语音生成             | [🏂 chat-tts](chat-tts/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1ib421i7oS/) <br> [🏊‍♀️ YouTube](https://youtu.be/ECAbuAMu_uI) |
+| 4    | Ollama大模型部署工具介绍         | [🏂 ollama](ollama/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1Gs421u7a5/) <br> [🏊‍♀️ YouTube](https://youtu.be/yQ1q8YWacyE) |
