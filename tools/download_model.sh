@@ -10,4 +10,11 @@ model_id="shenzhi-wang/Llama3-8B-Chinese-Chat"
 model_dir="/root/autodl-tmp/models/Llama3-8B-Chinese-Chat/"
 
 
-huggingface-cli download --resume-download ${model_id} --local-dir ${model_dir}
+huggingface-cli download ${model_id} --local-dir ${model_dir}
+
+
+
+# 下载modelscope模型
+
+# pip install modelscope
+modelscope download --model ZhipuAI/glm-4-9b-chat --local_dir /root/autodl-tmp/models/glm-4-9b-chat
