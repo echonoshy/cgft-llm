@@ -20,9 +20,9 @@ print("Completion result:", completion.choices[0].text)
 
 # chat
 # completion = client.chat.completions.create(
-#   model="NousResearch/Meta-Llama-3-8B-Instruct",
+#   model="/root/autodl-tmp/models/qwen2-1.5b",
 #   messages=[
-#     {"role": "user", "content": "Hello!"}
+#     {"role": "user", "content": "魔镜魔镜，谁是世界上最美丽的人呢？"}
 #   ]
 # )
 
