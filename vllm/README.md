@@ -1,9 +1,9 @@
 
-# 【大模型部署】Vllm部署GLM-4
+# vllm部署工具及paged attention
 
 🎥 视频教程
-- [YouTube](https://youtu.be/2MYsfe0pc9A)
-- [Bilibili](https://www.bilibili.com/video/BV1et421N7TK/)
+- [YouTube](https://youtu.be/cQWzKX9gM9Q)
+- [Bilibili](https://www.bilibili.com/video/BV1R1421r7tk)
 
 ## 1. Vllm介绍
 ### 📝 1. 准备模型文件
