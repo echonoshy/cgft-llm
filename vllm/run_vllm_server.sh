@@ -11,5 +11,5 @@ python -m vllm.entrypoints.openai.api_server \
 # python -m vllm.entrypoints.openai.api_server \
 #     --model /root/autodl-tmp/models/glm-4-9b-chat \
 #     --tensor-parallel-size 2 \
-#     --max_model_len 32768 \
+#     --max-model-len 32768 \
 #     --trust-remote-code

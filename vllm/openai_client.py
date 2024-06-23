@@ -9,21 +9,30 @@ client = OpenAI(
     base_url=openai_api_base,
 )
 
-# instruction 
-completion = client.completions.create(
-    model="/root/autodl-tmp/models/qwen2-1.5b",
-    prompt="魔镜魔镜，谁是世界上最美丽的人呢？"
-)
+def instruct():
+    """ instruct 模式
+    """
+    completion = client.completions.create(
+        model="/root/autodl-tmp/models/qwen2-1.5b",
+        prompt="魔镜魔镜，谁是世界上最美丽的人呢？"
+    )
 
-print("Completion result:", completion.choices[0].text)
+    print("Completion result:", completion.choices[0].text)
 
 
-# chat
-# completion = client.chat.completions.create(
-#   model="/root/autodl-tmp/models/qwen2-1.5b",
-#   messages=[
-#     {"role": "user", "content": "魔镜魔镜，谁是世界上最美丽的人呢？"}
-#   ]
-# )
+def chat():
+    """ chat 模式
+    """
+    completion = client.chat.completions.create(
+      model="/root/autodl-tmp/models/qwen2-1.5b",
+      messages=[
+        {"role": "user", "content": "魔镜魔镜，谁是世界上最美丽的人呢？"}
+      ]
+    )
 
-# print(completion.choices[0].message)
+    print(completion.choices[0].message)
+    
+    
+if __name__ == "__main__":
+    instruct()
+    chat()
