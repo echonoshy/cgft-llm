@@ -3,7 +3,7 @@
 ## 📷 朴素RAG思想
 “ra + g" 
 
-![Basci RAG](./llama-index/assets/basic_rag.png)
+![Basic RAG](./assets/basic_rag.png)
 
 
 ## 🧹 RAG的Pipeline
@@ -38,4 +38,7 @@ python llama-index/index-doc.py
 python llama-index/index-pdf.py
 ```
 
-### 3. 
+### 3. 拆解query过程
+```
+python llama-index/query.py
+```
