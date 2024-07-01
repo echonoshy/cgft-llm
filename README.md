@@ -16,3 +16,4 @@
 | 3    | ChatTTS实现语音生成             | [🏂 chat-tts](chat-tts/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1ib421i7oS/) <br> [🏊‍♀️ YouTube](https://youtu.be/ECAbuAMu_uI) |
 | 4    | Ollama大模型部署工具介绍         | [🏂 ollama](ollama/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1Gs421u7a5/) <br> [🏊‍♀️ YouTube](https://youtu.be/yQ1q8YWacyE) |
 | 5    | vllm部署工具及paged attention   | [🏂 vllm](vllm/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1R1421r7tk) <br> [🏊‍♀️ YouTube](https://youtu.be/cQWzKX9gM9Q) |
+| 6    | llama-index实现RAG             | [🏂 llama-index](llama-index/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1jE421A77u) <br> [🏊‍♀️ YouTube](https://youtu.be/Q6vUx94HCDc) |
