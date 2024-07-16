@@ -28,6 +28,16 @@ https://llamahub.ai/?tab=readers
 
 ## 🖌️ 代码样例
 
+### 0. 安装环境
+
+```
+pip install llama-index
+
+如果配置ollama本地模型，需要额外安装：
+pip install llama-index-llms-ollama
+pip install llama-index-embeddings-ollama
+```
+
 ### 1. 对多个txt文本的检索问答
 ```
 python llama-index/index-doc.py
