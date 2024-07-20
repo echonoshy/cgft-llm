@@ -88,6 +88,9 @@ class OpenAIEmbedding(BaseTextEmbedding, OpenAILLMImpl):
         for chunk in token_chunks:
             try:
                 # embedding, chunk_len = self._embed_with_retry(chunk, **kwargs)
+                embedding = ollama.embeddings(model="qwen2-7b-instruct-q5_k_m", prompt=chunk)['embedding']
+                chunk_len = len(chunk)
+                
                 chunk_embeddings.append(embedding)
                 chunk_lens.append(chunk_len)
             # TODO: catch a more specific exception
@@ -98,9 +101,10 @@ class OpenAIEmbedding(BaseTextEmbedding, OpenAILLMImpl):
                 )
 
                 continue
-        chunk_embeddings = np.average(chunk_embeddings, axis=0, weights=chunk_lens)
-        chunk_embeddings = chunk_embeddings / np.linalg.norm(chunk_embeddings)
-        return chunk_embeddings.tolist()
+        # chunk_embeddings = np.average(chunk_embeddings, axis=0, weights=chunk_lens)
+        # chunk_embeddings = chunk_embeddings / np.linalg.norm(chunk_embeddings)
+        # return chunk_embeddings.tolist()
+        return chunk_embeddings
 
     async def aembed(self, text: str, **kwargs: Any) -> list[float]:
         """
@@ -133,21 +137,8 @@ class OpenAIEmbedding(BaseTextEmbedding, OpenAILLMImpl):
                 reraise=True,
                 retry=retry_if_exception_type(self.retry_error_types),
             )
-            # for attempt in retryer:
-            #     with attempt:
-            #         embedding = (
-            #             self.sync_client.embeddings.create(  # type: ignore
-            #                 input=text,
-            #                 model=self.model,
-            #                 **kwargs,  # type: ignore
-            #             )
-            #             .data[0]
-            #             .embedding
-            #             or []
-            #         )
-            #         return (embedding, len(text))
-            
-            
+
+                    
             for attempt in retryer:
                 with attempt:
                     embedding = ollama.embeddings(model="qwen2-7b-instruct-q5_k_m", prompt=text)
