@@ -19,7 +19,7 @@
 | 4    | vllm部署工具及paged attention   | [🏂 vllm](vllm/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1R1421r7tk) <br> [🏊‍♀️ YouTube](https://youtu.be/cQWzKX9gM9Q) |
 | 5    | llama-index实现RAG             | [🏂 llama-index](llama-index/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1jE421A77u) <br> [🏊‍♀️ YouTube](https://youtu.be/Q6vUx94HCDc) |
 | 6    | graph-rag本地部署              | [🏂 graph-rag](graph-rag/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1rE421w7t3) <br> [🏊‍♀️ YouTube](https://youtu.be/tFLJUXsKGsc) |
-| 7    | mkdocs + readthedocs部署项目文档  | [🏂 mkdocs](graph-rag/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV19f421v7P9) <br> [🏊‍♀️ YouTube](https://youtu.be/FRyvV-hj65M) |
+| 7    | mkdocs + readthedocs部署项目文档  | [🏂 mkdocs](mkdocs/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV19f421v7P9) <br> [🏊‍♀️ YouTube](https://youtu.be/FRyvV-hj65M) |
 
 
 ## 🛒 Roadmap (Beta)
