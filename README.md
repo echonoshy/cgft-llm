@@ -18,14 +18,15 @@
 | 3    | Ollama大模型部署工具介绍         | [🏂 ollama](ollama/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1Gs421u7a5/) <br> [🏊‍♀️ YouTube](https://youtu.be/yQ1q8YWacyE) |
 | 4    | vllm部署工具及paged attention   | [🏂 vllm](vllm/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1R1421r7tk) <br> [🏊‍♀️ YouTube](https://youtu.be/cQWzKX9gM9Q) |
 | 5    | llama-index实现RAG             | [🏂 llama-index](llama-index/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1jE421A77u) <br> [🏊‍♀️ YouTube](https://youtu.be/Q6vUx94HCDc) |
-
+| 6    | graph-rag本地部署              | [🏂 graph-rag](graph-rag/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1rE421w7t3) <br> [🏊‍♀️ YouTube](https://youtu.be/tFLJUXsKGsc) |
+| 7    | mkdocs + readthedocs部署项目文档  | [🏂 mkdocs](graph-rag/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV19f421v7P9) <br> [🏊‍♀️ YouTube](https://youtu.be/FRyvV-hj65M) |
 
 
 ## 🛒 Roadmap (Beta)
 
 1. 模块化知识介绍
 - [x] Basic RAG
-- [ ] [GraphRAG](https://github.com/microsoft/graphrag)
+- [x] [GraphRAG](https://github.com/microsoft/graphrag)
 - [ ] [graphrag-accelerator](https://github.com/Azure-Samples/graphrag-accelerator)
 - [ ] function calling
 - [ ] autogen
