@@ -1,30 +1,22 @@
-import streamlit as st
+import os
+from dotenv import load_dotenv
+
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
-from openai import OpenAI
+
 import json
-
-# Streamlit 页面配置
-st.set_page_config(page_title="GPT Mail", page_icon="✉️")
-
-# 侧边栏设置
-st.sidebar.header('Required API Keys')
-OPENAI_API_KEY = st.sidebar.text_input("Enter OpenAI's API key", '', type='password')
-Authorization_Code = st.sidebar.text_input("Enter 126 Mail's Authorization code", type="password")
+from openai import OpenAI
 
 
-# OPENAI_API_KEY = st.secrets['OPENAI_API_KEY']
-# Authorization_Code = st.secrets["Authorization_Code"]
+GPT_MODEL = "gpt-4o-mini"
+
+load_dotenv()
+# 获取环境变量
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+AUTHORIZATION_CODE = os.getenv("AUTHORIZATION_CODE")
 
 client = OpenAI(api_key=OPENAI_API_KEY)
-
-# 主页面标题
-st.title("GPT Mail")
-st.markdown("Chat with AI to send emails!")
-
-# GPT模型和工具设置
-GPT_MODEL = "gpt-4o-mini"
 
 tools = [
     {
@@ -58,6 +50,7 @@ tools = [
     }
 ]
 
+
 def chat_completion_request(messages, tools=None, tool_choice=None, model=GPT_MODEL):
     try:
         response = client.chat.completions.create(
@@ -68,77 +61,78 @@ def chat_completion_request(messages, tools=None, tool_choice=None, model=GPT_MO
         )
         return response
     except Exception as e:
-        st.error(f"Unable to generate ChatCompletion response: {e}")
-        return None
+        print("Unable to generate ChatCompletion response")
+        print(f"Exception: {e}")
+        return e
+
 
 def send_email(sender_email, sender_authorization_code, recipient_email, subject, body):
+    # 创建 MIMEMultipart 对象
     message = MIMEMultipart()
     message["From"] = sender_email
     message["To"] = recipient_email
     message["Subject"] = subject
+
     message.attach(MIMEText(body, "plain"))
+
+    # 创建 SMTP_SSL 会话
+    with smtplib.SMTP_SSL("smtp.126.com", 465) as server:
+        server.login(sender_email, sender_authorization_code)
+        text = message.as_string()
+        server.sendmail(sender_email, recipient_email, text)
+
+
+def main():
+    messages = []
     
-    try:
-        with smtplib.SMTP_SSL("smtp.126.com", 465) as server:
-            server.login(sender_email, sender_authorization_code)
-            text = message.as_string()
-            server.sendmail(sender_email, recipient_email, text)
-        return True
-    except Exception as e:
-        st.error(f"Error sending email: {e}")
-        return False
-
-# 初始化会话状态
-if "messages" not in st.session_state:
-    st.session_state.messages = []
-
-# 显示聊天历史
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
-
-# 聊天输入
-if prompt := st.chat_input("What's your message?"):
-    st.session_state.messages.append({"role": "user", "content": prompt})
-    with st.chat_message("user"):
-        st.markdown(prompt)
-
-    # 获取AI响应
-    with st.chat_message("assistant"):
-        message_placeholder = st.empty()
-        full_response = ""
-        
+    while True:
+        msg = input("【You】: ")
+        messages.append({"role": "user", "content": msg})
         response = chat_completion_request(
-            messages=st.session_state.messages,
+            messages=messages,
             tools=tools
         )
+        if content := response.choices[0].message.content:
+            print(f"【AI】: {content}")
+            messages.append({"role": "assistant", "content": content})
+        else:
+            fn_name = response.choices[0].message.tool_calls[0].function.name
+            fn_args = response.choices[0].message.tool_calls[0].function.arguments
+            # print(f"【Debug info】: fn_name - {fn_name}")
+            # print(f"【Debug info】: fn_args - {fn_args}")
         
-        if response:
-            if content := response.choices[0].message.content:
-                full_response = content
-            else:
-                fn_call = response.choices[0].message.tool_calls[0].function
-                fn_name = fn_call.name
-                fn_args = json.loads(fn_call.arguments)
-                
-                if fn_name == "send_email":
-                    if send_email(
-                        sender_email=fn_args["FromEmail"],
-                        sender_authorization_code=Authorization_Code, 
-                        recipient_email=fn_args["Recipients"], 
-                        subject=fn_args["Subject"], 
-                        body=fn_args["Body"],
-                    ):
-                        full_response = "Email sent successfully!"
+            if fn_name == "send_email":
+                try:
+                    args = json.loads(fn_args)
+                    # 返回将要发送的邮件内容给用户确认
+                    print("【AI】: 邮件内容如下：")
+                    print(f"发件人: {args['FromEmail']}")
+                    print(f"收件人: {args['Recipients']}")
+                    print(f"主题: {args['Subject']}")
+                    print(f"内容: {args['Body']}")
+                    
+                    confirm = input("AI: 确认发送邮件吗？ (yes/no): ").strip().lower()
+                    if confirm == "yes":
+                        send_email(
+                            sender_email=args["FromEmail"],
+                            sender_authorization_code=AUTHORIZATION_CODE, 
+                            recipient_email=args["Recipients"], 
+                            subject=args["Subject"], 
+                            body=args["Body"],
+                        )
+                        print("邮件已发送，还需要什么帮助吗？")
+                        messages.append({"role": "assistant", "content": "邮件已发送，还需要什么帮助吗？"})
                     else:
-                        full_response = "Failed to send email. Please check your settings and try again."
-                else:
-                    full_response = f"Unknown function call: {fn_name}"
-            
-            message_placeholder.markdown(full_response)
-            st.session_state.messages.append({"role": "assistant", "content": full_response})
+                        print("邮件发送已取消，还需要什么帮助吗？")
+                        messages.append({"role": "assistant", "content": "邮件发送已取消，还需要什么帮助吗？"})
+                except Exception as e:
+                    print(f"发送邮件时出错：{e}")
+                    messages.append({"role": "assistant", "content": "抱歉，功能异常！"})    
 
-# 添加清除聊天历史的按钮
-if st.button("Clear Chat History"):
-    st.session_state.messages = []
-    st.experimental_rerun()
+
+if __name__ == "__main__":
+    main()
+
+
+# 帮我发送一封邮件
+# 发件人: remember0202@126.com, 收件人：remember0101@126.com, 发送内容写着一封来自未来胖虎的问候邮件，主题随便
