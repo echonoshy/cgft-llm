@@ -30,3 +30,12 @@ streamlit run stapp.py
 [126邮箱授权码获取](https://help.mail.163.com/faqDetail.do?code=d7a5dc8471cd0c0e8b4b8f4f8e49998b374173cfe9171305fa1ce630d7f67ac2a5feb28b66796d3b)
 
 [openai官方示例](https://platform.openai.com/docs/guides/function-calling)
+
+
+## 5. 思考
+![](./virtual-human.png)
+假设你要开发一款AI机器人（2D / 3D），这个机器人可以：
+1. 对话
+2. 有情感（喜怒哀乐）
+3. 做对应动作？
+
