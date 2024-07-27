@@ -83,7 +83,7 @@ def send_email(sender_email, sender_authorization_code, recipient_email, subject
         server.sendmail(sender_email, recipient_email, text)
 
 def main():
-    st.title("📥 Mail Assistant")
+    st.title("🪪 AI Assistant")
 
     # Initialize chat history
     if "messages" not in st.session_state:
