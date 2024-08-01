@@ -8,6 +8,7 @@
 Qwen/Qwen2-7B-Instruct-GGUF qwen2-7b-instruct-q5_k_m.gguf
 
 ```
+# 通过huggingface镜像站下载
 export HF_ENDPOINT=https://hf-mirror.com
 huggingface-cli download Qwen/Qwen2-7B-Instruct-GGUF qwen2-7b-instruct-q5_k_m.gguf --local-dir /root/autodl-tmp/models/
 ```
@@ -15,6 +16,8 @@ huggingface-cli download Qwen/Qwen2-7B-Instruct-GGUF qwen2-7b-instruct-q5_k_m.gg
 1.2 构建ollama model
 
 ```
+# 直接使用ollama pull的模型上下文长度有限，容易报错。推荐通过Modelfile方式手动构建模型，并指定一个较长的上下文。
+
 ollama create qwen2-7b-instruct-q5_k_m -f /root/code/cgft-llm/graph-rag/src/Modelfile
 ```
 
@@ -25,10 +28,14 @@ pip install graphrag
 pip install ollama
 
 sudo find / -name openai_embeddings_llm.py
-替换openai_embeddings_llm.py
+使用src文件夹中的openai_embeddings_llm.py替换graphrag包中的同名文件
+
+sudo find / -name embeddings.py
+使用src文件夹中的embeddings.py替换graphrag包中的同名文件
+⚠️ 如果你不是使用该模型（qwen2-7b-instruct-q5_k_m），请修改src替换文件中对应的模型名！！！
 ```
 
-测试接口
+测试emb接口是否正常
 
 ```
 curl http://localhost:11434/api/embeddings -d '{

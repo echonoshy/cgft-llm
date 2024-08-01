@@ -1,5 +1,5 @@
-# Modify:
-# /root/miniconda3/lib/python3.10/site-packages/graphrag/llm/openai/openai_embeddings_llm.py
+# Modify: /root/miniconda3/lib/python3.10/site-packages/graphrag/llm/openai/openai_embeddings_llm.py
+# 手动修改33行的ollama模型名`qwen2-7b-instruct-q5_k_m`， 配置文件中的修改在这里不生效，测试版本没有做参数解析。
 
 
 from typing_extensions import Unpack

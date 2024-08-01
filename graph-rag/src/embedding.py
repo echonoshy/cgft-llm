@@ -1,8 +1,6 @@
-# Modify /root/miniconda3/lib/python3.10/site-packages/graphrag/query/llm/oai/embedding.py
+# Modify: /root/miniconda3/lib/python3.10/site-packages/graphrag/query/llm/oai/embedding.py
+# 手动修改89行的ollama模型名`qwen2-7b-instruct-q5_k_m`， 配置文件中的修改在这里不生效，测试版本没有做参数解析。
 
-
-# Copyright (c) 2024 Microsoft Corporation.
-# Licensed under the MIT License
 
 """OpenAI Embedding model implementation."""
 
