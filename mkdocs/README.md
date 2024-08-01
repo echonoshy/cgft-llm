@@ -11,8 +11,10 @@ pip install mkdocs
 1.2 初始化项目
 
 ```
+# 新建项目
 mkdocs new .
 
+# 启动本地服务
 mkdocs serve
 ```
 
@@ -31,14 +33,14 @@ pip install mkdocs-material
 
 
 
-
 ## 2. 远程服务托管
 
 2.1 使用rtd远程托管
 
 > https://readthedocs.org/
 
-2.2 项目配置
+2.2 项目配置  
+配置好以后，每当github收到新的提交以后，rtd网站会重新自动构建并部署服务，保证网站是最新的。
 
 - 关联github
 - 配置webhook
