@@ -9,7 +9,7 @@
 openai==0.28.1
 streamlit==1.37.0
 
-配置.env环境变量
+配置.env环境变量，将.env_sample重命命成.env
 OPENAI_API_KEY=
 AUTHORIZATION_CODE=
 ```
@@ -37,5 +37,4 @@ streamlit run stapp.py
 假设你要开发一款AI机器人（2D / 3D），这个机器人可以：
 1. 对话
 2. 有情感（喜怒哀乐）
-3. 做对应动作？
-
+3. 做对应动作
