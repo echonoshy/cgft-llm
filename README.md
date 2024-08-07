@@ -22,7 +22,15 @@
 | 5    | llama-index实现RAG             | [🏂 llama-index](llama-index/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1jE421A77u) <br> [🏊‍♀️ YouTube](https://youtu.be/Q6vUx94HCDc) |
 | 6    | graph-rag本地部署              | [🏂 graph-rag](graph-rag/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1rE421w7t3) <br> [🏊‍♀️ YouTube](https://youtu.be/tFLJUXsKGsc) |
 | 7    | mkdocs+readthedocs部署项目文档  | [🏂 mkdocs](mkdocs/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV19f421v7P9) <br> [🏊‍♀️ YouTube](https://youtu.be/FRyvV-hj65M) |
-| 8    | function-calling 自动发邮件    | [🏂 function-calling](function-calling/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1eH4y1c7KQ/) <br> [🏊‍♀️ YouTube](https://youtu.be/dPKPQ2DA88k) |
+| 8    | function-calling 自动发邮件    | [🏂 function-calling](function-calling/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1eH4y1c7KQ/) <br> [🏊‍♀️ YouTube](https://youtu.be/U2tbBxtA_wQ) |
+
+
+### 🪂 2. kaggle大模型竞赛系列
+
+| 序号 | 项目                           | 代码文档                        | 视频教程                                                    |
+|------|--------------------------------|---------------------------------|-------------------------------------------------------------|
+| 1    | kaggle快速入门                  | [🏂 getting-started](kaggle/getting-started.ipynb) | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1vVayeREVe/) <br> [🏊‍♀️ YouTube](https://youtu.be/Mz4V3zinMYI) |
+
 
 
 ## 🛒 Roadmap (Beta)
