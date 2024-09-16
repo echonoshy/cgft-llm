@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.jpg" height="450px" alt="图片描述" style="max-width:85%; height:auto;"/>
+  <img src="assets/logo.jpg" height="400px" alt="Hands on LLMs" style="max-width:85%; height:auto;"/>
 </p>
 
 # ⛰️ 动手做大模型系列 🎮
