@@ -1,3 +1,7 @@
+# Gradio 
 
-todo: httpx.ConnectError: [Errno 61] Connection refused
-export no_proxy = localhost, 127.0.0.1, ::1
+
+## 官方相关资料：
+1. [Quick Start](https://www.gradio.app/guides/quickstart)
+2. [Docs](https://www.gradio.app/docs)
+
