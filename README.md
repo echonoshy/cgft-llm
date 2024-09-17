@@ -27,7 +27,7 @@
 | 7    | mkdocs+readthedocs部署项目文档  | [🏂 mkdocs](mkdocs/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV19f421v7P9) <br> [🏊‍♀️ YouTube](https://youtu.be/FRyvV-hj65M) |
 | 8    | function-calling 自动发邮件    | [🏂 function-calling](function-calling/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1eH4y1c7KQ/) <br> [🏊‍♀️ YouTube](https://youtu.be/U2tbBxtA_wQ) |
 | 9    | 大模型学习路径及面试    | [🏂 llm-roadmap](docs/llm-roadmap.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1maW4euELX) <br> [🏊‍♀️ YouTube](https://youtu.be/-YLeUO6wwz8) |
-| 10    | gradio系列教程（🏊更新至03期）    | [🏂 gradio](gradio/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1wi4aeXEM6/) <br>  |
+| 10    | gradio系列教程（🏊更新至05期）    | [🏂 gradio](gradio/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1wi4aeXEM6/) <br>  |
 
 ### 🪂 2. kaggle大模型竞赛系列
 
