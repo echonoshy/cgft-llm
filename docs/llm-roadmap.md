@@ -1,8 +1,5 @@
-<p align="center">
-  <img src="../assets/transformer-structure.png" height="450px" alt="图片描述" style="max-width:90%; height:auto;"/>
-</p>
 
-# LLM学习路径
+📼 # LLM学习路径
 
 ## 第一部分：模型算法基础
 
