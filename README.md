@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo-min.png" height="400px" alt="Hands on LLMs" style="max-width:85%; height:auto;"/>
+  <img src="assets/logo-min.png" height="380px" alt="Hands on LLMs" style="max-width:85%; height:auto;"/>
 </p>
 
 # ⛰️ 动手做大模型系列 🎮
@@ -27,7 +27,7 @@
 | 7    | mkdocs+readthedocs部署项目文档  | [🏂 mkdocs](mkdocs/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV19f421v7P9) <br> [🏊‍♀️ YouTube](https://youtu.be/FRyvV-hj65M) |
 | 8    | function-calling 自动发邮件    | [🏂 function-calling](function-calling/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1eH4y1c7KQ/) <br> [🏊‍♀️ YouTube](https://youtu.be/U2tbBxtA_wQ) |
 | 9    | 大模型学习路径及面试    | [🏂 llm-roadmap](docs/llm-roadmap.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1maW4euELX) <br> [🏊‍♀️ YouTube](https://youtu.be/-YLeUO6wwz8) |
-| 10   | 大模型算法岗非技术答疑    | [🏂 llm-no-tec-QA](docs/llm-no-tec-qa.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1Kjx7ejE5M/) <br> [🏊‍♀️ YouTube](https://youtu.be/JrY8CL0pz68) |
+| 10   | 大模型算法岗非技术答疑    | [🏂 llm-no-tec-qa](docs/llm-no-tec-qa.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1Kjx7ejE5M/) <br> [🏊‍♀️ YouTube](https://youtu.be/JrY8CL0pz68) |
 
 
 ### 🪂 2. 专题系列
