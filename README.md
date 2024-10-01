@@ -28,6 +28,7 @@
 | 8    | function-calling 自动发邮件    | [🏂 function-calling](function-calling/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1eH4y1c7KQ/) <br> [🏊‍♀️ YouTube](https://youtu.be/U2tbBxtA_wQ) |
 | 9    | 大模型学习路径及面试    | [🏂 llm-roadmap](docs/llm-roadmap.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1maW4euELX) <br> [🏊‍♀️ YouTube](https://youtu.be/-YLeUO6wwz8) |
 | 10   | 大模型算法岗非技术答疑    | [🏂 llm-no-tec-qa](docs/llm-no-tec-qa.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1Kjx7ejE5M/) <br> [🏊‍♀️ YouTube](https://youtu.be/JrY8CL0pz68) |
+| 11   | AI标注流程及label studio框架    | [🏂 label-studio](label-studio/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1oRxteFEJi/) <br> [🏊‍♀️ YouTube](https://youtu.be/rTNrfq5Ay7o) |
 
 
 ### 🪂 2. 专题系列
