@@ -1,14 +1,20 @@
 <p align="center">
-  <img src="assets/logo-min.png" height="340px" alt="Hands on LLMs" style="max-width:85%; height:auto;"/>
+  <img src="assets/logo-min.png" height="360px" alt="Hands on LLMs" style="max-width:85%; height:auto;"/>
 </p>
 
-![GitHub stars](https://img.shields.io/github/stars/echonoshy/cgft-llm?style=social)
-![GitHub forks](https://img.shields.io/github/forks/echonoshy/cgft-llm?style=social)
-![GitHub watchers](https://img.shields.io/github/watchers/echonoshy/cgft-llm?style=social)
-![GitHub repo size](https://img.shields.io/github/repo-size/echonoshy/cgft-llm)
-![GitHub language count](https://img.shields.io/github/languages/count/echonoshy/cgft-llm)
-![GitHub top language](https://img.shields.io/github/languages/top/echonoshy/cgft-llm)
-![GitHub last commit](https://img.shields.io/github/last-commit/echonoshy/cgft-llm?color=red)
+
+<div align="center">
+
+  ![GitHub stars](https://img.shields.io/github/stars/DjangoPeng/LLM-quickstart?style=social)
+  ![GitHub forks](https://img.shields.io/github/forks/DjangoPeng/LLM-quickstart?style=social)
+  ![GitHub watchers](https://img.shields.io/github/watchers/DjangoPeng/LLM-quickstart?style=social)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/DjangoPeng/LLM-quickstart)
+  ![GitHub language count](https://img.shields.io/github/languages/count/DjangoPeng/LLM-quickstart)
+  ![GitHub top language](https://img.shields.io/github/languages/top/DjangoPeng/LLM-quickstart)
+  ![GitHub last commit](https://img.shields.io/github/last-commit/DjangoPeng/LLM-quickstart?color=red)
+  
+</div>
+
 
 # ⛰️ 动手做大模型系列 🎮
 
