@@ -1,0 +1,20 @@
+services:
+  nginx:
+    image: nginx:latest
+    container_name: my-nginx
+    ports:
+      - "8080:80"
+    networks:
+      - my-network
+
+  python-app:
+    build: ./python-app
+    container_name: python-request
+    depends_on:
+      - nginx
+    networks:
+      - my-network
+
+networks:
+  my-network:
+    driver: bridge
