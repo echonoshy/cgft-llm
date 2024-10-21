@@ -53,6 +53,8 @@
 |------|--------------------------------|---------------------------------|-------------------------------------------------------------|
 | 1    | kaggle 大模型竞赛系列  （🏊更新至01期）      | [🏂 kaggle](kaggle/getting-started.ipynb) | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1vVayeREVe/) <br> [🏊‍♀️ YouTube](https://youtu.be/Mz4V3zinMYI) |
 | 2    | gradio 可视化系列     （🏊更新至05期）      | [🏂 gradio](gradio/README.md) | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1wi4aeXEM6/) <br> [🏊‍♀️ YouTube]() |
+| 3    | docker 容器化部署     （🏊已完结）          | [🏂 docker](docker/README.md) | [🤾‍♀️ Bilibili]() <br> [🏊‍♀️ YouTube]() |
+
 
 
 ## 🛒 Roadmap (Beta)
@@ -61,10 +63,11 @@
 1. 模块化知识
 - [ ] llama.cpp更新版本
 - [ ] Dify: 构建AI agent 应用
-- [ ] label studio: 自建打标平台
+- [x] label studio: 自建打标平台
 
 
 2. 专题系列
 - [ ] gradio 
 - [ ] kaggle
+- [x] docker 容器化部署
 - [ ] 对话式GPT机器人 （简化版豆包）
