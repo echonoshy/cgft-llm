@@ -8,6 +8,7 @@
 4. [volume 卷](docs/4-volume.md)
 5. [network 网络](docs/5-network.md)
 6. [Docker Compose](docs/6-docker-compose.md)
+7. [proxy](docs/7-proxy代理.md)
 
 
 Docker demo:
