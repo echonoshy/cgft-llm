@@ -1,7 +1,6 @@
 <p align="center">
-  <img src="assets/logo-min.png" height="300px" alt="Hands on LLMs"/>
+  <img src="assets/logo-min.png" width="500" alt="Hands on LLMs"/>
 </p>
-
 
 <div align="center">
 
@@ -57,17 +56,28 @@
 
 
 
-## 🛒 Roadmap (Beta)
+## 🗺️ Roadmap
 
 
-1. 模块化知识
+**1. LLM 主线知识**
 - [ ] llama.cpp更新版本
 - [ ] Dify: 构建AI agent 应用
 - [x] label studio: 自建打标平台
 
 
-2. 专题系列
+**2. AI 专题**
 - [ ] gradio 
 - [ ] kaggle
 - [x] docker 容器化部署
 - [ ] 对话式GPT机器人 （简化版豆包）
+
+
+**3. AI工程**
+* 语音类
+  - [ ] 流式变声器
+  - [ ] 端到端音频大模型
+  - [ ] 声音克隆
+
+* 文本类
+  - [ ] AI播客
+* 图像类
