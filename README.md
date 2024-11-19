@@ -42,6 +42,7 @@
 | 9    | 大模型学习路径及面试    | [🏂 llm-roadmap](docs/llm-roadmap.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1maW4euELX) <br> [🏊‍♀️ YouTube](https://youtu.be/-YLeUO6wwz8) |
 | 10   | 大模型算法岗非技术答疑    | [🏂 llm-no-tec-qa](docs/llm-no-tec-qa.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1Kjx7ejE5M/) <br> [🏊‍♀️ YouTube](https://youtu.be/JrY8CL0pz68) |
 | 11   | AI标注流程及label studio框架    | [🏂 label-studio](label-studio/README.md)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1oRxteFEJi/) <br> [🏊‍♀️ YouTube](https://youtu.be/rTNrfq5Ay7o) |
+| 12   | AI算法项目开发流程及实例    | [🏂 AI-project-workflow](project-workflow/AI项目开发流程.pdf)  | [🤾‍♀️ Bilibili](https://www.bilibili.com/video/BV1XSUpYmERX/) <br> [🏊‍♀️ YouTube](https://youtu.be/dB9t3fcuVF8) |
 
 
 ### 🪂 2. 专题系列
@@ -76,7 +77,7 @@
 * 语音类
   - [ ] 流式变声器
   - [ ] 端到端音频大模型
-  - [ ] 声音克隆
+  - [x] 声音克隆
 
 * 文本类
   - [ ] AI播客
