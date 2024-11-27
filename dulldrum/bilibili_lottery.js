@@ -93,8 +93,30 @@ function processForwardList() {
 
 // 抽取幸运用户
 function draw(num) {
+    // 将 name_set 转换为数组，以便操作
+    const nameArray = Array.from(name_set);
+    
+    // 如果抽奖人数大于集合大小，直接限制抽奖人数
+    if (num > nameArray.length) {
+        console.log("抽奖人数大于用户数，自动调整为最大用户数！");
+        num = nameArray.length;
+    }
+
+    // 用于存储已抽取的用户
+    const winners = new Set();
+
     for (let i = 0; i < num; i++) {
-        const luckyNum = parseInt(Math.random() * name_set.size, 10);
-        console.log(`🎉 中奖用户: ${Array.from(name_set)[luckyNum]}`);
+        let luckyNum;
+
+        // 直到抽到一个未抽过的用户
+        do {
+            luckyNum = Math.floor(Math.random() * nameArray.length); // 随机生成一个用户索引
+        } while (winners.has(luckyNum)); // 如果用户已经被抽取，重新生成
+
+        // 添加到已抽取用户集合
+        winners.add(luckyNum);
+
+        // 输出中奖者
+        console.log(`🎉 中奖用户: ${nameArray[luckyNum]}`);
     }
 }
