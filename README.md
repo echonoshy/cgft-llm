@@ -58,6 +58,13 @@
 | 3 | docker 容器化部署     （🏊已完结） | [ docker](docker/README.md) | ![Duration](https://img.shields.io/badge/Duration-41:37-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1o7y7Y8EZ1)](https://www.bilibili.com/video/BV1o7y7Y8EZ1/) <br> [![youtube](https://img.shields.io/youtube/views/DeYNR47abG8?style=social)](https://youtu.be/DeYNR47abG8) |
 
 
+
+### 🏖️ 3. 番外篇
+| 序号 | 项目 | 代码文档 | 视频时长 | 视频教程 |
+|------|--------------------------------|---------------------------------|------------|-------------------------------------------------------------|
+| 1 | B站实现动态转发抽奖  | [ Bilibili-lottery](dulldrum/bilibili_lottery.js) | ![Duration](https://img.shields.io/badge/Duration-4:40-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1gYzEYrEQt)](https://www.bilibili.com/video/BV1gYzEYrEQt/) <br> [![youtube](https://img.shields.io/youtube/views/Bnb92NG30us?style=social)](https://youtu.be/Bnb92NG30us) |
+
+
 ## 🗺️ Roadmap
 
 
