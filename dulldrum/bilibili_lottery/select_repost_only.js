@@ -1,5 +1,5 @@
 /**
- * 实现B站动态转发定时抽奖的小功能，增加下拉刷新功能
+ * 实现B站动态转发定时抽奖的小功能，仅抽取转发用户
  * 作者: UP胖虎遛二狗 echonoshy@github.com
  * 使用方法: 
  * 1. 打开动态页面，在浏览器控制台粘贴本代码。
@@ -7,8 +7,9 @@
  */
 
 // ==================== 配置参数 ====================
-const targetDate = new Date("2024-11-30T12:00:00"); // 设置抽奖时间
+const targetDate = new Date("2024-11-31T12:00:00"); // 设置抽奖时间
 const drawCount = 3; // 设置抽奖人数
+const scrollDelay = 500; // 下拉刷新的间隔时间（毫秒）
 // =================================================
 
 console.log("等待目标时间:", targetDate);
@@ -48,7 +49,7 @@ function startLottery() {
     }
 
     // 启动自动下拉刷新逻辑
-    myScrollInterval = setInterval(scrollPage, 500);
+    myScrollInterval = setInterval(scrollPage, scrollDelay);
 }
 
 // 自动下拉刷新
