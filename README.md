@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo-min.png" width="560" alt="Hands on LLMs"/>
+  <img src="assets/logo-min.png" width="580" alt="Hands on LLMs"/>
 </p>
 
 <div align="center">
@@ -18,13 +18,15 @@
 # ⛰️ 动手做大模型系列 🎮
 
 如果你在实操的过程中遇到问题，请在对应的视频下方留言。
-如果复现遇到bug，请描述：
+复现遇到bug，请描述：
 1. 🎯 运行环境
 2. 🧩 对应的代码、日志和报错截图
 
-> 如果你不太了解如何提出一个好问题，请花几分钟阅读一下这个，相信我，可能并不能改变什么🤫（不是）。  
-> [How-To-Ask-Questions-The-Smart-Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)
+有感兴趣的内容或问题，[点击这里加入讨论🎉](https://github.com/echonoshy/cgft-llm/discussions)。
 
+> 如果你不太了解如何提出一个好问题，请花几分钟阅读一下这个，相信我，可能并不能改变什么🤫（不是）。  
+> [How-To-Ask-Questions-The-Smart-Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)  
+ 
 ## 🎨 视频及文档合集
 
 ### 🛰️ 1. 大模型模块知识
