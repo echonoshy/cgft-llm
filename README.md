@@ -71,12 +71,12 @@
 
 **1. LLM 主线知识**
 - [ ] llama.cpp更新版本
-- [ ] AI agent
+- [x] AI agent
 - [x] label studio: 自建打标平台
 
 
 **2. AI 专题**
-- [ ] gradio 
+- [x] gradio 
 - [ ] kaggle
 - [x] docker 容器化部署
 
