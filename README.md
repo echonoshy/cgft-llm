@@ -47,7 +47,7 @@
 | 12 | AI标注流程及label studio框架 | [label-studio](label-studio/README.md) | ![Duration](https://img.shields.io/badge/Duration-29:16-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1oRxteFEJi)](https://www.bilibili.com/video/BV1oRxteFEJi/) <br> [![youtube](https://img.shields.io/youtube/views/rTNrfq5Ay7o?style=social)](https://youtu.be/rTNrfq5Ay7o) |
 | 13 | AI算法项目开发流程及实例 | [AI-project-workflow](project-workflow/AI项目开发流程.pdf) | ![Duration](https://img.shields.io/badge/Duration-35:27-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1XSUpYmERX)](https://www.bilibili.com/video/BV1XSUpYmERX/) <br> [![youtube](https://img.shields.io/youtube/views/dB9t3fcuVF8?style=social)](https://youtu.be/dB9t3fcuVF8) |
 | 14 | Dify实现Agent和LLM Workflow | [Agent llm-workflow](./dify/agent-llm-workflow-dify.md) | ![Duration](https://img.shields.io/badge/Duration-59:23-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1hacaeNEQJ)](https://www.bilibili.com/video/BV1hacaeNEQJ/) <br> [![youtube](https://img.shields.io/youtube/views/zU5nHsUx5ck?style=social)](https://youtu.be/zU5nHsUx5ck) |
-
+| 15 | rpa自动化及LLM workflow  | [rpa]() | ![Duration](https://img.shields.io/badge/Duration-13:20-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1qcNUeNEXf)](https://www.bilibili.com/video/BV1qcNUeNEXf/) <br> [![youtube](https://img.shields.io/youtube/views/Y7b0RVVO6QI?style=social)](https://youtu.be/Y7b0RVVO6QI) |
 
 
 ### 🪂 2. 专题系列
@@ -66,6 +66,7 @@
 | 序号 | 项目 | 代码文档 | 视频时长 | 视频教程 |
 |------|--------------------------------|---------------------------------|------------|-------------------------------------------------------------|
 | 1 | B站实现动态转发抽奖  | [ Bilibili-lottery](./dulldrum/bilibili_lottery/bilibili_lottery.md) | ![Duration](https://img.shields.io/badge/Duration-4:40-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1gYzEYrEQt)](https://www.bilibili.com/video/BV1gYzEYrEQt/) <br> [![youtube](https://img.shields.io/youtube/views/Bnb92NG30us?style=social)](https://youtu.be/Bnb92NG30us) |
+
 
 
 ## 🗺️ Roadmap
