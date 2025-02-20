@@ -26,9 +26,8 @@
 
 > 如果你不太了解如何提出一个好问题，请花几分钟阅读一下这个，相信我，可能并不能改变什么🤫（不是）。  
 > [How-To-Ask-Questions-The-Smart-Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)  
- 
-## 🎨 视频及文档合集
-> [How-To-Ask-Questions-The-Smart-Way](https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md)
+
+
 
 ## 🔬 视频及文档合集
 
