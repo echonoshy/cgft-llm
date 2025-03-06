@@ -21,12 +21,9 @@
 基于中文数据训练过的 LLaMA3 8B 模型：  
 [shenzhi-wang/Llama3-8B-Chinese-Chat](https://huggingface.co/shenzhi-wang/Llama3-8B-Chinese-Chat)
 
-（可选）配置 hf 国内镜像站：
 ```bash
 pip install -U huggingface_hub
-pip install huggingface-cli
-
-export HF_ENDPOINT=https://hf-mirror.com
+export HF_ENDPOINT=https://hf-mirror.com  # （可选）配置 hf 国内镜像站
 
 huggingface-cli download --resume-download shenzhi-wang/Llama3-8B-Chinese-Chat --local-dir /root/autodl-tmp/models/Llama3-8B-Chinese-Chat1
 ```
