@@ -1,0 +1,221 @@
+app:
+  description: 'BaaS：通用型客服助手
+
+    https://github.com/echonoshy/bot-as-a-service'
+  icon: ghost
+  icon_background: '#E4FBCC'
+  mode: advanced-chat
+  name: Bot-as-a-Service
+  use_icon_as_answer_icon: true
+dependencies:
+- current_identifier: null
+  type: marketplace
+  value:
+    marketplace_plugin_unique_identifier: langgenius/tongyi:0.0.16@83c2af34fbec26724422443da2f79400586f57c63a651ffab9f82c3d6b563802
+kind: app
+version: 0.1.5
+workflow:
+  conversation_variables: []
+  environment_variables: []
+  features:
+    file_upload:
+      allowed_file_extensions:
+      - .JPG
+      - .JPEG
+      - .PNG
+      - .GIF
+      - .WEBP
+      - .SVG
+      allowed_file_types:
+      - image
+      allowed_file_upload_methods:
+      - local_file
+      - remote_url
+      enabled: false
+      fileUploadConfig:
+        audio_file_size_limit: 50
+        batch_count_limit: 5
+        file_size_limit: 15
+        image_file_size_limit: 10
+        video_file_size_limit: 100
+        workflow_file_upload_limit: 10
+      image:
+        enabled: false
+        number_limits: 3
+        transfer_methods:
+        - local_file
+        - remote_url
+      number_limits: 3
+    opening_statement: ''
+    retriever_resource:
+      enabled: true
+    sensitive_word_avoidance:
+      enabled: false
+    speech_to_text:
+      enabled: false
+    suggested_questions: []
+    suggested_questions_after_answer:
+      enabled: false
+    text_to_speech:
+      enabled: false
+      language: ''
+      voice: ''
+  graph:
+    edges:
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: start
+        targetType: knowledge-retrieval
+      id: 1744164595342-source-1744556015351-target
+      source: '1744164595342'
+      sourceHandle: source
+      target: '1744556015351'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: knowledge-retrieval
+        targetType: llm
+      id: 1744556015351-source-1744556034458-target
+      source: '1744556015351'
+      sourceHandle: source
+      target: '1744556034458'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    - data:
+        isInIteration: false
+        isInLoop: false
+        sourceType: llm
+        targetType: answer
+      id: 1744556034458-source-1744556044807-target
+      source: '1744556034458'
+      sourceHandle: source
+      target: '1744556044807'
+      targetHandle: target
+      type: custom
+      zIndex: 0
+    nodes:
+    - data:
+        desc: ''
+        selected: false
+        title: 开始
+        type: start
+        variables: []
+      height: 54
+      id: '1744164595342'
+      position:
+        x: -86.95764758491265
+        y: 72.78249113585333
+      positionAbsolute:
+        x: -86.95764758491265
+        y: 72.78249113585333
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        dataset_ids:
+        - WI7G3Y6nEFoB0sJ1wVworfiPYS/4kpuKuRbEmVMCD+HccNdyq4L4XiJkWyNv/yQB
+        desc: ''
+        metadata_filtering_conditions:
+          conditions:
+          - comparison_operator: is
+            id: cae23f89-c707-429b-b12a-17af66149042
+            name: uploader
+            value: 胖虎不遛狗
+          logical_operator: and
+        metadata_filtering_mode: manual
+        multiple_retrieval_config:
+          reranking_enable: false
+          reranking_mode: reranking_model
+          reranking_model:
+            model: gte-rerank-v2
+            provider: langgenius/tongyi/tongyi
+          top_k: 4
+        query_variable_selector:
+        - '1744164595342'
+        - sys.query
+        retrieval_mode: multiple
+        selected: false
+        title: 知识检索
+        type: knowledge-retrieval
+      height: 92
+      id: '1744556015351'
+      position:
+        x: 205.51194451240184
+        y: 72.78249113585333
+      positionAbsolute:
+        x: 205.51194451240184
+        y: 72.78249113585333
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        context:
+          enabled: true
+          variable_selector:
+          - '1744556015351'
+          - result
+        desc: ''
+        model:
+          completion_params: {}
+          mode: chat
+          name: deepseek-v3
+          provider: langgenius/tongyi/tongyi
+        prompt_template:
+        - id: 02d5d557-cc85-483e-90fd-7fee80da9950
+          role: system
+          text: '{{#context#}}'
+        - id: 6273e5d8-f656-4ef0-adcf-ab726d72e2c0
+          role: user
+          text: '{{#sys.query#}}'
+        selected: true
+        title: LLM
+        type: llm
+        variables: []
+        vision:
+          enabled: false
+      height: 90
+      id: '1744556034458'
+      position:
+        x: 510.7302527183078
+        y: 72.78249113585333
+      positionAbsolute:
+        x: 510.7302527183078
+        y: 72.78249113585333
+      selected: true
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    - data:
+        answer: '{{#1744556034458.text#}}'
+        desc: ''
+        selected: false
+        title: 直接回复
+        type: answer
+        variables: []
+      height: 105
+      id: '1744556044807'
+      position:
+        x: 814.7302527183078
+        y: 72.78249113585333
+      positionAbsolute:
+        x: 814.7302527183078
+        y: 72.78249113585333
+      selected: false
+      sourcePosition: right
+      targetPosition: left
+      type: custom
+      width: 244
+    viewport:
+      x: 122.35471750779482
+      y: 368.34289369059206
+      zoom: 0.8353501056079353
