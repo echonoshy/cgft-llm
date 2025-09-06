@@ -56,7 +56,7 @@
 | 19 | 构建高效RAG知识库 | [rag-knowledge-base](rag-knowledge-base/readme.md) | ![Duration](https://img.shields.io/badge/Duration-37:41-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1HTdkYeExC)](https://www.bilibili.com/video/BV1HTdkYeExC) <br> [![youtube](https://img.shields.io/youtube/views/-qGUeOJJ2eM?style=social)](https://youtu.be/zI0D4BUeRcE) |
 
 
-### 🔋 2. 工程实践
+### 🛵 2. 工程实践
 
 > 专题系列会以多个视频介绍同一个主题，分P的形式展示，即共用一个video url。
 
