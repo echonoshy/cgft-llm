@@ -63,7 +63,7 @@
 | 序号 | 项目 | 代码文档 | 视频时长 | 视频教程 |
 |------|------|----------|----------|----------|
 | 1 | python工程实践 · 依赖管理：uv | [uv](docs/uv.md) | ![Duration](https://img.shields.io/badge/Duration-24:11-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV179YKzjEx6)](https://www.bilibili.com/video/BV179YKzjEx6) <br> [![youtube](https://img.shields.io/youtube/views/RJbxIaVFGSM?style=social)](https://youtu.be/RJbxIaVFGSM) |
-
+| 2 | python工程实践 · 代码规范：ruff | [ruff](docs/ruff.md) | ![Duration](https://img.shields.io/badge/Duration-21:50-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1zwpLz2Exh)](https://www.bilibili.com/video/BV1zwpLz2Exh) <br> [![youtube](https://img.shields.io/youtube/views/fm-zgDFAqNY?style=social)](https://youtu.be/fm-zgDFAqNY) |
 
 
 
