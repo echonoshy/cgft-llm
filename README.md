@@ -56,15 +56,15 @@
 | 19 | 构建高效RAG知识库 | [rag-knowledge-base](rag-knowledge-base/readme.md) | ![Duration](https://img.shields.io/badge/Duration-37:41-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1HTdkYeExC)](https://www.bilibili.com/video/BV1HTdkYeExC) <br> [![youtube](https://img.shields.io/youtube/views/zI0D4BUeRcE?style=social)](https://youtu.be/zI0D4BUeRcE) |
 | 20 | langfuse llm服务监控平台 | [langfuse](docs/langfuse.md) | ![Duration](https://img.shields.io/badge/Duration-26:15-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1tUpDzwEr3)](https://www.bilibili.com/video/BV1tUpDzwEr3) <br> [![youtube](https://img.shields.io/youtube/views/JlzPs8-dwAk?style=social)](https://youtu.be/JlzPs8-dwAk) |
 
-### 🛵 2. 工程实践
+### 🛵 2. 动手加入开源
 
-> 专题系列会以多个视频介绍同一个主题，分P的形式展示，即共用一个video url。
+> 主要讲开源项目规范的一些内容。
 
 | 序号 | 项目 | 代码文档 | 视频时长 | 视频教程 |
 |------|------|----------|----------|----------|
 | 1 | python工程实践 · 依赖管理：uv | [uv](docs/uv.md) | ![Duration](https://img.shields.io/badge/Duration-24:11-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV179YKzjEx6)](https://www.bilibili.com/video/BV179YKzjEx6) <br> [![youtube](https://img.shields.io/youtube/views/RJbxIaVFGSM?style=social)](https://youtu.be/RJbxIaVFGSM) |
 | 2 | python工程实践 · 代码规范：ruff | [ruff](docs/ruff.md) | ![Duration](https://img.shields.io/badge/Duration-21:50-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1zwpLz2Exh)](https://www.bilibili.com/video/BV1zwpLz2Exh) <br> [![youtube](https://img.shields.io/youtube/views/fm-zgDFAqNY?style=social)](https://youtu.be/fm-zgDFAqNY) |
-
+| 3 | 代码提交检查：pre-commit | [pre-commit](docs/pre-commit.md) | ![Duration](https://img.shields.io/badge/Duration-11:21-blue) | [![bilibili](https://img.shields.io/badge/dynamic/json?label=views&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1P5nfz6EKb)](https://www.bilibili.com/video/BV1P5nfz6EKb) <br> [![youtube](https://img.shields.io/youtube/views/DtSHvJmM4Lo?style=social)](https://youtu.be/DtSHvJmM4Lo) |
 
 
 ### 🔋 3. 模块知识专题系列
