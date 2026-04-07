@@ -46,72 +46,72 @@
 ## 💡 2. 大模型核心技术
 > 涵盖大模型微调、部署、RAG、工作流等核心实战。
 
-| 序号 | 项目 | 代码文档 | 视频教程 (含时长) |
-| :--- | :--- | :--- | :--- |
-| 21 | fastmcp 实现mcp服务端和客户端 | [文档](#) | [![bilibili][img_llm_21_bili]][ref_llm_21_bili] [![youtube][img_llm_21_yt]][ref_llm_21_yt] ⏱️ 26:01 |
-| 20 | langfuse llm服务监控平台 | [文档][ref_llm_20_doc] | [![bilibili][img_llm_20_bili]][ref_llm_20_bili] [![youtube][img_llm_20_yt]][ref_llm_20_yt] ⏱️ 26:15 |
-| 19 | 构建高效RAG知识库 | [文档][ref_llm_19_doc] | [![bilibili][img_llm_19_bili]][ref_llm_19_bili] [![youtube][img_llm_19_yt]][ref_llm_19_yt] ⏱️ 37:41 |
+| 序号 | 项目 | 代码文档 | 视频教程 | 时长 |
+| :--- | :--- | :--- | :--- | :--- |
+| 21 | fastmcp 实现mcp服务端和客户端 | [文档](#) | [![bilibili][img_llm_21_bili]][ref_llm_21_bili] [![youtube][img_llm_21_yt]][ref_llm_21_yt] | <kbd><small>26:01</small></kbd> |
+| 20 | langfuse llm服务监控平台 | [文档][ref_llm_20_doc] | [![bilibili][img_llm_20_bili]][ref_llm_20_bili] [![youtube][img_llm_20_yt]][ref_llm_20_yt] | <kbd><small>26:15</small></kbd> |
+| 19 | 构建高效RAG知识库 | [文档][ref_llm_19_doc] | [![bilibili][img_llm_19_bili]][ref_llm_19_bili] [![youtube][img_llm_19_yt]][ref_llm_19_yt] | <kbd><small>37:41</small></kbd> |
 
 <details>
 <summary><b>点击展开查看往期 1~18 期内容</b></summary>
 
-| 序号 | 项目 | 代码文档 | 视频教程 (含时长) |
-| :--- | :--- | :--- | :--- |
-| 18 | milvus向量数据库 | [文档][ref_llm_18_doc] | [![bilibili][img_llm_18_bili]][ref_llm_18_bili] [![youtube][img_llm_18_yt]][ref_llm_18_yt] ⏱️ 28:13 |
-| 17 | tool-call原理及极简browser-use实现 | [文档][ref_llm_17_doc] | [![bilibili][img_llm_17_bili]][ref_llm_17_bili] [![youtube][img_llm_17_yt]][ref_llm_17_yt] ⏱️ 14:47 |
-| 16 | deepseek-r1模型微调和训练数据构造 | [文档][ref_llm_16_doc] | [![bilibili][img_llm_16_bili]][ref_llm_16_bili] [![youtube][img_llm_16_yt]][ref_llm_16_yt] ⏱️ 14:01 |
-| 15 | rpa自动化结合LLM workflow | [文档][ref_llm_15_doc] | [![bilibili][img_llm_15_bili]][ref_llm_15_bili] [![youtube][img_llm_15_yt]][ref_llm_15_yt] ⏱️ 13:20 |
-| 14 | dify实现Agent和LLM Workflow | [文档][ref_llm_14_doc] | [![bilibili][img_llm_14_bili]][ref_llm_14_bili] [![youtube][img_llm_14_yt]][ref_llm_14_yt] ⏱️ 59:23 |
-| 13 | AI算法项目开发流程及实例 | [文档][ref_llm_13_doc] | [![bilibili][img_llm_13_bili]][ref_llm_13_bili] [![youtube][img_llm_13_yt]][ref_llm_13_yt] ⏱️ 34:43 |
-| 12 | AI标注流程及label studio框架 | [文档][ref_llm_12_doc] | [![bilibili][img_llm_12_bili]][ref_llm_12_bili] [![youtube][img_llm_12_yt]][ref_llm_12_yt] ⏱️ 20:00 |
-| 11 | 大模型算法岗非技术答疑 | [文档][ref_llm_11_doc] | [![bilibili][img_llm_11_bili]][ref_llm_11_bili] [![youtube][img_llm_11_yt]][ref_llm_11_yt] ⏱️ 16:00 |
-| 10 | 大模型学习路径及面试 | [文档][ref_llm_10_doc] | [![bilibili][img_llm_10_bili]][ref_llm_10_bili] [![youtube][img_llm_10_yt]][ref_llm_10_yt] ⏱️ 25:01 |
-| 9 | function-calling 自动发邮件 | [文档][ref_llm_09_doc] | [![bilibili][img_llm_09_bili]][ref_llm_09_bili] [![youtube][img_llm_09_yt]][ref_llm_09_yt] ⏱️ 23:10 |
-| 8 | mkdocs+readthedocs部署项目文档 | [文档][ref_llm_08_doc] | [![bilibili][img_llm_08_bili]][ref_llm_08_bili] [![youtube][img_llm_08_yt]][ref_llm_08_yt] ⏱️ 11:25 |
-| 7 | graph-rag本地部署 | [文档][ref_llm_07_doc] | [![bilibili][img_llm_07_bili]][ref_llm_07_bili] [![youtube][img_llm_07_yt]][ref_llm_07_yt] ⏱️ 23:23 |
-| 6 | llama-index实现RAG | [文档][ref_llm_06_doc] | [![bilibili][img_llm_06_bili]][ref_llm_06_bili] [![youtube][img_llm_06_yt]][ref_llm_06_yt] ⏱️ 21:48 |
-| 5 | vllm部署工具及paged attention | [文档][ref_llm_05_doc] | [![bilibili][img_llm_05_bili]][ref_llm_05_bili] [![youtube][img_llm_05_yt]][ref_llm_05_yt] ⏱️ 40:28 |
-| 4 | ollama大模型部署工具介绍 | [文档][ref_llm_04_doc] | [![bilibili][img_llm_04_bili]][ref_llm_04_bili] [![youtube][img_llm_04_yt]][ref_llm_04_yt] ⏱️ 21:28 |
-| 3 | llama.cpp进行轻量化部署和量化 | [文档][ref_llm_03_doc] | [![bilibili][img_llm_03_bili]][ref_llm_03_bili] [![youtube][img_llm_03_yt]][ref_llm_03_yt] ⏱️ 46:37 |
-| 2 | 训练数据整理以及微调优化建议 | [文档][ref_llm_02_doc] | [![bilibili][img_llm_02_bili]][ref_llm_02_bili] [![youtube][img_llm_02_yt]][ref_llm_02_yt] ⏱️ 20:13 |
-| 1 | 使用llama-factory微调llama3 | [文档][ref_llm_01_doc] | [![bilibili][img_llm_01_bili]][ref_llm_01_bili] [![youtube][img_llm_01_yt]][ref_llm_01_yt] ⏱️ 35:28 |
+| 序号 | 项目 | 代码文档 | 视频教程 | 时长 |
+| :--- | :--- | :--- | :--- | :--- |
+| 18 | milvus向量数据库 | [文档][ref_llm_18_doc] | [![bilibili][img_llm_18_bili]][ref_llm_18_bili] [![youtube][img_llm_18_yt]][ref_llm_18_yt] | <kbd><small>28:13</small></kbd> |
+| 17 | tool-call原理及极简browser-use实现 | [文档][ref_llm_17_doc] | [![bilibili][img_llm_17_bili]][ref_llm_17_bili] [![youtube][img_llm_17_yt]][ref_llm_17_yt] | <kbd><small>14:47</small></kbd> |
+| 16 | deepseek-r1模型微调和训练数据构造 | [文档][ref_llm_16_doc] | [![bilibili][img_llm_16_bili]][ref_llm_16_bili] [![youtube][img_llm_16_yt]][ref_llm_16_yt] | <kbd><small>14:01</small></kbd> |
+| 15 | rpa自动化结合LLM workflow | [文档][ref_llm_15_doc] | [![bilibili][img_llm_15_bili]][ref_llm_15_bili] [![youtube][img_llm_15_yt]][ref_llm_15_yt] | <kbd><small>13:20</small></kbd> |
+| 14 | dify实现Agent和LLM Workflow | [文档][ref_llm_14_doc] | [![bilibili][img_llm_14_bili]][ref_llm_14_bili] [![youtube][img_llm_14_yt]][ref_llm_14_yt] | <kbd><small>59:23</small></kbd> |
+| 13 | AI算法项目开发流程及实例 | [文档][ref_llm_13_doc] | [![bilibili][img_llm_13_bili]][ref_llm_13_bili] [![youtube][img_llm_13_yt]][ref_llm_13_yt] | <kbd><small>34:43</small></kbd> |
+| 12 | AI标注流程及label studio框架 | [文档][ref_llm_12_doc] | [![bilibili][img_llm_12_bili]][ref_llm_12_bili] [![youtube][img_llm_12_yt]][ref_llm_12_yt] | <kbd><small>20:00</small></kbd> |
+| 11 | 大模型算法岗非技术答疑 | [文档][ref_llm_11_doc] | [![bilibili][img_llm_11_bili]][ref_llm_11_bili] [![youtube][img_llm_11_yt]][ref_llm_11_yt] | <kbd><small>16:00</small></kbd> |
+| 10 | 大模型学习路径及面试 | [文档][ref_llm_10_doc] | [![bilibili][img_llm_10_bili]][ref_llm_10_bili] [![youtube][img_llm_10_yt]][ref_llm_10_yt] | <kbd><small>25:01</small></kbd> |
+| 9 | function-calling 自动发邮件 | [文档][ref_llm_09_doc] | [![bilibili][img_llm_09_bili]][ref_llm_09_bili] [![youtube][img_llm_09_yt]][ref_llm_09_yt] | <kbd><small>23:10</small></kbd> |
+| 8 | mkdocs+readthedocs部署项目文档 | [文档][ref_llm_08_doc] | [![bilibili][img_llm_08_bili]][ref_llm_08_bili] [![youtube][img_llm_08_yt]][ref_llm_08_yt] | <kbd><small>11:25</small></kbd> |
+| 7 | graph-rag本地部署 | [文档][ref_llm_07_doc] | [![bilibili][img_llm_07_bili]][ref_llm_07_bili] [![youtube][img_llm_07_yt]][ref_llm_07_yt] | <kbd><small>23:23</small></kbd> |
+| 6 | llama-index实现RAG | [文档][ref_llm_06_doc] | [![bilibili][img_llm_06_bili]][ref_llm_06_bili] [![youtube][img_llm_06_yt]][ref_llm_06_yt] | <kbd><small>21:48</small></kbd> |
+| 5 | vllm部署工具及paged attention | [文档][ref_llm_05_doc] | [![bilibili][img_llm_05_bili]][ref_llm_05_bili] [![youtube][img_llm_05_yt]][ref_llm_05_yt] | <kbd><small>40:28</small></kbd> |
+| 4 | ollama大模型部署工具介绍 | [文档][ref_llm_04_doc] | [![bilibili][img_llm_04_bili]][ref_llm_04_bili] [![youtube][img_llm_04_yt]][ref_llm_04_yt] | <kbd><small>21:28</small></kbd> |
+| 3 | llama.cpp进行轻量化部署和量化 | [文档][ref_llm_03_doc] | [![bilibili][img_llm_03_bili]][ref_llm_03_bili] [![youtube][img_llm_03_yt]][ref_llm_03_yt] | <kbd><small>46:37</small></kbd> |
+| 2 | 训练数据整理以及微调优化建议 | [文档][ref_llm_02_doc] | [![bilibili][img_llm_02_bili]][ref_llm_02_bili] [![youtube][img_llm_02_yt]][ref_llm_02_yt] | <kbd><small>20:13</small></kbd> |
+| 1 | 使用llama-factory微调llama3 | [文档][ref_llm_01_doc] | [![bilibili][img_llm_01_bili]][ref_llm_01_bili] [![youtube][img_llm_01_yt]][ref_llm_01_yt] | <kbd><small>35:28</small></kbd> |
 
 </details>
 
 ## 🛠️ 3. 动手加入开源
 > 主要讲开源项目规范的一些内容。
 
-| 序号 | 项目 | 代码文档 | 视频教程 (含时长) |
-| :--- | :--- | :--- | :--- |
-| 4 | 代码测试：pytest | [文档][ref_opensource_4_doc] | [![bilibili][img_opensource_4_bili]][ref_opensource_4_bili] [![youtube][img_opensource_4_yt]][ref_opensource_4_yt] ⏱️ 11:21 |
-| 3 | 代码提交检查：pre-commit | [文档][ref_opensource_3_doc] | [![bilibili][img_opensource_3_bili]][ref_opensource_3_bili] [![youtube][img_opensource_3_yt]][ref_opensource_3_yt] ⏱️ 11:21 |
-| 2 | python工程实践 · 代码规范：ruff | [文档][ref_opensource_2_doc] | [![bilibili][img_opensource_2_bili]][ref_opensource_2_bili] [![youtube][img_opensource_2_yt]][ref_opensource_2_yt] ⏱️ 21:50 |
-| 1 | python工程实践 · 依赖管理：uv | [文档][ref_opensource_1_doc] | [![bilibili][img_opensource_1_bili]][ref_opensource_1_bili] [![youtube][img_opensource_1_yt]][ref_opensource_1_yt] ⏱️ 24:11 |
+| 序号 | 项目 | 代码文档 | 视频教程 | 时长 |
+| :--- | :--- | :--- | :--- | :--- |
+| 4 | 代码测试：pytest | [文档][ref_opensource_4_doc] | [![bilibili][img_opensource_4_bili]][ref_opensource_4_bili] [![youtube][img_opensource_4_yt]][ref_opensource_4_yt] | <kbd><small>11:21</small></kbd> |
+| 3 | 代码提交检查：pre-commit | [文档][ref_opensource_3_doc] | [![bilibili][img_opensource_3_bili]][ref_opensource_3_bili] [![youtube][img_opensource_3_yt]][ref_opensource_3_yt] | <kbd><small>11:21</small></kbd> |
+| 2 | python工程实践 · 代码规范：ruff | [文档][ref_opensource_2_doc] | [![bilibili][img_opensource_2_bili]][ref_opensource_2_bili] [![youtube][img_opensource_2_yt]][ref_opensource_2_yt] | <kbd><small>21:50</small></kbd> |
+| 1 | python工程实践 · 依赖管理：uv | [文档][ref_opensource_1_doc] | [![bilibili][img_opensource_1_bili]][ref_opensource_1_bili] [![youtube][img_opensource_1_yt]][ref_opensource_1_yt] | <kbd><small>24:11</small></kbd> |
 
 ## 📦 4. 模块知识专题系列
 > 专题系列会以多个视频介绍同一个主题，分P的形式展示，即共用一个视频链接。
 
-| 序号 | 项目 | 代码文档 | 视频教程 (含时长) |
-| :--- | :--- | :--- | :--- |
-| 3 | docker 容器化部署（已完结）| [文档][ref_module_3_doc] | [![bilibili][img_module_3_bili]][ref_module_3_bili] [![youtube][img_module_3_yt]][ref_module_3_yt] ⏱️ 62:59 |
-| 2 | gradio 使用python构建并分享AI应用（已完结） | [文档][ref_module_2_doc] | [![bilibili][img_module_2_bili]][ref_module_2_bili] [![youtube][img_module_2_yt]][ref_module_2_yt] ⏱️ 70:51 |
-| 1 | kaggle 大模型竞赛系列（更新至01期） | [文档][ref_module_1_doc] | [![bilibili][img_module_1_bili]][ref_module_1_bili] [![youtube][img_module_1_yt]][ref_module_1_yt] ⏱️ 25:41 |
+| 序号 | 项目 | 代码文档 | 视频教程 | 时长 |
+| :--- | :--- | :--- | :--- | :--- |
+| 3 | docker 容器化部署（已完结）| [文档][ref_module_3_doc] | [![bilibili][img_module_3_bili]][ref_module_3_bili] [![youtube][img_module_3_yt]][ref_module_3_yt] | <kbd><small>62:59</small></kbd> |
+| 2 | gradio 使用python构建并分享AI应用（已完结） | [文档][ref_module_2_doc] | [![bilibili][img_module_2_bili]][ref_module_2_bili] [![youtube][img_module_2_yt]][ref_module_2_yt] | <kbd><small>70:51</small></kbd> |
+| 1 | kaggle 大模型竞赛系列（更新至01期） | [文档][ref_module_1_doc] | [![bilibili][img_module_1_bili]][ref_module_1_bili] [![youtube][img_module_1_yt]][ref_module_1_yt] | <kbd><small>25:41</small></kbd> |
 
 ## 🚀 5. 不着调的 AI 项目
 > 将一些脑洞大开的点子落地成 AI 项目的不着调专题。
 
-| 序号 | 项目 | 代码文档 | 视频教程 (含时长) |
-| :--- | :--- | :--- | :--- |
-| 3 | 猎空: LLM+微信自动化资讯机器人 | [tracer][ref_project_3_doc] | [![bilibili][img_project_3_bili]][ref_project_3_bili] [![youtube][img_project_3_yt]][ref_project_3_yt] ⏱️ 15:11 |
-| 2 | 听舒: 换声引擎-用作者的声音读自传 | [tingshu][ref_project_2_doc] | [![bilibili][img_project_2_bili]][ref_project_2_bili] [![youtube][img_project_2_yt]][ref_project_2_yt] ⏱️ 4:16 |
-| 1 | D.Va: 基于deepseek优化的端到端多人播客工具 | [d.va][ref_project_1_doc] | [![bilibili][img_project_1_bili]][ref_project_1_bili] [![youtube][img_project_1_yt]][ref_project_1_yt] ⏱️ 13:42 |
+| 序号 | 项目 | 代码文档 | 视频教程 | 时长 |
+| :--- | :--- | :--- | :--- | :--- |
+| 3 | 猎空: LLM+微信自动化资讯机器人 | [tracer][ref_project_3_doc] | [![bilibili][img_project_3_bili]][ref_project_3_bili] [![youtube][img_project_3_yt]][ref_project_3_yt] | <kbd><small>15:11</small></kbd> |
+| 2 | 听舒: 换声引擎-用作者的声音读自传 | [tingshu][ref_project_2_doc] | [![bilibili][img_project_2_bili]][ref_project_2_bili] [![youtube][img_project_2_yt]][ref_project_2_yt] | <kbd><small>4:16</small></kbd> |
+| 1 | D.Va: 基于deepseek优化的端到端多人播客工具 | [d.va][ref_project_1_doc] | [![bilibili][img_project_1_bili]][ref_project_1_bili] [![youtube][img_project_1_yt]][ref_project_1_yt] | <kbd><small>13:42</small></kbd> |
 
 ## 🎈 6. 番外篇
 > 懒得分类的技术合集。
 
-| 序号 | 项目 | 代码文档 | 视频教程 (含时长) |
-| :--- | :--- | :--- | :--- |
-| 1 | B站实现动态转发抽奖 | [文档][ref_extra_1_doc] | [![bilibili][img_extra_1_bili]][ref_extra_1_bili] [![youtube][img_extra_1_yt]][ref_extra_1_yt] ⏱️ 4:40 |
+| 序号 | 项目 | 代码文档 | 视频教程 | 时长 |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | B站实现动态转发抽奖 | [文档][ref_extra_1_doc] | [![bilibili][img_extra_1_bili]][ref_extra_1_bili] [![youtube][img_extra_1_yt]][ref_extra_1_yt] | <kbd><small>4:40</small></kbd> |
 
 ---
 
