@@ -42,7 +42,9 @@
 ## 💡 1. Agent 智能体系统
 > 探索 Agent 架构设计与系统落地，最新连载中...
 
-*(即将更新，敬请期待)*
+| 序号 | 项目 | 代码文档 | 视频教程 | 时长 |
+| :--- | :--- | :--- | :--- | :--- |
+| 1 | Agent 服务架构设计 | [文档][ref_agent_1_doc] | [![bilibili][img_agent_1_bili]][ref_agent_1_bili] [![youtube][img_agent_1_yt]][ref_agent_1_yt] | <kbd><small>7:32</small></kbd> |
 
 ## 💡 2. 大模型核心技术
 > 涵盖大模型微调、部署、RAG、工作流等核心实战。
@@ -131,6 +133,13 @@
 [img_feishu]: https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6-%E9%AD%94%E7%8E%8B%E5%A4%A7%E4%BA%BA%E7%94%B3%E8%AF%B7%E6%B7%BB%E5%8A%A0%E4%BD%A0%E4%B8%BA%E8%81%94%E7%B3%BB%E4%BA%BA-00D6B9?style=flat-square
 [ref_feishu]: https://www.feishu.cn/invitation/page/add_contact/?token=7c0pc01a-60b9-4c7e-bcc4-ed5a2cab4625
 [ref_how_to_ask]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
+
+<!-- Agent 智能体系统 -->
+[img_agent_1_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1A8DeBbE5f
+[img_agent_1_yt]: https://img.shields.io/youtube/views/WkAFAzAKM1s?style=social
+[ref_agent_1_doc]: 01-agent-sys/agent-service-architecture.html
+[ref_agent_1_bili]: https://www.bilibili.com/video/BV1A8DeBbE5f
+[ref_agent_1_yt]: https://youtu.be/WkAFAzAKM1s
 
 <!-- 大模型核心技术 -->
 [img_llm_21_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1rE1SBpEha

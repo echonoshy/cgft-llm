@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>多租户 Agent Service 系统架构</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: #F7F5F0;
+    color: #2D2D2D;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
+    padding: 40px;
+    min-height: 100vh;
+  }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 8px;
+    color: #1A1A1A;
+    letter-spacing: 2px;
+  }
+  .subtitle {
+    text-align: center;
+    color: #8C8C8C;
+    font-size: 14px;
+    margin-bottom: 48px;
+  }
+  .canvas {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  /* --- Layer Rows --- */
+  .layer {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .layer-label {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    background: #FFFFFF;
+    border: 1px solid #E8E5DE;
+    border-radius: 12px;
+    padding: 16px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #8C8C8C;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 44px;
+    flex-shrink: 0;
+  }
+  .layer-content {
+    flex: 1;
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+
+  /* --- Cards --- */
+  .card {
+    border-radius: 14px;
+    padding: 20px;
+    flex: 1;
+    min-width: 200px;
+    position: relative;
+    overflow: hidden;
+    background: #FFFFFF;
+    border: 1px solid #E8E5DE;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+  }
+  .card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+  }
+  .card-icon {
+    font-size: 20px;
+    margin-bottom: 8px;
+    display: block;
+  }
+  .card h3 {
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+  .card p {
+    font-size: 12px;
+    color: #6B6B6B;
+    line-height: 1.6;
+    margin-bottom: 8px;
+  }
+
+  /* Color themes — Anthropic inspired warm palette */
+  .card.coral   { background: #FFFBF8; border-color: #F0D9CC; }
+  .card.coral::before   { background: linear-gradient(90deg, #D97757, #E8956E); }
+  .card.coral h3 { color: #C06040; }
+
+  .card.sand { background: #FDFBF6; border-color: #E8DFD0; }
+  .card.sand::before { background: linear-gradient(90deg, #B8976A, #CDB088); }
+  .card.sand h3 { color: #96784D; }
+
+  .card.sage  { background: #F7FAF7; border-color: #D4E0D4; }
+  .card.sage::before  { background: linear-gradient(90deg, #6B9B6B, #88B488); }
+  .card.sage h3 { color: #4D7A4D; }
+
+  .card.terracotta { background: #FFF8F5; border-color: #EEDDD4; }
+  .card.terracotta::before { background: linear-gradient(90deg, #C4785A, #D99578); }
+  .card.terracotta h3 { color: #A85D3F; }
+
+  .card.plum   { background: #FAF7FC; border-color: #E0D4E8; }
+  .card.plum::before   { background: linear-gradient(90deg, #9B6BB5, #B488C8); }
+  .card.plum h3 { color: #7D4F96; }
+
+  .card.steel   { background: #F7F9FB; border-color: #D8DFE8; }
+  .card.steel::before   { background: linear-gradient(90deg, #6B85A0, #88A0B8); }
+  .card.steel h3 { color: #4D6880; }
+
+  .card.stone  { background: #FAFAF8; border-color: #E0DED8; }
+  .card.stone::before  { background: linear-gradient(90deg, #8C8C80, #A8A89C); }
+  .card.stone h3 { color: #5C5C52; }
+
+  /* --- Tags --- */
+  .tech-tag {
+    display: inline-block;
+    font-size: 10px;
+    padding: 2px 8px;
+    border-radius: 6px;
+    margin: 2px 2px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+  }
+  .tag-framework  { background: #FFF0E6; color: #C06040; }
+  .tag-db         { background: #EDF5ED; color: #4D7A4D; }
+  .tag-ai         { background: #F3EDF8; color: #7D4F96; }
+  .tag-infra      { background: #FFF5E6; color: #96784D; }
+  .tag-protocol   { background: #FFEAE0; color: #A85D3F; }
+  .tag-lib        { background: #ECF1F6; color: #4D6880; }
+
+  /* --- Arrows --- */
+  .arrow-row {
+    display: flex;
+    justify-content: center;
+    margin: 4px 0 4px 56px;
+    gap: 20px;
+  }
+  .arrow-down {
+    width: 2px;
+    height: 24px;
+    background: linear-gradient(to bottom, #C4B8A8, #DDD5C8);
+    position: relative;
+    margin: 0 auto;
+  }
+  .arrow-down::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: -4px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #C4B8A8;
+  }
+  .arrow-group {
+    display: flex;
+    gap: 120px;
+    justify-content: center;
+  }
+  .arrow-label {
+    font-size: 10px;
+    color: #8C8C8C;
+    text-align: center;
+    margin-top: 2px;
+  }
+
+  /* --- Flow Diagram (Center) --- */
+  .flow-section {
+    margin: 48px auto;
+    max-width: 900px;
+  }
+  .flow-section h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 32px;
+    color: #1A1A1A;
+  }
+  .flow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+  .flow-step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 780px;
+  }
+  .flow-node {
+    flex-shrink: 0;
+    width: 220px;
+    padding: 14px 18px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    border: 1px solid;
+    position: relative;
+  }
+  .flow-node.start {
+    background: #FFF8F5;
+    color: #C06040;
+    border-color: #F0D9CC;
+  }
+  .flow-node.process {
+    background: #FAF7FC;
+    color: #7D4F96;
+    border-color: #E0D4E8;
+  }
+  .flow-node.decision {
+    background: #F7FAF7;
+    color: #4D7A4D;
+    border-color: #D4E0D4;
+    border-radius: 12px;
+  }
+  .flow-node.action {
+    background: #FFF5EE;
+    color: #B85C3A;
+    border-color: #EEDDD0;
+  }
+  .flow-node.end {
+    background: #FFF8F5;
+    color: #C06040;
+    border-color: #F0D9CC;
+  }
+  .flow-annotation {
+    flex: 1;
+    font-size: 11px;
+    color: #6B6B6B;
+    padding: 10px 14px;
+    border-left: 2px solid #E8E5DE;
+    line-height: 1.7;
+  }
+  .flow-annotation strong {
+    color: #4A4A4A;
+    font-size: 11px;
+  }
+  .flow-arrow {
+    width: 2px;
+    height: 20px;
+    background: #C4B8A8;
+    margin: 0 auto;
+    position: relative;
+    margin-left: 109px;
+  }
+  .flow-arrow::after {
+    content: '';
+    position: absolute;
+    bottom: -3px;
+    left: -3px;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 5px solid #C4B8A8;
+  }
+  .flow-arrow.loop {
+    height: 28px;
+    background: #6B9B6B;
+  }
+  .flow-arrow.loop::after {
+    border-top-color: #6B9B6B;
+  }
+  .loop-label {
+    font-size: 10px;
+    color: #4D7A4D;
+    text-align: center;
+    margin-left: 109px;
+    margin-top: -2px;
+    margin-bottom: 2px;
+  }
+
+  .footer {
+    text-align: center;
+    margin-top: 48px;
+    color: #A0A0A0;
+    font-size: 12px;
+  }
+
+  /* --- Wide card --- */
+  .card.wide { min-width: 100%; }
+
+  @media (max-width: 900px) {
+    body { padding: 20px; }
+    .layer { flex-direction: column; }
+    .layer-label { writing-mode: horizontal-tb; min-width: unset; padding: 8px 16px; }
+    .flow-step { flex-direction: column; }
+    .flow-arrow, .flow-arrow.loop { margin-left: 0; }
+    .loop-label { margin-left: 0; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Multi-Tenant Agent Service</h1>
+<p class="subtitle">多租户智能助手服务系统 &mdash; 架构总览</p>
+
+<div class="canvas">
+
+<!-- ==================== Layer 1: Client ==================== -->
+<div class="layer">
+  <div class="layer-label">接 入 层</div>
+  <div class="layer-content">
+    <div class="card coral">
+      <span class="card-icon">&#x1f310;</span>
+      <h3>Web Chat UI</h3>
+      <p>主要交互界面，支持富文本、文件上传、流式输出</p>
+      <span class="tech-tag tag-framework">Next.js</span>
+      <span class="tech-tag tag-framework">shadcn/ui</span>
+      <span class="tech-tag tag-protocol">SSE / WebSocket</span>
+    </div>
+    <div class="card coral">
+      <span class="card-icon">&#x1f4f1;</span>
+      <h3>Mobile / 小程序</h3>
+      <p>移动端入口，复用同一套 API</p>
+      <span class="tech-tag tag-framework">React Native</span>
+      <span class="tech-tag tag-protocol">REST API</span>
+    </div>
+    <div class="card coral">
+      <span class="card-icon">&#x1f916;</span>
+      <h3>IM Webhook</h3>
+      <p>飞书 / 钉钉 / Slack / 企业微信 Bot 接入</p>
+      <span class="tech-tag tag-protocol">Webhook</span>
+      <span class="tech-tag tag-protocol">OAuth 2.0</span>
+    </div>
+    <div class="card coral">
+      <span class="card-icon">&#x2699;&#xfe0f;</span>
+      <h3>Open API</h3>
+      <p>第三方系统集成，支持 API Key 认证</p>
+      <span class="tech-tag tag-protocol">REST</span>
+      <span class="tech-tag tag-protocol">API Key</span>
+    </div>
+  </div>
+</div>
+
+<div class="arrow-row"><div class="arrow-group"><div class="arrow-down"></div><div class="arrow-down"></div><div class="arrow-down"></div><div class="arrow-down"></div></div></div>
+
+<!-- ==================== Layer 2: Gateway ==================== -->
+<div class="layer">
+  <div class="layer-label">网 关 层</div>
+  <div class="layer-content">
+    <div class="card stone wide">
+      <span class="card-icon">&#x1f6e1;&#xfe0f;</span>
+      <h3>API Gateway</h3>
+      <p>统一入口：JWT 认证 &rarr; 租户识别 &rarr; 速率限制 &rarr; 路由分发。所有请求经过这里，实现租户级隔离和流量控制。</p>
+      <span class="tech-tag tag-framework">FastAPI</span>
+      <span class="tech-tag tag-infra">Nginx / Traefik</span>
+      <span class="tech-tag tag-protocol">JWT</span>
+      <span class="tech-tag tag-infra">Rate Limiter</span>
+      <span class="tech-tag tag-db">Redis</span>
+    </div>
+  </div>
+</div>
+
+<div class="arrow-row"><div class="arrow-down"></div></div>
+
+<!-- ==================== Layer 3: Core Services ==================== -->
+<div class="layer">
+  <div class="layer-label">核 心 服 务</div>
+  <div class="layer-content">
+
+    <div class="card plum">
+      <span class="card-icon">&#x1f9e0;</span>
+      <h3>Agent Engine</h3>
+      <p>核心循环：接收用户消息 &rarr; 组装 Context &rarr; 调用 LLM &rarr; 解析 Tool Use &rarr; 执行工具 &rarr; 循环直到完成</p>
+      <span class="tech-tag tag-ai">Claude API</span>
+      <span class="tech-tag tag-ai">Tool Use</span>
+      <span class="tech-tag tag-framework">Async Loop</span>
+    </div>
+
+    <div class="card sage">
+      <span class="card-icon">&#x1f4ad;</span>
+      <h3>Memory Service</h3>
+      <p><strong>三大能力：</strong><br>
+        1. 自动提取 &mdash; 每轮对话后台异步提取记忆<br>
+        2. 向量检索 &mdash; 语义相似度 + 关键词 + 时间衰减<br>
+        3. 分类存储 &mdash; user / preference / project / reference / knowledge
+      </p>
+      <span class="tech-tag tag-ai">Embedding</span>
+      <span class="tech-tag tag-db">pgvector</span>
+      <span class="tech-tag tag-ai">Haiku (提取)</span>
+      <span class="tech-tag tag-lib">Hybrid Search</span>
+    </div>
+
+    <div class="card terracotta">
+      <span class="card-icon">&#x1f4d6;</span>
+      <h3>Knowledge Service</h3>
+      <p><strong>外部知识整合：</strong><br>
+        用户文档 &rarr; Parse (PDF/DOCX/XLS) &rarr; Chunk &rarr; Embed &rarr; Store<br>
+        网络检索 &rarr; Search &rarr; Extract &rarr; 结构化缓存<br>
+        统一 RAG 检索注入对话上下文
+      </p>
+      <span class="tech-tag tag-lib">unstructured</span>
+      <span class="tech-tag tag-ai">Voyage-3</span>
+      <span class="tech-tag tag-db">pgvector</span>
+      <span class="tech-tag tag-infra">S3 / MinIO</span>
+      <span class="tech-tag tag-lib">Web Search</span>
+    </div>
+
+  </div>
+</div>
+
+<div class="arrow-row"><div class="arrow-group"><div class="arrow-down"></div><div class="arrow-down"></div><div class="arrow-down"></div></div></div>
+
+<!-- ==================== Layer 4: Subsystems ==================== -->
+<div class="layer">
+  <div class="layer-label">能 力 层</div>
+  <div class="layer-content">
+
+    <div class="card sand">
+      <span class="card-icon">&#x26a1;</span>
+      <h3>Skill System</h3>
+      <p>YAML/Markdown 定义技能，安装/卸载/市场分发。每个 Skill 包含 prompt + 所需 tools + 触发条件。</p>
+      <span class="tech-tag tag-protocol">YAML Frontmatter</span>
+      <span class="tech-tag tag-lib">Skill Store</span>
+    </div>
+
+    <div class="card steel">
+      <span class="card-icon">&#x1f527;</span>
+      <h3>Tool Runtime</h3>
+      <p>标准化工具接口：JSON Schema 定义输入，统一 execute() 执行。内置 + 自定义 + MCP 工具。</p>
+      <span class="tech-tag tag-protocol">JSON Schema</span>
+      <span class="tech-tag tag-protocol">MCP</span>
+      <span class="tech-tag tag-lib">Sandbox</span>
+    </div>
+
+    <div class="card sage">
+      <span class="card-icon">&#x1f4ac;</span>
+      <h3>Session Manager</h3>
+      <p>会话持久化 + 自动压缩。超过 token 阈值时用 LLM 摘要历史，保留最近消息 + 重新注入关键文档。</p>
+      <span class="tech-tag tag-ai">Context Compact</span>
+      <span class="tech-tag tag-db">PostgreSQL</span>
+      <span class="tech-tag tag-db">Redis Cache</span>
+    </div>
+
+    <div class="card plum">
+      <span class="card-icon">&#x1f3e2;</span>
+      <h3>Tenant Manager</h3>
+      <p>租户隔离：独立配置 / 模型选择 / Token 额度 / 工具权限 / Skill 安装 / 计费统计</p>
+      <span class="tech-tag tag-db">PostgreSQL</span>
+      <span class="tech-tag tag-infra">Row-Level Security</span>
+    </div>
+
+  </div>
+</div>
+
+<div class="arrow-row"><div class="arrow-group"><div class="arrow-down"></div><div class="arrow-down"></div><div class="arrow-down"></div><div class="arrow-down"></div></div></div>
+
+<!-- ==================== Layer 5: Infra ==================== -->
+<div class="layer">
+  <div class="layer-label">基 础 设 施</div>
+  <div class="layer-content">
+    <div class="card stone">
+      <span class="card-icon">&#x1f4be;</span>
+      <h3>PostgreSQL + pgvector</h3>
+      <p>租户/用户/配置/会话 + 记忆&文档的向量检索</p>
+    </div>
+    <div class="card stone">
+      <span class="card-icon">&#x26a1;</span>
+      <h3>Redis</h3>
+      <p>会话缓存 / 速率限制 / 实时消息队列</p>
+    </div>
+    <div class="card stone">
+      <span class="card-icon">&#x1f4e6;</span>
+      <h3>S3 / MinIO</h3>
+      <p>用户上传文档的原始文件存储</p>
+    </div>
+    <div class="card stone">
+      <span class="card-icon">&#x1f680;</span>
+      <h3>Celery Workers</h3>
+      <p>异步任务：文档解析 / 记忆提取 / 定时任务</p>
+    </div>
+    <div class="card stone">
+      <span class="card-icon">&#x1f40b;</span>
+      <h3>Docker / K8s</h3>
+      <p>容器化部署，按租户弹性扩缩容</p>
+    </div>
+  </div>
+</div>
+
+</div><!-- end canvas -->
+
+
+<!-- ==================== Agent Loop Flow ==================== -->
+<div class="flow-section">
+  <h2>Agent 核心循环流程</h2>
+  <div class="flow-container">
+
+    <div class="flow-step">
+      <div class="flow-node start">&#x1f4e9; 用户发送消息<br><small>(含可选文件上传)</small></div>
+      <div class="flow-annotation">
+        <strong>入口处理：</strong>文件上传 &rarr; 解析 &rarr; 分块 &rarr; Embedding 存储<br>
+        文本消息进入 Agent Loop
+      </div>
+    </div>
+    <div class="flow-arrow"></div>
+
+    <div class="flow-step">
+      <div class="flow-node process">&#x1f50d; 检索相关记忆<br><small>Memory Retrieval</small></div>
+      <div class="flow-annotation">
+        <strong>混合检索：</strong>向量相似度(0.7) + BM25关键词(0.2) + 时间衰减(0.1)<br>
+        返回 Top-5 相关记忆，注入 System Prompt
+      </div>
+    </div>
+    <div class="flow-arrow"></div>
+
+    <div class="flow-step">
+      <div class="flow-node process">&#x1f4da; 检索外部知识<br><small>Knowledge RAG</small></div>
+      <div class="flow-annotation">
+        <strong>语义检索 + 重排序：</strong>从文档库与网络检索中获取相关知识片段<br>
+        Token 预算控制 (~5000 tokens)，截断策略
+      </div>
+    </div>
+    <div class="flow-arrow"></div>
+
+    <div class="flow-step">
+      <div class="flow-node process">&#x1f3d7;&#xfe0f; 组装 Context<br><small>Context Builder</small></div>
+      <div class="flow-annotation">
+        <strong>System Prompt =</strong> 基础指令 + 租户配置 + Skill Prompt + 记忆 + 知识片段<br>
+        <strong>Messages =</strong> 会话历史（可能已压缩） + 当前用户消息
+      </div>
+    </div>
+    <div class="flow-arrow"></div>
+
+    <div class="flow-step">
+      <div class="flow-node decision">&#x1f4a1; 调用 LLM<br><small>Claude API (tool_use)</small></div>
+      <div class="flow-annotation">
+        <strong>流式响应：</strong>SSE 推送给前端<br>
+        <strong>判断：</strong>stop_reason == "end_turn" &rarr; 结束<br>
+        &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;stop_reason == "tool_use" &rarr; 进入工具执行
+      </div>
+    </div>
+    <div class="flow-arrow loop"></div>
+    <div class="loop-label">&#x21a9; tool_use: 执行工具后回到 LLM</div>
+
+    <div class="flow-step">
+      <div class="flow-node action">&#x1f6e0;&#xfe0f; 执行 Tool<br><small>权限检查 &rarr; 执行 &rarr; 返回结果</small></div>
+      <div class="flow-annotation">
+        <strong>权限模型：</strong>deny &rarr; allow &rarr; ask (租户级 + 用户级)<br>
+        <strong>执行沙箱：</strong>工具在隔离环境运行，结果追加到 messages<br>
+        <strong>循环：</strong>结果返回 LLM，继续推理（最多 20 轮）
+      </div>
+    </div>
+    <div class="flow-arrow"></div>
+
+    <div class="flow-step">
+      <div class="flow-node end">&#x2705; 返回响应</div>
+      <div class="flow-annotation">
+        <strong>后处理（并行、不阻塞响应）：</strong><br>
+        1. 保存会话 + 按需触发 Context Compact<br>
+        2. 异步提取记忆（Haiku 模型，低成本）<br>
+        3. 用量统计 + 计费记录
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="footer">
+  Multi-Tenant Agent Service Architecture &mdash; 2026.04
+</div>
+
+</body>
+</html>
