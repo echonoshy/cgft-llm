@@ -39,7 +39,7 @@
 
 ---
 
-## 💡 1. Agent 智能体系统
+## 🤖 1. Agent 智能体系统
 > 探索 Agent 架构设计与系统落地，最新连载中...
 
 | 序号 | 项目 | 代码文档 | 视频教程 | 时长 |
@@ -137,7 +137,7 @@
 <!-- Agent 智能体系统 -->
 [img_agent_1_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1A8DeBbE5f
 [img_agent_1_yt]: https://img.shields.io/youtube/views/WkAFAzAKM1s?style=social
-[ref_agent_1_doc]: 01-agent-sys/agent-service-architecture.html
+[ref_agent_1_doc]: https://htmlpreview.github.io/?https://github.com/echonoshy/cgft-llm/blob/master/01-agent-sys/agent-service-architecture.html
 [ref_agent_1_bili]: https://www.bilibili.com/video/BV1A8DeBbE5f
 [ref_agent_1_yt]: https://youtu.be/WkAFAzAKM1s
 
