@@ -21,7 +21,8 @@
 1. 运行环境
 2. 对应的代码、日志和报错截图
 
-有感兴趣的内容或问题，[点击这里加入讨论][ref_discussion]。
+💬 如果你有好玩的想法，欢迎来找我聊聊：  
+[![Feishu][img_feishu]][ref_feishu]
 
 > 如果你不太了解如何提出一个好问题，请花几分钟阅读一下这个，相信我，可能并不能改变什么（不是）。  
 > [How-To-Ask-Questions-The-Smart-Way][ref_how_to_ask]  
@@ -127,7 +128,8 @@
 [img_github_last_commit]: https://img.shields.io/github/last-commit/echonoshy/cgft-llm?color=red
 
 <!-- 通用链接 -->
-[ref_discussion]: https://github.com/echonoshy/cgft-llm/discussions
+[img_feishu]: https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6-%E9%AD%94%E7%8E%8B%E5%A4%A7%E4%BA%BA%E7%94%B3%E8%AF%B7%E6%B7%BB%E5%8A%A0%E4%BD%A0%E4%B8%BA%E8%81%94%E7%B3%BB%E4%BA%BA-00D6B9?style=flat-square
+[ref_feishu]: https://www.feishu.cn/invitation/page/add_contact/?token=7c0pc01a-60b9-4c7e-bcc4-ed5a2cab4625
 [ref_how_to_ask]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
 
 <!-- 大模型核心技术 -->
