@@ -1,0 +1,2504 @@
+{
+    "docstore/metadata": {
+        "6a8ed4a2-baeb-4e5b-b39d-deba24b2f3d4": {
+            "doc_hash": "6cb906c76e07a041af66e0af2ea2ccc62cfc49050b1f5ee820b4acceb5e2753e"
+        },
+        "602a15fd-8b5e-427b-acb8-e3304e48adb1": {
+            "doc_hash": "90e01977281d4c20367a565ecf7e529e01bffaa1b21714f1d6c24bac52db277e"
+        },
+        "ec5ab0ff-0890-4533-88c0-b80b85c7ba67": {
+            "doc_hash": "ffab9a05ffc79f67a34445c24c0f104c7df7bfe963935c48e2da39716798c21c"
+        },
+        "265fb198-39e4-4713-bd99-1748c2e50d11": {
+            "doc_hash": "e58f3129cbc115e78e29a6e7584f664ca1158f5daa33d6be989f19d627260d21"
+        },
+        "f1d4defb-b41f-44a0-a324-d1f8ce1f2bd5": {
+            "doc_hash": "c80fcfefd2dfe4a2b6918759310c4382c29a7e0c9e8beb3956ae1723849e7c66"
+        },
+        "fc38574f-297e-45ca-baf5-734a503cb3b7": {
+            "doc_hash": "20b486c9faa89885f350ed4f44f173fac44dace387e2fc9538f26cdf5533ed5a"
+        },
+        "905227a2-531b-4d16-9b2a-51a238d3cd64": {
+            "doc_hash": "fbbbccde987a98affc396058c98568fd132b4e931c9d4120c0fec7f9fa11faac"
+        },
+        "27ca0f7d-afb4-4cbe-851d-f372fda8d7a1": {
+            "doc_hash": "d035b706753c91d98079488be22396a50ca6bb35f1efbd5d8aecc86361799f55"
+        },
+        "6597ee7d-f850-467c-925a-d9592ae29964": {
+            "doc_hash": "b059a28c8b96fb2e4d4c40b3b57c89260545bbf16a01da70887539cab04ab3b9"
+        },
+        "4f2fae4b-965e-444f-a665-66808f2f5e9d": {
+            "doc_hash": "72d72345204d985564d115482f450cbc4b330998bea2f05075eabe15f4f68b7a"
+        },
+        "39dbcd2e-3437-4df3-9f80-3342b2c7a245": {
+            "doc_hash": "5de85ec21220677835ed0160ddbf1afa3832bf97b23db305f101c84a0a1b447a"
+        },
+        "da84f840-f263-4483-8513-2e695c5a7eb4": {
+            "doc_hash": "2b90cf2044624835a842329564f0673392cfb6f10f913f43d13f1d5438b07b21"
+        },
+        "725c2c43-78b1-472a-a6eb-5996b90107c8": {
+            "doc_hash": "82ff1c408f27d6e2457242e5635bb1ac7c7364c84dd712560ab6fda8a9293439"
+        },
+        "69072846-766a-4e21-9269-4c9c5d269df5": {
+            "doc_hash": "66a7a398f76ff9cfe2ce447ae804736f503dd13e4d8fa17129fa2f93ab7c9599"
+        },
+        "3ef4098a-ff04-4368-9ec2-7b8863f04112": {
+            "doc_hash": "5ab9bf66e31c8af052238043749050a104450cf0b544aca0c74831d489dca4a6"
+        },
+        "6c680f1b-9a6a-4b93-b1c1-be71c3572bd4": {
+            "doc_hash": "7de163a021d940117fc09a82d18e7bca6dec5407b50027d566ec1640e859c371"
+        },
+        "9dc67ee0-213a-4f3e-839b-6f4efdaa2d1b": {
+            "doc_hash": "9936bf369015fd33f1eaed2e4c186338c24718ba4ab6c2ae6128fff43632225c"
+        },
+        "a4e9b5c6-a0ba-4dc6-bdfc-476fcc1b7d72": {
+            "doc_hash": "ea7c9a6dd054e848d7a2ca5103b044267eba8dc1b0f26538346ee4dcaa1ded2a"
+        },
+        "96e7159b-5a60-4c3b-8ee6-fd0458c92c28": {
+            "doc_hash": "a0af53d2bafc42bdb809e4e21170934b0a436feba154cfa8596a289bb1960238"
+        },
+        "a913a6a0-52d0-402e-939d-c05b313e3dd0": {
+            "doc_hash": "19c0d3d0917bb6dc7c84ccf373d2654858fbf57999b0e199894b9d9815b63b3f"
+        },
+        "03940b0b-2616-43d3-b597-70f792d8638a": {
+            "doc_hash": "a585bd44ff2a1aaaef18a24d34f00f0c63249921764d78b1ff8bd724c47e36c4"
+        },
+        "3f815ef4-1863-4dbe-945d-2014ae657e9b": {
+            "doc_hash": "ba3bfca07cb74d11b6a7cd0d583fb8da1f75afc37d5b2c123bc559b5a877af30"
+        },
+        "ff0f9769-5f88-4cc4-befa-af0fef125cdf": {
+            "doc_hash": "0197805f864a36bd6f1193e683423703990d394cbb1b582dc625165753787304"
+        },
+        "74ea0f71-e2e4-4a14-8de6-6b68d5af5230": {
+            "doc_hash": "d8ba19ffbd44365ea9868dad49c9a1e85502d0b908e85a9aacad7a3d2f03f0fd"
+        },
+        "cfc798f2-9990-4ff4-bf71-a28120a99067": {
+            "doc_hash": "89692fbfb4e00f148e7edc3b82bf09f6d3dd4bf08475eaf86ba961f294ecb8ab"
+        },
+        "70fa847d-eb58-4087-8634-caf022c8d73a": {
+            "doc_hash": "4b655a099ef6dfddaf00726c5ed63e69280ff88dc9ed6aa6203c05268ac2d37f"
+        },
+        "2caaa05c-1dbe-494e-b448-f3f8da3a6a09": {
+            "doc_hash": "d9b571457f992ef46e13be194ecc2826c40f79ca8125d9cb4a8a19dfaa7f089f"
+        },
+        "2c2be95b-ed80-47e6-a516-ec2cf239650e": {
+            "doc_hash": "237c7aa4390b7b0b2a2c22f16f22b28ba8ac7d7213ad191005973a141b8ab108"
+        },
+        "488419ae-3fa3-489a-8e08-15548b08a5b3": {
+            "doc_hash": "49cd0babe2ada2be0cce9ad9bb8999a8a4ef0ee5bf2c419b1020cff5df365f59"
+        },
+        "2d89e1d3-5369-42f1-9d06-8008d82e5c5a": {
+            "doc_hash": "9f6c9033e02387aa9df2e6dca09c27e03d98e4bfead671eb8afb9a5cc2948656"
+        },
+        "68f0c161-dd8b-4636-8cb3-032769ca8cd1": {
+            "doc_hash": "2404fb474531f882087305fcc2419e3c7e345bb54dd22f82884f8786c00f1577"
+        },
+        "7e5aac47-da5d-4cad-b3c3-86883d0ec697": {
+            "doc_hash": "9d35f76ec944d20574a744bbacbf9ff8e485ae4c68c38892713e378d233fdc96"
+        },
+        "aae1b74f-c2c2-49b1-8573-9d6732e07fbd": {
+            "doc_hash": "6cb906c76e07a041af66e0af2ea2ccc62cfc49050b1f5ee820b4acceb5e2753e",
+            "ref_doc_id": "6a8ed4a2-baeb-4e5b-b39d-deba24b2f3d4"
+        },
+        "fabf9c7f-0e63-4ce3-83f4-0001c3ad6f6f": {
+            "doc_hash": "90e01977281d4c20367a565ecf7e529e01bffaa1b21714f1d6c24bac52db277e",
+            "ref_doc_id": "602a15fd-8b5e-427b-acb8-e3304e48adb1"
+        },
+        "cafd1bc5-6c71-48be-9bd1-5d30aeca5fc5": {
+            "doc_hash": "ffab9a05ffc79f67a34445c24c0f104c7df7bfe963935c48e2da39716798c21c",
+            "ref_doc_id": "ec5ab0ff-0890-4533-88c0-b80b85c7ba67"
+        },
+        "63d59cc0-7706-4e5d-8e9c-66b6d922d977": {
+            "doc_hash": "e58f3129cbc115e78e29a6e7584f664ca1158f5daa33d6be989f19d627260d21",
+            "ref_doc_id": "265fb198-39e4-4713-bd99-1748c2e50d11"
+        },
+        "0b307bbf-f077-44e0-a218-071c0c118185": {
+            "doc_hash": "c80fcfefd2dfe4a2b6918759310c4382c29a7e0c9e8beb3956ae1723849e7c66",
+            "ref_doc_id": "f1d4defb-b41f-44a0-a324-d1f8ce1f2bd5"
+        },
+        "73e2ef24-daff-4719-85ee-87ccc9601495": {
+            "doc_hash": "ceb760481dabcd203c9ff527536de52bed3811cf392cca022f8d6e54d1dd7d05",
+            "ref_doc_id": "fc38574f-297e-45ca-baf5-734a503cb3b7"
+        },
+        "8ee1e07a-39cf-44e2-8d4c-184009e3081d": {
+            "doc_hash": "fbbbccde987a98affc396058c98568fd132b4e931c9d4120c0fec7f9fa11faac",
+            "ref_doc_id": "905227a2-531b-4d16-9b2a-51a238d3cd64"
+        },
+        "aa6e8ac9-af4c-4646-9f0f-bbdebed7d663": {
+            "doc_hash": "795892ea4403f2481b7ddcc41b2de73bf35c84078bc2184ca10f9aa1fffafa57",
+            "ref_doc_id": "27ca0f7d-afb4-4cbe-851d-f372fda8d7a1"
+        },
+        "4489cff9-6f82-4a74-b89b-9829fbc13174": {
+            "doc_hash": "b059a28c8b96fb2e4d4c40b3b57c89260545bbf16a01da70887539cab04ab3b9",
+            "ref_doc_id": "6597ee7d-f850-467c-925a-d9592ae29964"
+        },
+        "70759739-6ac3-499e-902d-b8067da709dc": {
+            "doc_hash": "72d72345204d985564d115482f450cbc4b330998bea2f05075eabe15f4f68b7a",
+            "ref_doc_id": "4f2fae4b-965e-444f-a665-66808f2f5e9d"
+        },
+        "e611271d-75e9-458e-9497-968814d3e07d": {
+            "doc_hash": "5de85ec21220677835ed0160ddbf1afa3832bf97b23db305f101c84a0a1b447a",
+            "ref_doc_id": "39dbcd2e-3437-4df3-9f80-3342b2c7a245"
+        },
+        "4f04f649-fd85-464c-beb3-f296bc7887d5": {
+            "doc_hash": "2b90cf2044624835a842329564f0673392cfb6f10f913f43d13f1d5438b07b21",
+            "ref_doc_id": "da84f840-f263-4483-8513-2e695c5a7eb4"
+        },
+        "cf278732-bd6f-42d2-b017-5cd236dee63e": {
+            "doc_hash": "82ff1c408f27d6e2457242e5635bb1ac7c7364c84dd712560ab6fda8a9293439",
+            "ref_doc_id": "725c2c43-78b1-472a-a6eb-5996b90107c8"
+        },
+        "044b7c35-06ee-4610-8216-ca9f12489ada": {
+            "doc_hash": "66a7a398f76ff9cfe2ce447ae804736f503dd13e4d8fa17129fa2f93ab7c9599",
+            "ref_doc_id": "69072846-766a-4e21-9269-4c9c5d269df5"
+        },
+        "a28d1a94-9e52-4bca-a02a-f712d6bb8bed": {
+            "doc_hash": "5ab9bf66e31c8af052238043749050a104450cf0b544aca0c74831d489dca4a6",
+            "ref_doc_id": "3ef4098a-ff04-4368-9ec2-7b8863f04112"
+        },
+        "3d435eea-140c-468c-a1db-c005cfec8062": {
+            "doc_hash": "7de163a021d940117fc09a82d18e7bca6dec5407b50027d566ec1640e859c371",
+            "ref_doc_id": "6c680f1b-9a6a-4b93-b1c1-be71c3572bd4"
+        },
+        "f2726dc3-dbf9-4003-bc13-bb27bbec70a3": {
+            "doc_hash": "76ec87b90eae4a5d35e4fbcefe034c880f932c4f181be4997cb4c9ac3069a824",
+            "ref_doc_id": "9dc67ee0-213a-4f3e-839b-6f4efdaa2d1b"
+        },
+        "03e619dc-1eba-4c09-b512-fa4c89d76f98": {
+            "doc_hash": "ea7c9a6dd054e848d7a2ca5103b044267eba8dc1b0f26538346ee4dcaa1ded2a",
+            "ref_doc_id": "a4e9b5c6-a0ba-4dc6-bdfc-476fcc1b7d72"
+        },
+        "12b67b87-9175-47cc-b080-e4d77dab1d48": {
+            "doc_hash": "a0af53d2bafc42bdb809e4e21170934b0a436feba154cfa8596a289bb1960238",
+            "ref_doc_id": "96e7159b-5a60-4c3b-8ee6-fd0458c92c28"
+        },
+        "989a0462-b43d-405e-b50c-feb25134a383": {
+            "doc_hash": "19c0d3d0917bb6dc7c84ccf373d2654858fbf57999b0e199894b9d9815b63b3f",
+            "ref_doc_id": "a913a6a0-52d0-402e-939d-c05b313e3dd0"
+        },
+        "c39dbaec-c869-44fc-bb2a-3554b6676439": {
+            "doc_hash": "a585bd44ff2a1aaaef18a24d34f00f0c63249921764d78b1ff8bd724c47e36c4",
+            "ref_doc_id": "03940b0b-2616-43d3-b597-70f792d8638a"
+        },
+        "395e30c6-8b3f-42f8-b691-89b18d821ca0": {
+            "doc_hash": "ba3bfca07cb74d11b6a7cd0d583fb8da1f75afc37d5b2c123bc559b5a877af30",
+            "ref_doc_id": "3f815ef4-1863-4dbe-945d-2014ae657e9b"
+        },
+        "cd54d746-5c6e-4077-acf8-abde34558654": {
+            "doc_hash": "0197805f864a36bd6f1193e683423703990d394cbb1b582dc625165753787304",
+            "ref_doc_id": "ff0f9769-5f88-4cc4-befa-af0fef125cdf"
+        },
+        "a040d006-0b0b-48cf-ab2b-4fc3e2a9bb11": {
+            "doc_hash": "d8ba19ffbd44365ea9868dad49c9a1e85502d0b908e85a9aacad7a3d2f03f0fd",
+            "ref_doc_id": "74ea0f71-e2e4-4a14-8de6-6b68d5af5230"
+        },
+        "80f325f1-30cd-4385-8f65-ea11c5e8f645": {
+            "doc_hash": "89692fbfb4e00f148e7edc3b82bf09f6d3dd4bf08475eaf86ba961f294ecb8ab",
+            "ref_doc_id": "cfc798f2-9990-4ff4-bf71-a28120a99067"
+        },
+        "0a8a746e-ca6a-4eee-bbd3-946cc91496e5": {
+            "doc_hash": "4b655a099ef6dfddaf00726c5ed63e69280ff88dc9ed6aa6203c05268ac2d37f",
+            "ref_doc_id": "70fa847d-eb58-4087-8634-caf022c8d73a"
+        },
+        "f47bed66-bc27-4199-8411-fea2f5c9ab2d": {
+            "doc_hash": "d9b571457f992ef46e13be194ecc2826c40f79ca8125d9cb4a8a19dfaa7f089f",
+            "ref_doc_id": "2caaa05c-1dbe-494e-b448-f3f8da3a6a09"
+        },
+        "f6110cb1-dcdb-4108-937e-15fa9984b375": {
+            "doc_hash": "237c7aa4390b7b0b2a2c22f16f22b28ba8ac7d7213ad191005973a141b8ab108",
+            "ref_doc_id": "2c2be95b-ed80-47e6-a516-ec2cf239650e"
+        },
+        "db1df6b3-5919-469f-8936-47230b653af8": {
+            "doc_hash": "49cd0babe2ada2be0cce9ad9bb8999a8a4ef0ee5bf2c419b1020cff5df365f59",
+            "ref_doc_id": "488419ae-3fa3-489a-8e08-15548b08a5b3"
+        },
+        "16110ac7-d212-4196-89d4-3c62448467bc": {
+            "doc_hash": "9f6c9033e02387aa9df2e6dca09c27e03d98e4bfead671eb8afb9a5cc2948656",
+            "ref_doc_id": "2d89e1d3-5369-42f1-9d06-8008d82e5c5a"
+        },
+        "5eafb5ee-25fb-4889-bae8-99e8df433e7c": {
+            "doc_hash": "2404fb474531f882087305fcc2419e3c7e345bb54dd22f82884f8786c00f1577",
+            "ref_doc_id": "68f0c161-dd8b-4636-8cb3-032769ca8cd1"
+        },
+        "8877c3b7-3d29-40ed-b2b8-f3ab225a1761": {
+            "doc_hash": "9d35f76ec944d20574a744bbacbf9ff8e485ae4c68c38892713e378d233fdc96",
+            "ref_doc_id": "7e5aac47-da5d-4cad-b3c3-86883d0ec697"
+        }
+    },
+    "docstore/data": {
+        "aae1b74f-c2c2-49b1-8573-9d6732e07fbd": {
+            "__data__": {
+                "id_": "aae1b74f-c2c2-49b1-8573-9d6732e07fbd",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "1",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "6a8ed4a2-baeb-4e5b-b39d-deba24b2f3d4",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "1",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "6cb906c76e07a041af66e0af2ea2ccc62cfc49050b1f5ee820b4acceb5e2753e",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 1/32Visit Australia to participate in a course of study.\nSubcl ass 500Student visa\nOverview\nStay\nUp to 5 years and in line with your enrolment.\nCost\nFrom AUD710.00, unless exempt.\n\u00a0\nProcessing times\nFor an indication of processing times for this visa, use the visa processing time guide tool (/visas/getting-a-visa/visa-\nprocessing-times/global-visa-processing-times).\u00a0This will show the processing times for recently decided applications. It is a\nguide only and not speci\u0000c to your application.\nWith this visa you can\nparticipate in an eligible course of study in Australia\ntravel in and out of Australia\nwork up to 48 hours a fortnight when your course of study or training is in session.\nSee all conditions (/visas/already-have-a-visa/check-visa-details-and-conditions/see-your-visa-conditions?product=500)\nCheck your eligibility (#Eligibility)\nYou must\napply online in or outside Australia\nbe enrolled in a course of study\u00a0in Australia\nhold Overseas Student Health Cover (OSHC), or fall in one of the exemption categories\nmust be 6 years or older\nprove you have a welfare arrangement (/visas/getting-a-visa/visa-listing/student-500/welfare-arrangements-students-under-18), if\nyou are under 18\n Immigration and citizenship\nAsk a question",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1362,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "fabf9c7f-0e63-4ce3-83f4-0001c3ad6f6f": {
+            "__data__": {
+                "id_": "fabf9c7f-0e63-4ce3-83f4-0001c3ad6f6f",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "2",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "602a15fd-8b5e-427b-acb8-e3304e48adb1",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "2",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "90e01977281d4c20367a565ecf7e529e01bffaa1b21714f1d6c24bac52db277e",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 2/32About this visaIf in Australia hold an eligible substantive visa. See, \u2018Have this Visa if applying while in Australia (/visas/getting-a-\nvisa/visa-listing/student-500?bk=Eligiblity-index-7#Eligibility)\u201d in Eligibility Tab.\nNote:\nA substantive visa ceases to be in effect if another substantive visa is granted\nApplications are received Australian Eastern Standard Time (AEST) (or Australian Eastern daylight standard time\n(AEDST) when applicable)\nHelp with your visa\nIf you are getting help with your visa, before you pay someone, read\u00a0information on Who can help with your visa\napplication (/help-support/who-can-help-with-your-application/overview).\nApply (https://online.immi.gov.au/elp/app?action=new&formId=STU-AP-500)\nWith this visa you can\nparticipate in an eligible course of study in Australia\ntravel in and out of AustraliaWith this visa you can (#aboutVisa-index-0)\nHow long you can stay (#aboutVisa-index-1)\nStay longer (#aboutVisa-index-2)\nCost (#aboutVisa-index-3)\nStudents affected by COVID-19 (#aboutVisa-index-4)\nInclude family (#aboutVisa-index-5)\nApply from (#aboutVisa-index-6)\nPackaged courses (#aboutVisa-index-7)\nProcessing times (#aboutVisa-index-8)\nYour obligations (#aboutVisa-index-9)\nTravel (#aboutVisa-index-10)\nVisa label (#aboutVisa-index-11)",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1399,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "cafd1bc5-6c71-48be-9bd1-5d30aeca5fc5": {
+            "__data__": {
+                "id_": "cafd1bc5-6c71-48be-9bd1-5d30aeca5fc5",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "3",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "ec5ab0ff-0890-4533-88c0-b80b85c7ba67",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "3",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "ffab9a05ffc79f67a34445c24c0f104c7df7bfe963935c48e2da39716798c21c",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 3/32work up to 48 hours a fortnight when your course of study or training is in session (students studying a masters by\nresearch or doctoral degree, and their families, have no work limit). See Work restrictions for student visa holders\n(/visas/getting-a-visa/visa-listing/student-500/temporary-relaxation-of-working-hours-for-student-visa-holders).\nHow long you can stay\nThis is a temporary visa to study up to 5 years. The type of course and its length will determine the\u00a0length of stay\n(/visas/getting-a-visa/visa-listing/student-500/length-of-stay)\nPrimary school children enrolled in years 1-4 will generally\u00a0only be granted a student visa for a maximum period of 3\nyears. \u00a0\nStay longer\nTo continue studying in Australia, you must apply for a new Student visa.\nIf your Student visa will expire before your graduation you might be eligible for a Visitor visa (subclass 600)\n(https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600). You will need a letter from your education provider with\nthe date of your graduation.\nIf you hold or held a student visa and completed speci\u0000c quali\u0000cations in Australia in the last six months, you might be\neligible for a Temporary Graduate visa (subclass 485) (/visas/getting-a-visa/visa-listing/temporary-graduate-485/).\nIf you are a recent engineering graduate of a recognized institution you might be eligible for the Skilled Recognition\nGraduate visa (subclass 476) (/visas/getting-a-visa/visa-listing/skilled-recognition-graduate-476).\nIf you want to stay longer for other reasons, you must apply for a new visa that suits your circumstances.\u00a0Explore your\nvisa options (/visas/getting-a-visa/visa-\u0000nder).\nCost\nThe visa costs from\u00a0AUD710.00\u00a0for the main applicant, unless they are exempt.\nThere is also a charge for each family member who applies for the visa.\nYou might also have to pay other costs for health checks, police certi\u0000cates and\u00a0biometrics.\nTo work out what your visa will cost, use the\u00a0Visa Pricing Estimator (https://immi.homeaffairs.gov.au/visas/visa-pricing-\nestimator).\u00a0The estimator does not take into account the other costs.\nStudents affected by COVID-19\nIf you held a Student visa on or after 1 February 2020, you may be eligible to have your visa application fee waived so\nyou can submit a further Student visa application. You may be eligible if you:\nhave deferred your study as you were unable to enter Australia due to travel restrictions\nwere forced to reduce to a part-time study load\nwere unable to complete your work-based training or placements.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2662,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "63d59cc0-7706-4e5d-8e9c-66b6d922d977": {
+            "__data__": {
+                "id_": "63d59cc0-7706-4e5d-8e9c-66b6d922d977",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "4",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "265fb198-39e4-4713-bd99-1748c2e50d11",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "4",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "e58f3129cbc115e78e29a6e7584f664ca1158f5daa33d6be989f19d627260d21",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 4/32This measure does not apply to students who are lodging a new student visa application because of ordinary reasons,\nincluding if you have:\nfailed a course or unit of study\ndeferred for personal reasons\nvoluntarily reduced your study load.\nYou must apply for a Student visa to have your application for a fee waiver considered. Attach a completed\u00a0Form 1545\nCOVID-19 Impacted Student (229KB PDF) (/form-listing/forms/1545.pdf)\u00a0from your education provider.\nIf you are applying for a fee waiver in Australia, we will not issue a Bridging visa automatically as the fee exemption must\nbe checked \u0000rst. You do not need to contact the department if you have applied for a fee waiver in Australia and have not\nbeen issued a Bridging visa immediately.\nThis waiver only applies to the visa application charge.\nInclude family\nYou can include family members when\u00a0you lodge your visa application. For student visas, your family member is:\nyour partner, or\nyour or your partner's dependent child who is unm arried and has not turned 18 years of age.\nWe cannot grant a student visa to your child if they have turned 18 years at the time your visa is \u0000nalised.\u00a0They need to\napply for their own visa.\nYou must declare\u00a0your family members in\u00a0your student visa application even if they do not plan to travel with you to\nAustralia. If you do not do this, your family members will not be eligible\u00a0for a\u00a0student visa\u00a0to join you in Australia.\nYour family members can also apply as a subsequent entrant (at a later time, separate from your application)\nin\u00a0ImmiAccount (/help-support/applying-online-or-on-paper/online).\nFamily members who apply for the visa must meet our requirements for\u00a0health (/help-support/meeting-our-\nrequirements/health)\u00a0and\u00a0character (/help-support/meeting-our-requirements/character).\nCheck the annua l school costs you will need to pay for any dependent children to go to either public or private schools in\nAustralia.\nFor more information see \u2018Evidence you have enough money for your stay\u2019 section under Gather documents (/visas/getting-\na-visa/visa-listing/student-500#HowTo).\nApply from\nYou can be in or outside Australia when you apply for the visa and when we decide on your application.\nPackaged courses\nYou will need to give us Con\u0000rmation of Enrolment (CoE) for each course. The last course you take as part of the course\npackage is your main course of study. We use your main course of study to work out what \u0000nancial and English\nlanguage skills evidence you must give us.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2611,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "0b307bbf-f077-44e0-a218-071c0c118185": {
+            "__data__": {
+                "id_": "0b307bbf-f077-44e0-a218-071c0c118185",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "5",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "f1d4defb-b41f-44a0-a324-d1f8ce1f2bd5",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "5",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "c80fcfefd2dfe4a2b6918759310c4382c29a7e0c9e8beb3956ae1723849e7c66",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 5/32EligibilityIf your visa application includes a package of courses, course gaps must be less than two calendar months, unless the\n\u0000rst course \u0000nishes at the end of the standard academic year and the next course commences at the beginning of the\nstandard academic year.\nFor example, the academic year generally ends in November and starts again in February the following year, three to four\nmonths is an acceptable gap between courses.\u00a0\nStandard visa grant periods apply to packaged courses.\nProcessing times\nFor an indication of processing times for this visa, use the visa processing time guide tool (/visas/getting-a-visa/visa-\nprocessing-times/global-visa-processing-times).\u00a0This will show the processing times for recently decided applications. It is a\nguide only and not speci\u0000c to your application.\nYour application can take longer to process if:\nyou do not \u0000ll it in correctly\nyou do not include all the documents we need or we need more information from you\nit takes us time to verify your information\nWe can't process your application if you do not pay the correct visa application charge. We will notify you if this is the\ncase.\nProcessing times are available through Global Visa Processing Times (/visas/getting-a-visa/visa-processing-times/global-visa-\nprocessing-times).\nYour obligations\nYou and your family must meet all visa conditions and follow Australian laws.\nSee which\u00a0conditions will\u00a0and might be attached to this visa. (/visas/already-have-a-visa/check-visa-details-and-conditions/see-your-\nvisa-conditions?product=500)\nTravel\nYou can travel outside Australia and return as many times as you want while the visa is valid.\nThe time you spend outside Australia does not extend the visa.\nVisa label\nWe will digitally link your visa to your passport. You will not get a label in your passport.\nBe a certain age (school student)",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1970,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "73e2ef24-daff-4719-85ee-87ccc9601495": {
+            "__data__": {
+                "id_": "73e2ef24-daff-4719-85ee-87ccc9601495",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "6",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "fc38574f-297e-45ca-baf5-734a503cb3b7",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "6",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "20b486c9faa89885f350ed4f44f173fac44dace387e2fc9538f26cdf5533ed5a",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 6/32Be enrolled in a course of study and provide evidenceIf you are a school student (but not participating in a secondary school\u00a0student exchange program), you must be\naged 6 or older to apply for this visa.\nYou must also be:\nless than 17 years old when you begin Year 9\nless than 18 years old when you begin Year 10\nless than 19 years old when you begin Year 11\u00a0\nless than 20 years old when you begin Year 12\u00a0\nYou must include evidence of enrolment in study with your student visa application, or your application will not be\nvalid and can't be processed.\nProviding a Con\u0000rmation of Enrolment (CoE)\nYou must be enrolled in a full time course\u00a0registered on the\u00a0Commonwealth Register of Institutions and courses for\nOverseas Students (CRICOS) (http://cricos.education.gov.au/).\nApplying outside Australia: provide a Con\u0000rmation of Enrolment (CoE) for each course of study with your visa\napplication.\nApplying inside Australia:\u00a0provide a CoE or Letter of Offer for all intended courses. You must provide your CoE\nbefore we can grant your visa.\nPackaged courses and CoEs\nIf you are applying for more than 1 course in your student visa application you must include all CoE codes in the\napplication form or your visa period may only consider the duration of the course according to the the CoE\nprovided.\nYou can apply to take 2 or more courses on your Student visa where one course clearly leads to the next. \u00a0Course\ngaps must be less than two calendar months, unless the \u0000rst course \u0000nishes at the end of the standard academic\nyear and the next course commences at the beginning of the standard academic year.\nIf you are applying for more than 1 course in your student visa application you must include all CoE codes in the\napplication form or your visa may only cover the CoE provided.\nOther evidence of enrolment\u00a0\nYou do not need to provide a Con\u0000rmation of Enrolment (CoE) if you are:\u00a0\nenrolled in a full-time course of study or training under a scholarship scheme approved by the Australian Minister\nfor Foreign Affairs and Trade:\u00a0provide a letter of support\nsponsored by the Australian Department of Defence:\u00a0provide a letter of support\na secondary exchange student:\u00a0provide an Acceptance Advice of Secondary Exchange Student (AASES) form\na postgraduate research student who needs to stay in Australia while your thesis is marked: provide a letter from\nyour education provider",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2500,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "8ee1e07a-39cf-44e2-8d4c-184009e3081d": {
+            "__data__": {
+                "id_": "8ee1e07a-39cf-44e2-8d4c-184009e3081d",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "7",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "905227a2-531b-4d16-9b2a-51a238d3cd64",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "7",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "fbbbccde987a98affc396058c98568fd132b4e931c9d4120c0fec7f9fa11faac",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 7/32Make welfare arrangements if you are under 18 years\nMeet English language requirements\nEnglish language testsIf you are applying for a student visa and you are under 18 years of age, you must have adequate welfare\narrangements in place while you are in Australia.\nIf you will be 18 years of age when you arrive in Australia, you must tell us as you might not need to provide some of\nthis information. Learn more about this and\u00a0welfare arrangements for student visa holders. (/visas/getting-a-visa/visa-\nlisting/student-500/welfare-arrangements-students-under-18)\nYou might need to provide evidence of your English language skills at the time you submit your visa application.\u00a0To\n\u0000nd out the evidence you need to provide use the Document Checklist tool (/visas/web-evidentiary-tool).\nNote: We can ask you for evidence of your English language skill after you have submitted your application, at any\ntime while we are processing\u00a0your application, even though the Document Checklist tool shows that you don't need\nto provide evidence of your English language skill when you submit your application.\u00a0\nIf you need to provide evidence of your English language skill, you must provide evidence that you:\nhave obtained a certain test score in an English language test that the Department has approved, or\nfall into an exemption category listed below\n\u00a0\nThe table below shows the English language test providers and the minimum overall band scores you must\nachieve to meet the Student visa English language requirement.\u00a0\n\u00a0\nYou must have taken the English language test in the 2 years before you apply for a student visa.\n\u00a0\nEnglish language test providers Minimum\nscoreMinimum score and at\nleast 10 weeks\u00a0English\nLanguage Intensive\nCourses for Overseas\nStudents (ELICOS)Minimum\nscore and at\nleast 20\nweeks\nELICOS\nInternational English Language Testing\nSystem (IELTS) (https://www.ielts.org/)5.5 5 4.5\nTOEFL internet-based test (only accepted if\ntest is taken on or before 25 July 2023)*\n(https://www.ets.org/toe\u0000/score-users/ibt/about.html)46 35 32\nCambridge English: Advanced (Certi\u0000cate in\nAdvanced English)\n(http://www.cambridgeenglish.org/exams-and-\ntests/advanced)162 154 147",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2295,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "aa6e8ac9-af4c-4646-9f0f-bbdebed7d663": {
+            "__data__": {
+                "id_": "aa6e8ac9-af4c-4646-9f0f-bbdebed7d663",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "8",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "27ca0f7d-afb4-4cbe-851d-f372fda8d7a1",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "8",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "d035b706753c91d98079488be22396a50ca6bb35f1efbd5d8aecc86361799f55",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 8/32English language evidence exemptions\nHave adequate health insurancePearson Test of English Academic (PTE\nAcademic) (https://pearsonpte.com/the-test)42 36 30\nOccupational English Test\n(https://www.occupationalenglishtest.org/)B for each\ntest\ncomponentN/A N/A\n*On 26 July 2023 the TOEFL internet-based test (TOEFL iBT) stopped offering English language tests for Australian visa purposes. A score for a TOEFL\niBT test taken on or after 26 July 2023 will no longer satisfy the English langauge requirement for Student visa purposes. Only TOEFL iBT scores from a\ntest taken on or before 25 July 2023 are accepted for Student visa purposes.\nYou do not need to provide evidence of an English test score with your visa application if one of the following\napplies:\nyou are a citizen and hold a passport from UK*, USA, Canada, NZ or Republic of Ireland\u00a0\nyou are an applicant who is a Foreign Affairs or, Defence sponsored student or a Secondary Exchange student\n(AASES)\nyou are enrolled in a principal course of study that is a registered school course, a standalone English\nLanguage Intensive Course for Overseas Students (ELICOS), a course registered to be delivered in a language\nother than English, or a registered post-graduate research course\nyou have completed at least 5 years\u2019 study in English in one or more of the following countries: Australia, UK,\nUSA, Canada, New Zealand, South Africa, or the Republic of Ireland\nin the 2 years before applying for the student visa, you completed, in Australia and in the English language,\neither the Senior Secondary Certi\u0000cate of Education or a substantial component of a course leading to a\nquali\u0000cation from the Australian Quali\u0000cations Framework at the Certi\u0000cate IV or higher level, while you held a\nstudent visa.\nNote: You may be required to provide evidence of an English test score with your visa application if you hold a\nBritish National Overseas (BNO) passport.\nYou and your family members must have and maintain adequate health insurance (/help-support/meeting-our-\nrequirements/health/adequate-health-insurance) for the whole of your stay in Australia. To \u0000nd out the length of coverage\nyou will require, see student visa grant periods (/visas/getting-a-visa/visa-listing/student-500/length-of-stay).\nYou and your family members must be covered by Overseas Student Health Cover (OSHC)\n(https://www.privatehealth.gov.au/health_insurance/overseas/overseas_student_health_cover.htm)\u00a0from an approved Australian health\ninsurance provider, unless an 'Exception' applies.\nApplicants outside Australia\nYour cover must start from the day you and your family arrive in Australia, not the day your course starts.\nIf you have been granted a visa and want to travel to Australia before your course begins, the OSHC start date must\nbe the same as the date you arrive, not the date your course starts. Generally this is a minimum of 1 week to 1\nmonth before your course starts.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 3042,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "4489cff9-6f82-4a74-b89b-9829fbc13174": {
+            "__data__": {
+                "id_": "4489cff9-6f82-4a74-b89b-9829fbc13174",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "9",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "6597ee7d-f850-467c-925a-d9592ae29964",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "9",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "b059a28c8b96fb2e4d4c40b3b57c89260545bbf16a01da70887539cab04ab3b9",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 9/32Have this visa if applying while in AustraliaYou must:\u00a0\nensure you don't enter Australia before your OSHC begins, and\nmaintain your OSHC until you leave Australia.\nYou may be refused entry to Australia if you cannot prove you have health insurance in place when you\u00a0arrive.\nApplicants in Australia\nApplicants must have OSHC. If your previous visa required you to have health insurance, cover must be continuous\nwith \u00a0no gap between your previous health cover and your OSHC.\nExceptions\nYou do not need to have OSHC if you are:\na Norwegian student covered by the Norwegian National Insurance Scheme\na Swedish student covered by Kammarkollegiet\na Belgian student covered under the Reciprocal Health Care Agreement with Australia\nHow to get Overseas Student Health Cover\nTo get OSHC:\n\u0000nd an approved provider\npay for your policy\nYour education provider or agent might arrange OSHC for you.\u00a0\nIf your education provider arranges your OSHC coverage, you will need to know the name of your health insurance\nprovider, the date that your policy starts and \u0000nishes and should be aware of the terms and conditions of your\npolicy. Your education provider will also need to include your health insurance information on your Certi\u0000cate of\nEnrolment (CoE).\nIf you arrange OSHC coverage yourself, you will need to know the policy num ber to include in the visa application.\nWe will refuse your visa application if you don't give us this information when you apply\u00a0for your student visa.\u00a0\nInsurance for family members\nIf you have a single OSHC policy and you have family members, including children born in Australia after your\narrival, consider getting a family policy. Every member of your family must have health insurance.\u00a0\nAny family member who joins you after you arrive in Australia must show us they have OSHC for the duration of\ntheir stay in Australia.\nIf you are in Australia:\nYou must hold an eligible substantive visa.\nNote: a bridging visa is not a substantive visa.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2088,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "70759739-6ac3-499e-902d-b8067da709dc": {
+            "__data__": {
+                "id_": "70759739-6ac3-499e-902d-b8067da709dc",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "10",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "4f2fae4b-965e-444f-a665-66808f2f5e9d",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "10",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "72d72345204d985564d115482f450cbc4b330998bea2f05075eabe15f4f68b7a",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 10/32Have enough money for your stay\nBe a genuine temporary entrant\nMeet our character requirement\nMeet our health requirement\nSign the Australian values statementIf you do not hold an eligible substantive visa, you must apply within 28 days of:\nholding a Student visa, a Special Purpose visa, or a dependent Diplomatic (temporary) visa or\nbeing noti\u0000ed by the Tribunal that your visa cancellation has been set aside.\nNote: you can only do this once. You cannot make a valid application for a student visa if you do not hold a\nsubstantive visa and you have previously been granted a visa based on an application made when you did not hold\na substantive visa.\nIf you do not hold a substantive visa, you can't apply for\u00a0a student visa if you have ever held a substantive visa that\nyou applied for in Australia while unlawful.\nIf you have one of these visas, you can't\u00a0apply for this visa while you are in Australia:\nDomestic Worker (Temporary) Diplomatic and Consular visa (subclass 426)\nTemporary Work (International Relations) visa (subclass 403) in the Domestic Worker (Diplomatic or consular)\nstream\nDiplomatic (Temporary) visa (subclass 995) \u2013 primary visa holder only. A family member of a Diplomatic\n(Temporary) visa (subclass 995) can apply for a Student visa in Australia\nTransit visa (subclass 771)\nVisitor visa (subclass 600) in the Sponsored Family stream or in the Approved Destination Status stream\nYou must have enough money to pay for your stay in Australia. Living costs vary throughout Australia and may be\nhigher than what is needed for your visa application. To see the minimum amount of money you need for your visa\napplication\u00a0go to Gather Documents in the 'Step by Step' (/visas/getting-a-visa/visa-listing/student-500#HowTo).\nYou must be a genuine temporary entrant (/visas/getting-a-visa/visa-listing/student-500/genuine-temporary-entrant) and intend to\nreturn home after studying in Australia.\nYou and family members aged 16 years and over who apply for the visa must meet our character requirement (/help-\nsupport/meeting-our-requirements/character).\nYou and any family members who apply for the visa\u00a0must meet our\u00a0health requirement (/help-support/meeting-our-\nrequirements/health).\nIf you are 18 years of age or older, you must:",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2377,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "e611271d-75e9-458e-9497-968814d3e07d": {
+            "__data__": {
+                "id_": "e611271d-75e9-458e-9497-968814d3e07d",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "11",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "39dbcd2e-3437-4df3-9f80-3342b2c7a245",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "11",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "5de85ec21220677835ed0160ddbf1afa3832bf97b23db305f101c84a0a1b447a",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 11/32Step by stepHave paid back your debt to the Australian Government\nNot had a visa cancelled or an application refused\nBest interests of the childhave read, or had explained to you, the Life in Australia booklet (/help-support/meeting-our-requirements/australian-values)\nand\nsign an\u00a0Australian Values Statement (/help-support/meeting-our-requirements/australian-values)\u00a0that con\u0000rms you will\nrespect the Australian way of life and obey Australian laws\nIf you or any family members (including those who don't apply for the visa with you) owe the Australian government\nmoney, you or they must have paid it back or arranged to pay it back.\nWe will consider your immigration history when we make a decision on your application, which means you might\nnot be eligible for this visa if you have had a visa cancelled or refused.\nIn some circumstances you may still apply for a permanent visa if you have had a visa cancelled or an application\nrefused see Limitations on applications in Australia (/form-listing/forms/1026i.pdf).\nIf applying for a visa from outside Australia see Can I go to Australia (/entering-and-leaving-australia/entering-australia/can-i-\ngo-to-australia/re-entry-ban).\nIf you want immigration assistance, see\u00a0Who can help with your visa application (/help-support/who-can-help-with-your-\napplication/overview).\nWe might not grant this visa if it is not in the best interests of an applicant under 18.\nMeet all these criteria? Check how to apply in our step by step (#HowTo)\u00a0guide.\nStep 1\nBefore you apply\nOutside Australia - Apply for your visa at least 8 weeks before your course starts.\nIn Australia - Allow plenty of time to apply for your next visa, avoid waiting to the last day your current\nsubstantive visa expires in case of unexpected complications, as we may not always be able to help you.\nOrganise health exams",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1961,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "4f04f649-fd85-464c-beb3-f296bc7887d5": {
+            "__data__": {
+                "id_": "4f04f649-fd85-464c-beb3-f296bc7887d5",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "12",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "da84f840-f263-4483-8513-2e695c5a7eb4",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "12",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "2b90cf2044624835a842329564f0673392cfb6f10f913f43d13f1d5438b07b21",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 12/32You might need to have health examinations (/help-support/meeting-our-requirements/health).\u00a0You can\ncomplete them\u00a0before you apply.\u00a0\nFind out the\u00a0examinations you need (/help-support/meeting-our-requirements/health)\u00a0and how to arrange\nthem if you want to have them before you apply.\nGet help with your application\nOnly some people can help you with your application. If you appoint someone to give you\nimmigration assistance they must be:\na registered migration agent (/help-support/who-can-help-with-your-application/using-a-migration-agent)\na legal practitioner (/help-support/who-can-help-with-your-application/using-a-legal-practitioner), or\nan exempt person (/help-support/who-can-help-with-your-application/exempt-person).\nYou can appoint anyone to receive documents (/help-support/who-can-help-with-your-application/authorised-\nrecipents) on your behalf relating to your visa matter.\nHave a valid passport\nYou and your family members must hold a valid passport in order to lodge a student visa\napplication.\nIf you are in Australia and your current passport expires, you will need to renew it before you apply\nfor your student visa.\nStep 2\nGather your documents\nTo see what you need to provide, use the\u00a0Document Checklist Tool (/visas/web-evidentiary-tool). Before you\nuse this tool please read the\u00a0disclaimer (/visas/getting-a-visa/visa-listing/student-500/disclaimer-for-document-\nchecklist).\u00a0\nEnter your country of passport and\u00a0education provider to get an accurate document checklist.\u00a0Choose\nthe option 'I have not decided on a provider yet' in the tool if you have not yet chosen a provider.\nThe tool will tell you what you will need to provide evidence of. If the tool says you need to provide\nevidence of a certain thing, select 'Show steps' to see what kind of\u00a0evidence we might accept.\nRe-check the document checklist based on the country of passport and education provider\u00a0just before\nyou submit your application to be sure you have the most current list. The Document Checklist Tool is\nupdated twice a year on 31 March and 30 September.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2180,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "cf278732-bd6f-42d2-b017-5cd236dee63e": {
+            "__data__": {
+                "id_": "cf278732-bd6f-42d2-b017-5cd236dee63e",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "13",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "725c2c43-78b1-472a-a6eb-5996b90107c8",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "13",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "82ff1c408f27d6e2457242e5635bb1ac7c7364c84dd712560ab6fda8a9293439",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 13/32Provide accurate information\nProvide accurate information. See what happens if you can't\u00a0prove your identity or don't provide true\ninformation (/help-support/meeting-our-requirements/providing-accurate-information).\u00a0\nIdentity documents\nWe need proof of your identity. If you cannot prove your identity:\nwe will refuse your visa application\nwe might not grant you another visa for 10 years\nwe might not grant any family members you listed on your application a visa for 10 years\nProvide the pages of your current passport showing your photo, personal details, and passport issue\nand expiry dates.\nAlso provide:\na national identity card, if you have one\nproof of change of name\nDocuments that prove a change of name include:\na marriage or divorce certi\u0000cate\nchange of name documents from an Australian Registry of Births, Deaths and Marriages, or the\nrelevant overseas authority\ndocuments that show other names you have been known by\nCon\u0000rmation of enrolment, letters of support and acceptance forms\nAttach the required documents according to your situation.\u00a0\nApplying outside Australia\nProvide a Con\u0000rmation of Enrolment (CoE) for all intended courses.\nApplying inside Australia\nProvide a CoE or letter of offer for all intended courses. You must provide the\u00a0CoEs before the visa\ncan be granted.\nAustralian Department of Foreign Affairs and Trade\u00a0or Australian Department of Defence\nsponsored\nProvide a letter of support\nIf your letter of support does not say it will meet the living costs and expenses of each secondary\napplicant, then evidence\u00a0of su\u0000cient funds is also required.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1707,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "044b7c35-06ee-4610-8216-ca9f12489ada": {
+            "__data__": {
+                "id_": "044b7c35-06ee-4610-8216-ca9f12489ada",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "14",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "69072846-766a-4e21-9269-4c9c5d269df5",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "14",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "66a7a398f76ff9cfe2ce447ae804736f503dd13e4d8fa17129fa2f93ab7c9599",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 14/32Secondary exchange student\nProvide an Acceptance Advice of Secondary Exchange Student form\nPostgraduate research student required to remain in Australia for marking of your thesis\nProvide a letter from your education provider.\nEvidence you have enough money for your stay\nIf the document checklist indicates you must provide evidence of your \u0000nancial capacity, you must\nattach\u00a0evidence to your visa application. We\u00a0may\u00a0refuse your visa without asking you for more\ninformation if you don't.\nIf we don't ask you to provide evidence you have enough money for your stay when you apply, we\nmay\u00a0ask you\u00a0to provide this evidence while\u00a0we are processing your application.\nThe living costs we ask you to declare and provide with your visa application is the minimum amount\nof money you need for the purpose of the visa. Actual living costs vary throughout Australia and may\nbe much higher than what you need for the visa.\u00a0We recommend you research the area you intend to\nlive including the cost of living in that area\nThere are options to prove you have enough money for your stay.\nYou could give us evidence of:\ndeposits of money from a \u0000nancial institution\ngovernment loans or loans from a \u0000nancial institution\nscholarships or similar \u0000nancial support.\nAnnual income\nAlternatively, you can provide evidence your parents or your partner had a personal annua l income of\nat least AUD62,222 in the 12 months immediately before you apply. If you bring family members, you\nmust show\u00a0your parents\u2019 or partner\u2019s income is at least AUD72,592.\nFrom 1 October 2023, you can provide evidence your parents or your partner had a personal income\nof at least AUD72,465 in the 12 months immediately before you apply. If you bring family members,\nyou must show your parents\u2019 or partner\u2019s income is at least AUD84,543.\nIf both your parents are working we can consider their combined income. Provide evidence of your\nparents\u2019 or partner\u2019s income in the form of o\u0000cial government documents such as tax assessments\nless than 12 months old. We won\u2019t accept bank statements or direct evidence from an employer.\n\u00a0\nWork out how much money you need for the visa\nAt a minimum, you must have enough money to pay for:\nyour travel\n12 months of your course fees (or pro rata fees, if your course is less than 12 months)\n12 months of living costs for you and any family members who come with you to Australia (or pro\nrata fees, if you are staying less than 12 months)\nschool fees for any school-age children who accompany you (or pro rata fees, if the child will be\nat school for less than 12 months).",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2689,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "a28d1a94-9e52-4bca-a02a-f712d6bb8bed": {
+            "__data__": {
+                "id_": "a28d1a94-9e52-4bca-a02a-f712d6bb8bed",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "15",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "3ef4098a-ff04-4368-9ec2-7b8863f04112",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "15",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "5ab9bf66e31c8af052238043749050a104450cf0b544aca0c74831d489dca4a6",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 15/32Use the following information to work out how much money you need for the visa. To calculate pro\nrata costs, divide the annua l cost by 365 and multiply the result by the num ber of days you intend to\nstay in Australia.\n\u00a0\nLiving costs\n12-month living costs are for:\nstudents or guardians - AUD21,041\npartners coming with you - AUD7,362\na child coming with you - AUD3,152.\nFrom 1 October 2023, the 12-month living costs will increase to:\nstudents or guardians - AUD24,505\npartners coming with you - AUD8,574\na child coming with you - AUD3,670.\nCourse fees\nUse the \u0000rst 12 months of your course fees. If your course is 12 months or less, use the total cost.\nDeduct any costs you have already paid \u2013 you must provide evidence you have paid them, such as a\nreceipt or Con\u0000rmation of Enrolment.\nIf you are in Australia and your course has already started, calculate the course fee for 12 months\nstarting on the date you lodge your application.\nExample 1: your course fee is AUD50,000 for 3 years. The fee for 12 months is the total course\ncost divided by the num ber of years you will be studying. AUD50,000 divided by 3 years =\nAUD16,666, less any amount you have already paid if relevant.\nExample 2: your course fee is AUD15,000 for 10 months and you have already paid AUD5,000.\nDeduct the amount you have already paid from the total amount. AUD15,000 - AUD5,000 =\nAUD10,000.\nExample 3: your course fee is AUD20,000 for 18 months. The fee for 12 months is the total\ndivided by the total num ber of months, then multiplied by 12. (AUD20,000/18) x 12 = AUD13,333.\nDeduct any costs you have already paid.\nSchooling costs\nIf you are including any school-age children in your application, add schooling costs of at least\nAUD8,296 per year for each child. Costs vary between states, territories and schools in Australia. You\nare responsible for \u0000nding out how much the child\u2019s schooling will cost.\nFrom 1 October 2023, if you are including any school-age children in your application, add schooling\ncosts of at least AUD9,661 per year for each child.\nYou don\u2019t have to provide evidence of schooling costs if you:\nare a PhD student and have enrolled your child in an Australian government school where the fees\nhave been waived, or\nhave received an Australian Commonwealth Government scholarship, including Foreign Affairs\nand Defence sponsored students, and have enrolled your child in an Australian government\nschool where the fees have been waived.\nYou must provide evidence the child is enrolled.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2617,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "3d435eea-140c-468c-a1db-c005cfec8062": {
+            "__data__": {
+                "id_": "3d435eea-140c-468c-a1db-c005cfec8062",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "16",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "6c680f1b-9a6a-4b93-b1c1-be71c3572bd4",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "16",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "7de163a021d940117fc09a82d18e7bca6dec5407b50027d566ec1640e859c371",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 16/32\u00a0\nTravel costs\nAs a guide, when you calculate how much money you need, include:\nAUD2,500 for travel costs if you are applying from East or Southern Africa\nAUD3,000 for travel costs if you are applying from West Africa\nAUD2,000 for travel costs if you are applying from anywhere else outside Australia\u00a0\nAUD1,000 for travel costs if you are applying in Australia. If\u00a0you will be returning to Africa include\nAUD1,500.\nFor combined applications\nInclude the costs and expenses of the primary applicant. For family members also applying for the\nvisa, include:\n12 months living costs (or pro rata)\nany school fees\ntravel expenses.\nOther options\nSecondary exchange students can prove they have enough money for their stay by providing a\ncompleted Acceptance Advice of Secondary Exchange Students (AASES) form.\nDepartment of Foreign Affairs and Trade (DFAT) students can prove they have enough money for\ntheir stay by providing a letter of support from DFAT. They must also provide proof of the \u0000nancial\ncapacity of any family members travelling with them.\nDepartment of Defence students can prove they have enough money for their stay by providing a\nletter of support from the Department of Defence. They must also provide proof of the \u0000nancial\ncapacity of any family members travelling with them.\n\u00a0\nFamily members who apply after we have granted you a visa (subsequent entrants)\nFamily members who apply to join you later must also, at a minimum, show us they have enough\nmoney to cover:\nthe costs and expenses of the student visa holder, including any remaining portion of the 12\nmonths school fees minus any amount already paid\n12 months living costs of all secondary applicants, including school fees\ntravel costs for all secondary applicants.\n\u00a0\nEvidence you have genuine access to the money\nIf we ask you to provide evidence of \u0000nancial capacity you must also prove you have access to it.\u00a0\nIf someone else is providing you funds, give us:\nevidence of your relationship with them\ntheir identity documents\nevidence of any \u0000nancial support they have given you or another student visa holder in the past.\nIf the \u0000nancial support provided involves a business, show us proof the business is operating.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2319,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "f2726dc3-dbf9-4003-bc13-bb27bbec70a3": {
+            "__data__": {
+                "id_": "f2726dc3-dbf9-4003-bc13-bb27bbec70a3",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "17",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "9dc67ee0-213a-4f3e-839b-6f4efdaa2d1b",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "17",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "9936bf369015fd33f1eaed2e4c186338c24718ba4ab6c2ae6128fff43632225c",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 17/32If you are providing evidence of deposits of money, explain their source.\nAny education loan to cover your tuition or living costs should be paid out according to the\nagreement between you, the bank and the education provider. If you receive any payments before we\nmake a decision on your application, give us evidence including the terms of the loan and the full\namount you will be paid.\nIf you are relying on another kind of loan, provide:\nevidence of the security you used\nthe terms of the loan\nevidence you can cover ongoing costs.\nThe best evidence you can provide of genuine access to funds if you are relying on a loan is evidence\nof disbursement.\nLet your provider know any conditions on your education loan. Some loans offer deferred repayment\nagainst your future earnings. These loans can be conditional on you studying only a speci\u0000ed course\nwith a certain provider.\nEvidence you are exempt from paying a visa application charge (VAC):\nThe following student visa applicants are not required to pay a visa application charge (VAC):\nStudents awarded a scholarship funded by the Commonwealth Government of Australia\nStudents and family members supported by the Department of Foreign Affairs and Trade\nStudent and family members supported by the Department of Defence\nSecondary exchange students\nStudents affected by education provider default and lodge a new student visa application within\n12 months of the provider default day\nFamily members of students enrolled in a postgraduate research course\nStudents affected by COVID-19 (https://immiauthor.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-\n500#About).\nIf you are not sure, you should not claim exemption. We will not accept your application if you are not\neligible and this may have consequences if you are in Australia. An\u00a0invalid application outcome could\naffect your visa status and you may not be eligible if your visa has already expired to apply for a\nfurther visa.\nNote:\nYou are not Commonwealth sponsored if you are sponsored by the government in your home\ncountry or your government has provided you with a loan. Most Commonwealth sponsored\nstudents are enrolled in post graduate research courses.\nIf your education provider is still operating but was unable to deliver the course you were enrolled\nin, then you are not affected by education provider default (/visas/getting-a-visa/visa-listing/student-\n500/education-provider-default).",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2551,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "03e619dc-1eba-4c09-b512-fa4c89d76f98": {
+            "__data__": {
+                "id_": "03e619dc-1eba-4c09-b512-fa4c89d76f98",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "18",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "a4e9b5c6-a0ba-4dc6-bdfc-476fcc1b7d72",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "18",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "ea7c9a6dd054e848d7a2ca5103b044267eba8dc1b0f26538346ee4dcaa1ded2a",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 18/32Overseas Student Health Cover\nYou must include proof of paid adequate health insurance for the proposed duration of your visa see\nstudent visa grant periods (/visas/getting-a-visa/visa-listing/student-500/length-of-stay).\nHealth insurance must be Overseas Student Health Cover (OSHC) covering everyone included in your\napplication.\nIf you don\u2019t provide your OSHC in your application form, we will refuse your visa application.\u00a0\nIf you or your agent have organised OSHC, and included this information on your CoE, you will need\nto include the name of your health insurance provider, the dates your policy starts and \u0000nishes and\nthe policy num ber in your application form.\nIf your education provider arranged your OSHC, you will need to include the name of your health\ninsurance provider and the dates your policy starts and \u0000nishes in your application.You do not need\nto include the policy num ber in your application.\u00a0\nMake sure there is no gap in your coverage if you are studying with more than one education\nprovider and both providers arrange OSHC for you. The second policy must begin as soon as the \u0000rst\nexpires.\nNote: If you are from Norway, Sweden or Belgium, you might not have to obtain OSHC.\u00a0See\ninformation on exceptions in the 'Have adequate health insurance' section on the Eligibility\n(/visas/getting-a-visa/visa-listing/student-500#Eligibility) page.\nGenuine temporary entrant documents\nEvery Student visa applicant must provide evidence\u00a0they are a\u00a0genuine temporary entrant (GTE). In\nthe online student visa application form, you will need to provide a statement of purpose in English\naddressing the GTE requirement.\u00a0 This statement is to be 300 words in total (a 2000 character limit\napplies).\nIn addition to the written statement in the application form, you will also need to attach supporting\ndocuments to ImmiAccount.\nSee how to provide evidence you are a genuine temporary entrant (/visas/getting-a-visa/visa-listing/student-\n500/genuine-temporary-entrant).\u00a0\nStudent visa English language requirements\nIf you must provide evidence you\u00a0meet the Student visa English language requirement, show us\u00a0you\nachieved a certain score on an approved English language test. The English language test must have\nbeen taken in the 2 years before you apply for a student visa.\nThe table refers to the English language test providers and the minimum scores you must achieve to\nmeet the Student visa English language requirement.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2562,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "12b67b87-9175-47cc-b080-e4d77dab1d48": {
+            "__data__": {
+                "id_": "12b67b87-9175-47cc-b080-e4d77dab1d48",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "19",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "96e7159b-5a60-4c3b-8ee6-fd0458c92c28",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "19",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "a0af53d2bafc42bdb809e4e21170934b0a436feba154cfa8596a289bb1960238",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 19/32English language test providers Minimum\nscoreMinimum score\nand at least 10\nweeks English\nLanguage\nIntensive\nCourses\n(ELICOS)Minimum\nscore and at\nleast 20\nweeks\nELICOS\nInternational English Language Testing\nSystem (https://www.ielts.org/)5.5 5 4.5\nTOEFL internet-based test (only accepted if\ntest is taken on or before 25 July 2023)*\n(https://www.ets.org/toe\u0000/score-\nusers/ibt/about.html)46 35 32\nCambridge English: Advanced (Certi\u0000cate\nin Advanced English)\n(http://www.cambridgeenglish.org/exams-and-\ntests/advanced/)162 154 147\nPearson Test of English Academic (PTE\nAcademic) (https://pearsonpte.com/the-test)42 36 30\nOccupational English Test\n(https://www.occupationalenglishtest.org/)B for each\ntest\ncomponentN/A N/A\n*On 26 July 2023 the TOEFL internet-based test (TOEFL iBT) stopped offering English language tests for Australian visa purposes. A\nscore for a TOEFL iBT test taken on or after 26 July 2023 will no longer satisfy the English language requirement for Student visa\npurposes. Only TOEFL iBT scores from a test taken on or before 25 July 2023 are accepted for Student visa purposes.\nWelfare arrangements for students under 18\nIf you are applying for a student visa and you are under 18 years old, you must have appropriate\nwelfare arrangements in place. This must cover your period of stay or until you turn 18 years,\nwhichever is \u0000rst.\nIf your nominated guardian is applying for a Subclass 590 Student Guardian visa\n(https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-590), both applications should be made at\nthe same time.\nFor more information see welfare arrangements for students under 18\n(https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500/welfare-arrangements-students-under-18).",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1878,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "989a0462-b43d-405e-b50c-feb25134a383": {
+            "__data__": {
+                "id_": "989a0462-b43d-405e-b50c-feb25134a383",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "20",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "a913a6a0-52d0-402e-939d-c05b313e3dd0",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "20",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "19c0d3d0917bb6dc7c84ccf373d2654858fbf57999b0e199894b9d9815b63b3f",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 20/32Partner documents\nProvide your partner's:\nidentity documents\ncharacter documents\ndocuments about other family members, if\u00a0applicable\nIf you are married, provide your marriage certi\u0000cate or other evidence that your marriage is valid in\nAustralia.\nIf you are a de facto partner, provide proof of your de facto relationship.\nThis proof should show that:\nyou have a mutual commitment with your partner\u00a0to the exclusion of all others\nyour relationship is genuine and continuing\nyou either live together or don't live permanently apart\nyou are not related by family\nAdditional proof of a de facto relationships\nIn addition to documents proving your relationship provide evidence that:\nyou have been in your de facto relationship for at least 12 months before you applied for this visa,\nor\nif applicable, provide evidence that your relationship is registered by a participating Australian\nstate or territory\nDependants under 18\nFor every dependant child under the age of 18 years\u00a0who is applying with you, provide:\ncopies of birth certi\u0000cates or the family book showing the names of both parents of all your\ndependent children\ncopies of the adoption paper, if applicable.\u00a0\nIf somebody other than your biological parents has legal guardianship over you (for example,\nadoptive parents or a court-appointed guardian), you must provide proof of their legal guardianship.\nThis can be adoption papers or parental court orders, if applicable.\nParental responsibility documents\nYou must get consent for any applicant under 18 years of age\u00a0to migrate to Australia from anyone\nwho:\nhas a legal right to decide where the child lives and\nis not coming to Australia with the child",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1787,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "c39dbaec-c869-44fc-bb2a-3554b6676439": {
+            "__data__": {
+                "id_": "c39dbaec-c869-44fc-bb2a-3554b6676439",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "21",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "03940b0b-2616-43d3-b597-70f792d8638a",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "21",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "a585bd44ff2a1aaaef18a24d34f00f0c63249921764d78b1ff8bd724c47e36c4",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 21/32They must complete either:\nForm 1229 Consent form to grant an Australian visa to a child under the age of 18 years\n(276KB PDF) (/form-listing/forms/1229.pdf)\na statutory declaration giving their consent for the child to visit Australia on this visa\nAlternatively, you can show us:\nan Australian court order that allows your child to migrate to Australia, or\nthat the laws of your home country allow them to migrate\nInclude:\nan identity document that shows the signature and photo of the person who completed the\nform or declaration, such as a\u00a0passport or driver\u2019s licence\nadoption papers or other court documents if applicable\nEvidence of school enrolment\nYou must give us evidence of education for any dependant child who has turned 5, but has not\nturned 18 years.\nThis can be a letter from the school (public or private) or from the State/Territory education\ndepartment where you will be studying, and include enrolment details and fees paid.\nChildren 18 years and over\nOnly unm arried children under the age of 18 can be included as a dependant in your application.\nIf you have a child 18 or over, or a child who will turn 18 years before your student visa is granted\nthey will need to apply for their own visa.\nTell us you are getting help\nTo nominate someone to:\nreceive your correspondence, use\u00a0Form 956A Appointment or withdrawal of an authorised\nrecipient (301KB PDF) (/form-listing/forms/956a.pdf)\nprovide immigration assistance, use\u00a0Form 956 Appointment of a registered migration agent, legal\npractitioner or exempt person (308KB PDF) (/form-listing/forms/956.pdf).\nUpload your written noti\u0000cation or your forms to\u00a0ImmiAccount (/help-support/applying-online-or-on-\npaper/overview).",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1818,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "395e30c6-8b3f-42f8-b691-89b18d821ca0": {
+            "__data__": {
+                "id_": "395e30c6-8b3f-42f8-b691-89b18d821ca0",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "22",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "3f815ef4-1863-4dbe-945d-2014ae657e9b",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "22",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "ba3bfca07cb74d11b6a7cd0d583fb8da1f75afc37d5b2c123bc559b5a877af30",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 22/32Prepare your documents\nTranslate\nHave all non-English documents translated into English.\nTranslators in Australia must be accredited by the\u00a0National Accreditation Authority for Translators\nand Interpreters (http://www.naati.com.au).\nTranslators outside Australia do not have to be accredited. But on each translation, they must\ninclude their:\nfull name\naddress and telephone num ber\nquali\u0000cations and experience in the language they are translating\nThese details must be in English.\nNote: You do not need to have any documents certi\u0000ed.\nScan or photograph\nScan or photograph all documents (English and non-English) in colour.\nThe scans and photos must be legible.\nIf a document is more than 1 page, save it all as 1 \u0000le.\nKeep\nKeep a copy of your completed application.\nStep 3\nApply for the visa\nYou must apply for this visa online. You can be in or outside Australia when you apply.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1009,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "cd54d746-5c6e-4077-acf8-abde34558654": {
+            "__data__": {
+                "id_": "cd54d746-5c6e-4077-acf8-abde34558654",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "23",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "ff0f9769-5f88-4cc4-befa-af0fef125cdf",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "23",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "0197805f864a36bd6f1193e683423703990d394cbb1b582dc625165753787304",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 23/32You should submit a complete and decision-ready application. Applications that are lodged without\nrelevant documentation may be refused or delayed. The application form in ImmiAccount tells you what\ndocuments to attach.\nIf you are in Australia\nYou must hold an eligible substantive visa, or apply:\nwithin 28 days of holding a Student visa, a Special Purpose visa, or a dependent Diplomatic\n(temporary) visa or\nwithin 28 days of being noti\u0000ed by the Tribunal that your visa cancellation has been set aside.\nYou cannot apply for a student visa if you hold one of the following visas:\nDomestic Worker (Temporary) Diplomatic and Consular visa (subclass 426)\nTemporary Work (International Relations) visa (subclass 403) in the Domestic Worker (Diplomatic\nor consular) stream\nDiplomatic (Temporary) visa (subclass 995) \u2013 primary visa holder only. A family member of a\nDiplomatic (Temporary) visa (subclass 995) can apply for a Student visa in Australia\nTransit visa (subclass 771)\nVisitor visa (subclass 600) in the Sponsored Family stream or in the Approved Destination Status\nstream.\nDo not provide false and misleading information\nProvide accurate information. See what happens\u00a0if you can't prove your identity or don't provide true\ninformation (/help-support/meeting-our-requirements/providing-accurate-information).\nApply online\n1. Create or log\u00a0in to ImmiAccount (https://online.immi.gov.au/lusc/login)\n2. Attach documents (/help-support/applying-online-or-on-paper/online)\n3. Pay the visa application charge (/help-support/applying-online-or-on-paper/online/how-to-pay)\nPaying the application charge\u00a0\nWhen you submit your application you must:\npay for you and your family members or your application will not be valid\nor\nprovide proof of exemption as shown in 'Step by step', Gather your documents.\nIf your visa cancellation was set aside by the Tribunal you can\u2019t apply online.\u00a0 Instead submit a\nImmiAccount technical support form (/help-support/departmental-forms/online-forms/immiaccount-technical-\nsupport-form).",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2144,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "a040d006-0b0b-48cf-ab2b-4fc3e2a9bb11": {
+            "__data__": {
+                "id_": "a040d006-0b0b-48cf-ab2b-4fc3e2a9bb11",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "24",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "74ea0f71-e2e4-4a14-8de6-6b68d5af5230",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "24",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "d8ba19ffbd44365ea9868dad49c9a1e85502d0b908e85a9aacad7a3d2f03f0fd",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 24/32Note: a valid application must be made within the eligibility timeframe as late applications will not\u00a0be\naccepted.\nSee how to resolve error messages when submitting online (/help-support/applying-online-or-on-\npaper/online/common-issues-and-error-messages).\nNote:\n1. We cannot grant a student visa to your child if they are 18 years or over at the time your visa is\n\u0000nished. Instead, they should apply for their own visa.\n2. Where subsequent entrants are siblings (two or more children with no parent), they must each\nmake a seperate subsequent entrant student visa application and pay the base visa application\ncharge to join their parent.\nStep 4\nAfter you apply\nSee what you can and must do after you apply.\nYou should respond to any requests for information promptly. You do not need to wait until the deadline\nto respond to a Departmental request for further information.\u00a0 You should also regularly log into your\nImmiAccounts to check for messages from the Department and respond promptly.\nYou should avoid booking travel before your visa has been \u0000nalised.\u00a0\nStatus updates\nIf it is within standard processing times do not call. We can't provide any further updates on the\napplication's progress.\u00a0You can see if we have asked for more information in your\u00a0ImmiAccount\n(/help-support/applying-online-or-on-paper/online).\nBiometrics\nWe might ask for biometrics.\u00a0Most applicants will be advised immediately after submitting an\napplication if you need to provide biometrics. You will receive a letter and will also be able to see this\nrequest in your ImmiAccount. You will be given 14 days to provide biometrics so it is important to\narrange an appointment quickly using the instructions in the request letter.\nYou must provide biometrics before travelling to Australia.\u00a0\nHealth exams",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1910,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "80f325f1-30cd-4385-8f65-ea11c5e8f645": {
+            "__data__": {
+                "id_": "80f325f1-30cd-4385-8f65-ea11c5e8f645",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "25",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "cfc798f2-9990-4ff4-bf71-a28120a99067",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "25",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "89692fbfb4e00f148e7edc3b82bf09f6d3dd4bf08475eaf86ba961f294ecb8ab",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 25/32If you did not have\u00a0health examinations (/help-support/meeting-our-requirements/health)\u00a0before you applied,\ncheck ImmiAccount to \u0000nd out if you need them.\nSee the medical referral letter with your Health Assessment Portal (HAP) ID and further directions in\nImmiAccount (https://online.immi.gov.au/ola/app).\u00a0\nStay lawful in Australia\nMake sure you stay lawful by holding a valid visa while we process your application.\nIf you were in Australia when you applied for this visa, you were granted a Bridging visa A (BVA). If\nyour current visa expires before we decide on your application, the BVA will start. You can stay in\nAustralia on the BVA while we process your new visa application. You cannot travel on the BVA -\nthere is no right of return on this visa; it cancels on departure.\nDo not cancel your current visa. If you do, you will:\nbe staying in Australia unlawfully\nnot be eligible for a Bridging visa A\nLearn more about\u00a0visa expiry (/visas/visa-about-to-expire).\nTravel after you apply\nYou do not have to tell us if you want to travel outside Australia while we process your application.\nThis is because you can be outside Australia when we make a decision.\nBut if you leave Australia, make sure your visa allows you to return. If you have a Bridging visa A, it\nwill cease if you leave Australia.\nIf you have a BVA and substantial reasons for travel, then a Bridging visa B (BVB) (/visas/getting-a-\nvisa/visa-listing/bridging-visa-b-020)enables return to Australia while your application is being processed.\nTo see if you can return on your current visa, check VEVO (/visas/already-have-a-visa/check-visa-details-and-\nconditions).\nLearn about\u00a0visa expiry (/visas/visa-about-to-expire).\nProviding more information\nLodging a complete application will ensure your visa is not delayed. If you did not attach all your\ndocuments when you applied, attach them as soon as you can in ImmiAccount. The Department\nmay \u0000nalise your application based on the information you provided when you \u0000rst lodged your visa,\nso it is recommended that you lodge a complete application. You can attach a maximum of 60\ndocuments. We might also ask you to provide more information.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2288,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "0a8a746e-ca6a-4eee-bbd3-946cc91496e5": {
+            "__data__": {
+                "id_": "0a8a746e-ca6a-4eee-bbd3-946cc91496e5",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "26",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "70fa847d-eb58-4087-8634-caf022c8d73a",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "26",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "4b655a099ef6dfddaf00726c5ed63e69280ff88dc9ed6aa6203c05268ac2d37f",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 26/32Add family members\nYour eligible family members (/visas/getting-a-visa/visa-listing/student-500#About) can:\naccompany you to Australia if you have included them in your visa application\njoin you in Australia, after you have been granted your visa, as a subsequent entrant. You must\nhave declared these family members in your student visa application.\nDeclare all family members on your application, even if they do not plan to travel with you to\nAustralia. If you do not do this, your family members will not be eligible for a student visa to join you\nin Australia.\nIf you did not declare a family member and they need to join you in Australia at a later date, you will\nneed to apply for a new student visa including them and explain why they were not included on your\napplication. An exception to this is if they became your family members after your student visa was\ngranted and before a subsequent application is made.\nNewborn children\nFind out what to do\u00a0if your child is born after you apply (/change-in-situation/had-a-baby).\nMistakes on your application\nLet us know as soon as you can.\u00a0\nComplete Form 1023 Noti\u0000cation of incorrect answers (168KB PDF) (/form-listing/forms/1023.pdf)\u00a0\nOr\u00a0\nIf you currently have a visa application in ImmiAccount that is not yet \u0000nalised, sign into\nImmiAccount and select 'Update Details' from the Menu option.\u00a0\nChoose 'Noti\u0000cation of incorrect answers' from the list and provide the correct information.\u00a0\nHelp with your application\nLet us know if you no longer want someone to:\nreceive your correspondence - complete\u00a0Form 956A Appointment or withdrawal of an authorised\nrecipient (301KB PDF) (/form-listing/forms/956a.pdf)\nprovide immigration advice - complete\u00a0Form 956 Appointment of a registered migration agent,\nlegal practitioner or exempt person (308KB PDF) (/form-listing/forms/956.pdf).",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1958,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "f47bed66-bc27-4199-8411-fea2f5c9ab2d": {
+            "__data__": {
+                "id_": "f47bed66-bc27-4199-8411-fea2f5c9ab2d",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "27",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "2caaa05c-1dbe-494e-b448-f3f8da3a6a09",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "27",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "d9b571457f992ef46e13be194ecc2826c40f79ca8125d9cb4a8a19dfaa7f089f",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 27/32Upload your written noti\u0000cation or your forms to\u00a0ImmiAccount (/help-support/applying-online-or-on-\npaper/overview).\nFor more information see Who can help you with your application (/help-support/who-can-help-with-your-\napplication/overview).\nTell us if things change\nThings you need to let us know about include:\nyou want to withdraw your application\nchanges to your phone num ber, address or passport\nchanges to your relationship status\nthe birth of a child\nSee how to tell us if\u00a0your situation changes (/change-in-situation).\n\u00a0\nEducation provider default\nEducation provider default occurs when a registered education provider in Australia:\ncloses, or\ncan't deliver your course because they have been sanctioned\nIf after lodging your student visa application your provider has defaulted, you will need to provide a\nnew CoE for a new education provider.\u00a0\nSee more about\u00a0education provider defaults (/visas/getting-a-visa/visa-listing/student-500/education-provider-\ndefault).\nStep 5\nVisa outcome\nWe will let you know in writing our decision about your visa application. We\u00a0will tell you:\nyour visa grant num ber\nthe date your visa expires\nyour visa conditions\nKeep a copy of the decision with you when in Australia.\nIf we refuse your visa we will let you know in writing. We will tell you why we refused and whether you\nhave a right to a review of the decision.\nWe will not refund the application charge if we refuse your application.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1561,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "f6110cb1-dcdb-4108-937e-15fa9984b375": {
+            "__data__": {
+                "id_": "f6110cb1-dcdb-4108-937e-15fa9984b375",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "28",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "2c2be95b-ed80-47e6-a516-ec2cf239650e",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "28",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "237c7aa4390b7b0b2a2c22f16f22b28ba8ac7d7213ad191005973a141b8ab108",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 28/32When you have this visa\nWhen you have your visa\nWhen you have your Student (subclass 500) visa, you may want to consider withdrawing any other undecided visa\napplications you have lodged with us.\nIf you are granted another substantive visa your Student (subclass 500) visa will cease.\nTo withdraw any other visa application, you must advise us in writing that you want to withdraw an application\n(https://immi.homeaffairs.gov.au/change-in-situation/withdraw-visa-application).\nComing to Australia\nBefore you leave\nCheck your travel documents\nYou must have:\na valid visa to enter Australia\na valid passport or other travel document\nAt the border\nComplete an Incoming Passenger Card\nAll people arriving Australia must complete the Incoming Passenger Card (https://www.abf.gov.au/entering-and-leaving-\naustralia/crossing-the-border/at-the-border/incoming-passenger-card-(ipc)).\u00a0You will get the card on board.\nLeaving the airport faster\nWe have an automated process that uses facial recognition technology and your ePassport. You might be able to leave\nthe airport faster if you use SmartGate (https://www.abf.gov.au/smartgates).When you have your visa (#haveThisVisa-index-0)\nComing to Australia (#haveThisVisa-index-1)\nIn Australia (#haveThisVisa-index-2)\nLeaving Australia (#haveThisVisa-index-3)",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1423,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "db1df6b3-5919-469f-8936-47230b653af8": {
+            "__data__": {
+                "id_": "db1df6b3-5919-469f-8936-47230b653af8",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "29",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "488419ae-3fa3-489a-8e08-15548b08a5b3",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "29",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "49cd0babe2ada2be0cce9ad9bb8999a8a4ef0ee5bf2c419b1020cff5df365f59",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 29/32In Australia\nWhat you can do when you have this visa\nparticipate in an eligible course of study in Australia\ntravel in and out of Australia\nwork up to 48 hours a fortnight when your course of study or training is in session.\nWhat you must do when you have this visa\nYou and your family members who apply with you must meet all visa conditions and obey Australian laws.\nTo see your speci\u0000c conditions, work and study entitlements see\u00a0your visa grant letter or\u00a0\u00a0Visa Entitlement Veri\u0000cation\nOnline (VEVO) (/visas/already-have-a-visa/check-visa-details-and-conditions/overview)\nHow long you can stay\nThis is a temporary visa. You can stay in Australia until the date we have told you. The student visa grant period\n(/visas/getting-a-visa/visa-listing/student-500/length-of-stay)\u00a0will depend on the type of course and its length.\nTo see when you must leave, use\u00a0VEVO (/visas/already-have-a-visa/check-visa-details-and-conditions/overview).\nStaying longer\nYou cannot stay in Australia longer by extending this visa. To continue studying in Australia, you must apply for a new\nStudent visa.\nIf you want to stay longer without studying, you must apply for a new visa.\u00a0\nSee your options (/visas/getting-a-visa/visa-\u0000nder).\u00a0\nVisa expiry before graduation\nIf your student visa will expire before your graduation, you might be able to apply for another visa that meets your\ncircumstances such as a visitor visa. You will need a letter from your education provider which states the date of your\ngraduation.\nTravelling on your visa\nYou can travel outside Australia and return as many times as you want while the visa is valid.\nTime spent outside Australia does not extend the visa.\nSee your conditions in\u00a0VEVO (/visas/already-have-a-visa/check-visa-details-and-conditions/overview).\nProving you have a visa\nTo prove you have a visa and show your conditions to someone, use\u00a0VEVO (/visas/already-have-a-visa/check-visa-details-and-\nconditions/overview).\nWorking on this visa\nNormally, student visa holders cannot work in Australia before the student has started their course of study.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2196,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "16110ac7-d212-4196-89d4-3c62448467bc": {
+            "__data__": {
+                "id_": "16110ac7-d212-4196-89d4-3c62448467bc",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "30",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "2d89e1d3-5369-42f1-9d06-8008d82e5c5a",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "30",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "9f6c9033e02387aa9df2e6dca09c27e03d98e4bfead671eb8afb9a5cc2948656",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 30/32From 1 July 2023, work restrictions for student visa holders will be capped at 48 hours a\u00a0fortnight. These work\nrestrictions apply when the course of study or training is in session.\nStudents who have started a master degree by research or doctoral degree, and their family members, can work\nunrestricted hours.\nStudent visa holders already working in the aged care sector on 9 May 2023 can work unrestricted hours in the aged\ncare sector until 31 December 2023. See Work restrictions for student visa holders (/visas/getting-a-visa/visa-listing/student-\n500/temporary-relaxation-of-working-hours-for-student-visa-holders).\nStudents must ensure they are aware of any changes to visa conditions, including work rights.\nTo see the visa conditions that affect your work situation, see\u00a0VEVO (/visas/already-have-a-visa/check-visa-details-and-\nconditions/overview).\nBringing a family member\nYou can include a family member in your application or they can apply to join you later as a subsequent\napplicant\u00a0in\u00a0ImmiAccount (/help-support/applying-online-or-on-paper/online) provided:\nyou declared existing family members at the time you lodged your application, or\nthey became your family member after you were granted the visa.\nExisting family members must have been declared at the time of you lodged your application\nIf a person became your family member after you lodged your application and before you were granted the visa, you\nmust have informed us in writing before your visa was granted.\nFor student visas, your family member is:\nyour partner, or\nyour or your partner's dependent child who is unm arried and has not turned 18 years of age.\nWe cannot grant a student visa to your child if they have turned 18 years at the time your visa is \u0000nalised. Instead they\nneed to apply for their own visa.\nWhere subsequent entrants are siblings (two or more children with no parent), they must make separate student visa\napplications and each pay the base application charge to join their parent.\nFamily members who apply for the visa must meet our requirements for\u00a0health (/help-support/meeting-our-\nrequirements/health)\u00a0and\u00a0character (/help-support/meeting-our-requirements/character)\u00a0and be a genuine temporary entrant\n(/visas/getting-a-visa/visa-listing/student-500/genuine-temporary-entrant).\nIf you are bringing school aged children, check the annua l school costs you will need to pay for them to go to either\npublic or private schools in Australia.\nNewborn child\nFind out what to do if you have a child (/change-in-situation/had-a-baby).\nTell us if things change\nThings you need to let us know about include:\nchanges to your phone num ber, email, address or passport",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2792,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "5eafb5ee-25fb-4889-bae8-99e8df433e7c": {
+            "__data__": {
+                "id_": "5eafb5ee-25fb-4889-bae8-99e8df433e7c",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "31",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "68f0c161-dd8b-4636-8cb3-032769ca8cd1",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "31",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "2404fb474531f882087305fcc2419e3c7e345bb54dd22f82884f8786c00f1577",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 31/32changes to your relationship status\nchanges to your welfare arrangements\nthe birth of a child\nSee how to let us know if there is a\u00a0change in your situation (/change-in-situation).\nYour study situation has changed\nFind out what to do if there is a change in your study situation (/change-in-situation/study-situation).\u00a0This includes:\nyou are thinking about changing\u00a0courses\ncompleting your course early\ncircumstances where you can defer your course\nYour visa may also be subject to visa conditions that require you to seek permission before making certain changes to\nyour study. To check your visa conditions use VEVO (/visas/already-have-a-visa/check-visa-details-and-conditions/overview).\nMigration Amendment (Protecting Australia\u2019s Critical Technology) Regulations 2022\nIf you apply for a student visa after 1 July 2022, your student visa will be subject to visa condition 8208. For information\non visa condition 8208, see your visa conditions (/visas/already-have-a-visa/check-visa-details-and-conditions/see-your-visa-conditions?\nproduct=500).\nFlexible arrangements regarding start dates due to COVID-19\nThe Department understands that some students may not be able to start their course of study on time due to COVID-19\nrestrictions. Make sure your education provider knows that you cannot start your studies due to COVID-19 restrictions.\nThere are options that can ensure you are not in breach of your visa conditions. Your education provider can tell you\nwhat options are available to you for your situation.\nIf you hold a Student visa, contact your education provider if you cannot travel due to COVID-19 restrictions. Make sure\nthat you are enrolled in an approved course of study at all times.\nBe aware that we may cancel your visa if you:\nfail to start studies on time, or\ndo not hold a current or active Con\u0000rmation of Enrolment (CoE).\nYour education provider will be able to help you so this does not happen.\nIf you are outside Australia and have not held an active or current CoE, check your visa status on VEVO (/visas/already-have-\na-visa/check-visa-details-and-conditions/check-conditions-online). Do this before making any travel plans to ensure your visa status\nhas not changed.\nPlease see Change in your study situation (/change-in-situation/study-situation).\nEducation provider default\nEducation provider default occurs when a registered education provider in Australia:\ncloses, or\ncan't deliver your course because they have been sanctioned",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 2589,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        },
+        "8877c3b7-3d29-40ed-b2b8-f3ab225a1761": {
+            "__data__": {
+                "id_": "8877c3b7-3d29-40ed-b2b8-f3ab225a1761",
+                "embedding": null,
+                "metadata": {
+                    "page_label": "32",
+                    "file_name": "Subclass 500 Student visa.pdf",
+                    "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                    "file_type": "application/pdf",
+                    "file_size": 723044,
+                    "creation_date": "2024-06-30",
+                    "last_modified_date": "2024-06-30"
+                },
+                "excluded_embed_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "excluded_llm_metadata_keys": [
+                    "file_name",
+                    "file_type",
+                    "file_size",
+                    "creation_date",
+                    "last_modified_date",
+                    "last_accessed_date"
+                ],
+                "relationships": {
+                    "1": {
+                        "node_id": "7e5aac47-da5d-4cad-b3c3-86883d0ec697",
+                        "node_type": "4",
+                        "metadata": {
+                            "page_label": "32",
+                            "file_name": "Subclass 500 Student visa.pdf",
+                            "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                            "file_type": "application/pdf",
+                            "file_size": 723044,
+                            "creation_date": "2024-06-30",
+                            "last_modified_date": "2024-06-30"
+                        },
+                        "hash": "9d35f76ec944d20574a744bbacbf9ff8e485ae4c68c38892713e378d233fdc96",
+                        "class_name": "RelatedNodeInfo"
+                    }
+                },
+                "text": "12/8/23, 10:41 AM Subclass 500 Student visa\nhttps://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500 32/32Last updated:\n7 No vember 2023If after\u00a0lodging your student visa application your provider has defaulted, you will need to provide a new CoE for a new\neducation provider.\u00a0\nSee more about\u00a0education provider default (/visas/getting-a-visa/visa-listing/student-500/education-provider-default).\nLeaving Australia\nBefore you leave\nCheck your travel documents\nYou must have a valid passport or other travel document to leave Australia.\nEnsure your visa is still valid if you intend to return to Australia\nCheck your conditions and the expiry of your current visa in VEVO.\nSee what you\u00a0can and must do if your visa has expired or is about to expire (/visas/visa-about-to-expire).\nAt the Border\nLeaving the airport faster\nWe have an automated process that uses facial recognition technology and your ePassport. You might be able to leave\nthe airport faster if you use SmartGate. (http://www.abf.gov.au/smartgates)\nGet your superannuation if you intend not to return to Australia\nYou are likely to have some money in a superannua tion fund if you worked in Australia and you are:\n18 years old or older\npaid AUD450 or more before tax in a month\nSee how to access your super (/entering-and-leaving-australia/leaving-australia).\nTo prove you have been to Australia\nRequest your international movement records (https://immi.homeaffairs.gov.au/entering-and-leaving-australia/request-movement-records)\nto get proof of your travel in and out of Australia.",
+                "mimetype": "text/plain",
+                "start_char_idx": 0,
+                "end_char_idx": 1566,
+                "text_template": "{metadata_str}\n\n{content}",
+                "metadata_template": "{key}: {value}",
+                "metadata_seperator": "\n",
+                "class_name": "TextNode"
+            },
+            "__type__": "1"
+        }
+    },
+    "docstore/ref_doc_info": {
+        "6a8ed4a2-baeb-4e5b-b39d-deba24b2f3d4": {
+            "node_ids": [
+                "aae1b74f-c2c2-49b1-8573-9d6732e07fbd"
+            ],
+            "metadata": {
+                "page_label": "1",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "602a15fd-8b5e-427b-acb8-e3304e48adb1": {
+            "node_ids": [
+                "fabf9c7f-0e63-4ce3-83f4-0001c3ad6f6f"
+            ],
+            "metadata": {
+                "page_label": "2",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "ec5ab0ff-0890-4533-88c0-b80b85c7ba67": {
+            "node_ids": [
+                "cafd1bc5-6c71-48be-9bd1-5d30aeca5fc5"
+            ],
+            "metadata": {
+                "page_label": "3",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "265fb198-39e4-4713-bd99-1748c2e50d11": {
+            "node_ids": [
+                "63d59cc0-7706-4e5d-8e9c-66b6d922d977"
+            ],
+            "metadata": {
+                "page_label": "4",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "f1d4defb-b41f-44a0-a324-d1f8ce1f2bd5": {
+            "node_ids": [
+                "0b307bbf-f077-44e0-a218-071c0c118185"
+            ],
+            "metadata": {
+                "page_label": "5",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "fc38574f-297e-45ca-baf5-734a503cb3b7": {
+            "node_ids": [
+                "73e2ef24-daff-4719-85ee-87ccc9601495"
+            ],
+            "metadata": {
+                "page_label": "6",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "905227a2-531b-4d16-9b2a-51a238d3cd64": {
+            "node_ids": [
+                "8ee1e07a-39cf-44e2-8d4c-184009e3081d"
+            ],
+            "metadata": {
+                "page_label": "7",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "27ca0f7d-afb4-4cbe-851d-f372fda8d7a1": {
+            "node_ids": [
+                "aa6e8ac9-af4c-4646-9f0f-bbdebed7d663"
+            ],
+            "metadata": {
+                "page_label": "8",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "6597ee7d-f850-467c-925a-d9592ae29964": {
+            "node_ids": [
+                "4489cff9-6f82-4a74-b89b-9829fbc13174"
+            ],
+            "metadata": {
+                "page_label": "9",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "4f2fae4b-965e-444f-a665-66808f2f5e9d": {
+            "node_ids": [
+                "70759739-6ac3-499e-902d-b8067da709dc"
+            ],
+            "metadata": {
+                "page_label": "10",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "39dbcd2e-3437-4df3-9f80-3342b2c7a245": {
+            "node_ids": [
+                "e611271d-75e9-458e-9497-968814d3e07d"
+            ],
+            "metadata": {
+                "page_label": "11",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "da84f840-f263-4483-8513-2e695c5a7eb4": {
+            "node_ids": [
+                "4f04f649-fd85-464c-beb3-f296bc7887d5"
+            ],
+            "metadata": {
+                "page_label": "12",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "725c2c43-78b1-472a-a6eb-5996b90107c8": {
+            "node_ids": [
+                "cf278732-bd6f-42d2-b017-5cd236dee63e"
+            ],
+            "metadata": {
+                "page_label": "13",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "69072846-766a-4e21-9269-4c9c5d269df5": {
+            "node_ids": [
+                "044b7c35-06ee-4610-8216-ca9f12489ada"
+            ],
+            "metadata": {
+                "page_label": "14",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "3ef4098a-ff04-4368-9ec2-7b8863f04112": {
+            "node_ids": [
+                "a28d1a94-9e52-4bca-a02a-f712d6bb8bed"
+            ],
+            "metadata": {
+                "page_label": "15",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "6c680f1b-9a6a-4b93-b1c1-be71c3572bd4": {
+            "node_ids": [
+                "3d435eea-140c-468c-a1db-c005cfec8062"
+            ],
+            "metadata": {
+                "page_label": "16",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "9dc67ee0-213a-4f3e-839b-6f4efdaa2d1b": {
+            "node_ids": [
+                "f2726dc3-dbf9-4003-bc13-bb27bbec70a3"
+            ],
+            "metadata": {
+                "page_label": "17",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "a4e9b5c6-a0ba-4dc6-bdfc-476fcc1b7d72": {
+            "node_ids": [
+                "03e619dc-1eba-4c09-b512-fa4c89d76f98"
+            ],
+            "metadata": {
+                "page_label": "18",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "96e7159b-5a60-4c3b-8ee6-fd0458c92c28": {
+            "node_ids": [
+                "12b67b87-9175-47cc-b080-e4d77dab1d48"
+            ],
+            "metadata": {
+                "page_label": "19",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "a913a6a0-52d0-402e-939d-c05b313e3dd0": {
+            "node_ids": [
+                "989a0462-b43d-405e-b50c-feb25134a383"
+            ],
+            "metadata": {
+                "page_label": "20",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "03940b0b-2616-43d3-b597-70f792d8638a": {
+            "node_ids": [
+                "c39dbaec-c869-44fc-bb2a-3554b6676439"
+            ],
+            "metadata": {
+                "page_label": "21",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "3f815ef4-1863-4dbe-945d-2014ae657e9b": {
+            "node_ids": [
+                "395e30c6-8b3f-42f8-b691-89b18d821ca0"
+            ],
+            "metadata": {
+                "page_label": "22",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "ff0f9769-5f88-4cc4-befa-af0fef125cdf": {
+            "node_ids": [
+                "cd54d746-5c6e-4077-acf8-abde34558654"
+            ],
+            "metadata": {
+                "page_label": "23",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "74ea0f71-e2e4-4a14-8de6-6b68d5af5230": {
+            "node_ids": [
+                "a040d006-0b0b-48cf-ab2b-4fc3e2a9bb11"
+            ],
+            "metadata": {
+                "page_label": "24",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "cfc798f2-9990-4ff4-bf71-a28120a99067": {
+            "node_ids": [
+                "80f325f1-30cd-4385-8f65-ea11c5e8f645"
+            ],
+            "metadata": {
+                "page_label": "25",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "70fa847d-eb58-4087-8634-caf022c8d73a": {
+            "node_ids": [
+                "0a8a746e-ca6a-4eee-bbd3-946cc91496e5"
+            ],
+            "metadata": {
+                "page_label": "26",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "2caaa05c-1dbe-494e-b448-f3f8da3a6a09": {
+            "node_ids": [
+                "f47bed66-bc27-4199-8411-fea2f5c9ab2d"
+            ],
+            "metadata": {
+                "page_label": "27",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "2c2be95b-ed80-47e6-a516-ec2cf239650e": {
+            "node_ids": [
+                "f6110cb1-dcdb-4108-937e-15fa9984b375"
+            ],
+            "metadata": {
+                "page_label": "28",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "488419ae-3fa3-489a-8e08-15548b08a5b3": {
+            "node_ids": [
+                "db1df6b3-5919-469f-8936-47230b653af8"
+            ],
+            "metadata": {
+                "page_label": "29",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "2d89e1d3-5369-42f1-9d06-8008d82e5c5a": {
+            "node_ids": [
+                "16110ac7-d212-4196-89d4-3c62448467bc"
+            ],
+            "metadata": {
+                "page_label": "30",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "68f0c161-dd8b-4636-8cb3-032769ca8cd1": {
+            "node_ids": [
+                "5eafb5ee-25fb-4889-bae8-99e8df433e7c"
+            ],
+            "metadata": {
+                "page_label": "31",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        },
+        "7e5aac47-da5d-4cad-b3c3-86883d0ec697": {
+            "node_ids": [
+                "8877c3b7-3d29-40ed-b2b8-f3ab225a1761"
+            ],
+            "metadata": {
+                "page_label": "32",
+                "file_name": "Subclass 500 Student visa.pdf",
+                "file_path": "/root/code/cgft-llm/llama-index/pdf/Subclass 500 Student visa.pdf",
+                "file_type": "application/pdf",
+                "file_size": 723044,
+                "creation_date": "2024-06-30",
+                "last_modified_date": "2024-06-30"
+            }
+        }
+    }
+}

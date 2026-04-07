@@ -1,0 +1,14 @@
+repository,url,description,language,stars,forks,stars_today
+glanceapp/glance,https://github.com/glanceapp/glance,A self-hosted dashboard that puts all your feeds in one place,Go,"13,929",488,889 stars today
+xpipe-io/xpipe,https://github.com/xpipe-io/xpipe,Access your entire server infrastructure from your local desktop,Java,"8,432",287,624 stars today
+yuaotian/go-cursor-help,https://github.com/yuaotian/go-cursor-help,解决Cursor在免费订阅期间出现以下提示的问题: You've reached your trial request limit. / Too many free trial accounts used on this machine. Please upgrade to pro. We have this limit in place to prevent abuse. Please let us know if you believe this is a mistake.,Shell,"14,397","1,871",314 stars today
+freeCodeCamp/freeCodeCamp,https://github.com/freeCodeCamp/freeCodeCamp,freeCodeCamp.org's open-source codebase and curriculum. Learn to code for free.,TypeScript,"413,079","39,362",446 stars today
+calcom/cal.com,https://github.com/calcom/cal.com,Scheduling infrastructure for absolutely everyone.,TypeScript,"34,580","8,877",28 stars today
+ai-christianson/RA.Aid,https://github.com/ai-christianson/RA.Aid,Develop software autonomously.,Python,897,90,62 stars today
+langchain-ai/ollama-deep-researcher,https://github.com/langchain-ai/ollama-deep-researcher,Fully local web research and report writing assistant,Python,"3,256",417,444 stars today
+TanStack/form,https://github.com/TanStack/form,"🤖 Headless, performant, and type-safe form state management for TS/JS, React, Vue, Angular, Solid, and Lit.",TypeScript,"4,712",402,62 stars today
+tj-actions/changed-files,https://github.com/tj-actions/changed-files,"Github action to retrieve all (added, copied, modified, deleted, renamed, type changed, unmerged, unknown) files and directories.",TypeScript,"2,003",228,5 stars today
+hpcaitech/Open-Sora,https://github.com/hpcaitech/Open-Sora,Open-Sora: Democratizing Efficient Video Production for All,Python,"25,070","2,429",442 stars today
+milanm/DevOps-Roadmap,https://github.com/milanm/DevOps-Roadmap,DevOps Roadmap for 2025. with learning resources,未知,"14,395","2,393",67 stars today
+RIP-Comm/sossoldi,https://github.com/RIP-Comm/sossoldi,"""Sossoldi"" is a wealth management / personal finance / Net Worth tracking app, made with Flutter.",Dart,577,135,82 stars today
+uutils/coreutils,https://github.com/uutils/coreutils,Cross-platform Rust rewrite of the GNU coreutils,Rust,"18,940","1,364",141 stars today

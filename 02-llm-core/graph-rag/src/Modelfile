@@ -1,0 +1,5 @@
+FROM /root/autodl-tmp/models/qwen2-7b-instruct-q5_k_m.gguf
+
+PARAMETER temperature 1
+PARAMETER num_ctx 4096
+
