@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replica 蓝图 — AI 记忆与上下文</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fdfbf7;
+  --fg: #111111;
+  --card: #ffffff;
+  --primary: #ff4911;
+  --secondary: #c4a1ff;
+  --accent: #ffd83d;
+  --success: #00e676;
+  --info: #2979ff;
+  --muted: #f0f0f0;
+  --muted-fg: #555555;
+  --destructive: #ff3366;
+  --border: #111111;
+  --sidebar: #f4f0ea;
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --shadow: 4px 4px 0px 0px var(--border);
+  --shadow-sm: 2px 2px 0px 0px var(--border);
+  --shadow-lg: 8px 8px 0px 0px var(--border);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* ── Navigation ── */
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--fg);
+  color: var(--bg);
+  padding: 0.75rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  border-bottom: 3px solid var(--primary);
+}
+nav .logo {
+  font-weight: 800;
+  font-size: 1.25rem;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+nav a {
+  color: var(--bg);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 0.3rem 0.75rem;
+  border: 2px solid transparent;
+  transition: all 0.15s;
+}
+nav a:hover { border-color: var(--accent); color: var(--accent); }
+nav a.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+
+/* ── Layout ── */
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+/* ── Hero ── */
+.hero {
+  text-align: center;
+  padding: 3rem 2rem;
+  margin-bottom: 2rem;
+}
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+}
+.hero h1 span { color: var(--primary); }
+.hero p {
+  font-size: 1.1rem;
+  color: var(--muted-fg);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* ── Section ── */
+.section {
+  margin-bottom: 3rem;
+}
+.section-title {
+  font-size: 1.5rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--fg);
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.section-title .badge {
+  display: inline-block;
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.7rem;
+  padding: 0.15rem 0.5rem;
+  font-weight: 700;
+  border: 2px solid var(--border);
+}
+
+/* ── Cards ── */
+.card {
+  background: var(--card);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+.card-header {
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.card p { color: var(--muted-fg); font-size: 0.95rem; }
+
+/* ── Why Section ── */
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+.why-card {
+  background: var(--card);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem;
+  text-align: center;
+}
+.why-card .icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+.why-card h3 {
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.why-card p { font-size: 0.85rem; color: var(--muted-fg); }
+
+/* ── Three Layer Context ── */
+.context-layers {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+.layer {
+  display: flex;
+  align-items: stretch;
+  border: 2px solid var(--border);
+  background: var(--card);
+  position: relative;
+}
+.layer + .layer { border-top: none; }
+.layer-num {
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.5rem;
+  font-family: var(--font-mono);
+  flex-shrink: 0;
+  border-right: 2px solid var(--border);
+}
+.layer:nth-child(1) .layer-num { background: var(--primary); color: #fff; }
+.layer:nth-child(2) .layer-num { background: var(--secondary); color: var(--fg); }
+.layer:nth-child(3) .layer-num { background: var(--accent); color: var(--fg); }
+.layer-content {
+  padding: 1.25rem 1.5rem;
+  flex: 1;
+}
+.layer-content h3 {
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+.layer-content .subtitle {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--muted-fg);
+  margin-bottom: 0.5rem;
+}
+.layer-content p { font-size: 0.9rem; color: var(--muted-fg); }
+.layer-tag {
+  display: inline-block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.1rem 0.4rem;
+  border: 2px solid var(--border);
+  margin-right: 0.25rem;
+  margin-top: 0.5rem;
+  background: var(--muted);
+}
+.layer-inject {
+  width: 100%;
+  text-align: center;
+  padding: 0.4rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--muted-fg);
+  position: relative;
+}
+.layer-inject::before {
+  content: '▼';
+  display: block;
+  font-size: 0.9rem;
+  color: var(--primary);
+}
+
+/* ── Memory Types Grid ── */
+.mem-types {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+.mem-type {
+  background: var(--card);
+  border: 2px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  padding: 1.25rem;
+  position: relative;
+  overflow: hidden;
+}
+.mem-type::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+.mem-type:nth-child(1)::before { background: var(--primary); }
+.mem-type:nth-child(2)::before { background: var(--accent); }
+.mem-type:nth-child(3)::before { background: var(--secondary); }
+.mem-type:nth-child(4)::before { background: var(--success); }
+.mem-type h3 {
+  font-weight: 800;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+.mem-type .en {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--muted-fg);
+  margin-bottom: 0.5rem;
+}
+.mem-type p { font-size: 0.85rem; color: var(--muted-fg); }
+.mem-type .example {
+  margin-top: 0.75rem;
+  padding: 0.5rem;
+  background: var(--muted);
+  border: 1px solid var(--border);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--fg);
+}
+
+/* ── Retrieval Pipeline ── */
+.pipeline {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.pipe-step {
+  background: var(--card);
+  border: 2px solid var(--border);
+  padding: 1rem 1.25rem;
+  text-align: center;
+  min-width: 140px;
+  box-shadow: var(--shadow-sm);
+}
+.pipe-step h4 {
+  font-weight: 800;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+}
+.pipe-step p {
+  font-size: 0.75rem;
+  color: var(--muted-fg);
+  font-family: var(--font-mono);
+}
+.pipe-arrow {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  padding: 0 0.25rem;
+  flex-shrink: 0;
+}
+.pipe-step.highlight {
+  background: var(--accent);
+  border-color: var(--border);
+}
+.pipe-merge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.pipe-merge .pipe-step { width: 100%; }
+
+/* ── Lifecycle ── */
+.lifecycle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+  position: relative;
+}
+.life-stage {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  border: 2px solid var(--border);
+  background: var(--card);
+  position: relative;
+  min-width: 150px;
+}
+.life-stage .num {
+  position: absolute;
+  top: -12px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--fg);
+  color: var(--bg);
+  font-family: var(--font-mono);
+  font-weight: 800;
+  font-size: 0.75rem;
+  padding: 0.1rem 0.5rem;
+  border: 2px solid var(--border);
+}
+.life-stage h4 {
+  font-weight: 800;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.25rem;
+  margin-top: 0.25rem;
+}
+.life-stage p {
+  font-size: 0.8rem;
+  color: var(--muted-fg);
+}
+.life-arrow {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--primary);
+  flex-shrink: 0;
+}
+.life-stage:nth-child(1) { box-shadow: 4px 4px 0 var(--primary); }
+.life-stage:nth-child(3) { box-shadow: 4px 4px 0 var(--accent); }
+.life-stage:nth-child(5) { box-shadow: 4px 4px 0 var(--secondary); }
+.life-stage:nth-child(7) { box-shadow: 4px 4px 0 var(--success); }
+
+/* ── Formula Box ── */
+.formula-box {
+  background: var(--fg);
+  color: var(--bg);
+  border: 2px solid var(--border);
+  padding: 1.5rem 2rem;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  line-height: 2;
+  box-shadow: 4px 4px 0 var(--accent);
+  margin-top: 1rem;
+  overflow-x: auto;
+}
+.formula-box .comment { color: var(--success); }
+.formula-box .keyword { color: var(--accent); }
+.formula-box .value { color: var(--secondary); }
+
+/* ── Footer ── */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.8rem;
+  color: var(--muted-fg);
+  border-top: 2px solid var(--border);
+  margin-top: 2rem;
+}
+footer a { color: var(--primary); font-weight: 700; text-decoration: none; }
+
+/* ── Responsive ── */
+@media (max-width: 900px) {
+  .why-grid { grid-template-columns: 1fr; }
+  .mem-types { grid-template-columns: repeat(2, 1fr); }
+  .pipeline { flex-direction: column; }
+  .pipe-arrow { transform: rotate(90deg); }
+  .lifecycle { flex-direction: column; }
+  .life-arrow { transform: rotate(90deg); }
+  .hero h1 { font-size: 2rem; }
+}
+@media (max-width: 600px) {
+  .mem-types { grid-template-columns: 1fr; }
+  .container { padding: 1rem; }
+}
+</style>
+</head>
+<body>
+
+<!-- PLACEHOLDER_NAV -->
+<nav>
+  <span class="logo">Replica 蓝图</span>
+  <a href="memory.html" class="active">记忆与上下文</a>
+  <a href="architecture.html">架构与数据流</a>
+  <a href="engineering.html">工程设计</a>
+</nav>
+
+<div class="container">
+
+<!-- Hero -->
+<div class="hero">
+  <h1>AI <span>记忆</span>与上下文</h1>
+  <p>Replica 的核心使命：让 AI 拥有持久、可检索、会进化的记忆系统，而不仅仅是一个无状态的对话窗口。</p>
+</div>
+
+<!-- Section 1: Why Memory -->
+<div class="section">
+  <h2 class="section-title">为什么 AI 需要记忆？ <span class="badge">核心问题</span></h2>
+  <div class="why-grid">
+    <div class="why-card">
+      <span class="icon">🧠</span>
+      <h3>上下文窗口有限</h3>
+      <p>LLM 的上下文窗口是有限的。当对话超过阈值，早期信息会被丢弃。记忆系统让重要信息持久化。</p>
+    </div>
+    <div class="why-card">
+      <span class="icon">🔗</span>
+      <h3>跨会话连续性</h3>
+      <p>用户期望 AI 记住之前的对话。没有记忆，每次对话都是从零开始，无法建立长期关系。</p>
+    </div>
+    <div class="why-card">
+      <span class="icon">🎯</span>
+      <h3>个性化与精准</h3>
+      <p>通过积累用户偏好、事实和行为模式，AI 可以提供越来越精准的个性化回复。</p>
+    </div>
+  </div>
+</div>
+
+<!-- Section 2: Three-Layer Context -->
+<div class="section">
+  <h2 class="section-title">三层上下文架构 <span class="badge">Context Build</span></h2>
+  <p style="margin-bottom:1rem;color:var(--muted-fg);font-size:0.9rem;">每次对话时，系统从三个层次组装上下文注入 LLM，确保 AI 既了解用户的长期信息，又能检索相关历史知识，同时保持当前对话的连贯性。</p>
+
+  <div class="context-layers">
+    <div class="layer">
+      <div class="layer-num">1</div>
+      <div class="layer-content">
+        <h3>Evergreen 常青记忆</h3>
+        <div class="subtitle">EvergreenMemory — 始终注入</div>
+        <p>关于用户的长期事实：偏好、关系、目标等。不需要搜索，全量注入系统提示词。</p>
+        <span class="layer-tag">fact</span>
+        <span class="layer-tag">preference</span>
+        <span class="layer-tag">relationship</span>
+        <span class="layer-tag">goal</span>
+      </div>
+    </div>
+    <div class="layer-inject">注入 System Prompt</div>
+    <div class="layer">
+      <div class="layer-num">2</div>
+      <div class="layer-content">
+        <h3>Knowledge 知识检索</h3>
+        <div class="subtitle">KnowledgeEntry — 按相关性检索</div>
+        <p>从统一知识库中，通过混合搜索（向量 + 全文）检索与当前对话最相关的历史知识片段。</p>
+        <span class="layer-tag">episode</span>
+        <span class="layer-tag">event</span>
+        <span class="layer-tag">foresight</span>
+      </div>
+    </div>
+    <div class="layer-inject">注入 System Prompt</div>
+    <div class="layer">
+      <div class="layer-num">3</div>
+      <div class="layer-content">
+        <h3>Session 会话上下文</h3>
+        <div class="subtitle">Message — 近期未压缩消息</div>
+        <p>当前会话中尚未被压缩的消息历史，保持对话的即时连贯性。超过阈值时触发压缩。</p>
+        <span class="layer-tag">user</span>
+        <span class="layer-tag">assistant</span>
+        <span class="layer-tag">compaction_summary</span>
+      </div>
+    </div>
+    <div class="layer-inject">作为 Messages 历史</div>
+  </div>
+
+  <div class="formula-box">
+    <span class="comment">// 上下文组装伪代码</span><br>
+    <span class="keyword">system_prompt</span> = build_system_prompt(<br>
+    &nbsp;&nbsp;<span class="value">evergreen</span>: 全量用户长期记忆,<br>
+    &nbsp;&nbsp;<span class="value">knowledge</span>: hybrid_search(query=用户消息, top_k=5)<br>
+    )<br>
+    <span class="keyword">messages</span> = [system_prompt] + <span class="value">session.uncompacted_messages</span><br>
+    <span class="keyword">response</span> = LLM.stream(messages)
+  </div>
+</div>
+
+<!-- Section 3: Memory Types -->
+<div class="section">
+  <h2 class="section-title">四种记忆类型 <span class="badge">KnowledgeEntry</span></h2>
+  <div class="mem-types">
+    <div class="mem-type">
+      <h3>情节记忆</h3>
+      <div class="en">Episode</div>
+      <p>对一段对话的叙事性总结，包含主题、参与者和关键情节。类似人类的"回忆"。</p>
+      <div class="example">"用户讨论了周末去杭州旅行的计划，提到想去西湖和灵隐寺。"</div>
+    </div>
+    <div class="mem-type">
+      <h3>事件日志</h3>
+      <div class="en">Event</div>
+      <p>从对话中提取的原子事实，每条都是独立可检索的知识点。</p>
+      <div class="example">"用户的生日是 3 月 15 日"<br>"用户养了一只叫小橘的猫"</div>
+    </div>
+    <div class="mem-type">
+      <h3>前瞻预测</h3>
+      <div class="en">Foresight</div>
+      <p>基于对话推断的未来可能事件，附带时间窗口和证据链。</p>
+      <div class="example">"用户可能在下周需要请假（证据：提到下周有医院预约）"</div>
+    </div>
+    <div class="mem-type">
+      <h3>常青记忆</h3>
+      <div class="en">Evergreen</div>
+      <p>手动或自动提取的长期稳定事实，始终注入上下文，不参与检索排序。</p>
+      <div class="example">"用户偏好简洁的回复风格"<br>"用户是一名后端工程师"</div>
+    </div>
+  </div>
+</div>
+
+<!-- Section 4: Hybrid Retrieval -->
+<div class="section">
+  <h2 class="section-title">混合检索流程 <span class="badge">Hybrid Search</span></h2>
+  <div class="pipeline">
+    <div class="pipe-step" style="background:var(--sidebar);">
+      <h4>用户查询</h4>
+      <p>query text</p>
+    </div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step">
+      <h4>Embedding</h4>
+      <p>query → vector</p>
+    </div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-merge">
+      <div class="pipe-step" style="border-left:4px solid var(--primary);">
+        <h4>向量搜索</h4>
+        <p>cosine similarity</p>
+      </div>
+      <div class="pipe-step" style="border-left:4px solid var(--info);">
+        <h4>全文搜索</h4>
+        <p>ts_rank + tsvector</p>
+      </div>
+    </div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step highlight">
+      <h4>分数融合</h4>
+      <p>0.7×vec + 0.3×text</p>
+    </div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step">
+      <h4>时间衰减</h4>
+      <p>exp(-λ × age)</p>
+    </div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step" style="background:var(--secondary);border-color:var(--border);">
+      <h4>MMR 重排序</h4>
+      <p>多样性 + 相关性</p>
+    </div>
+    <span class="pipe-arrow">→</span>
+    <div class="pipe-step" style="background:var(--success);border-color:var(--border);">
+      <h4>Top-K 结果</h4>
+      <p>default: 10</p>
+    </div>
+  </div>
+
+  <div class="formula-box">
+    <span class="comment">// 分数计算公式</span><br>
+    <span class="keyword">score</span> = <span class="value">0.7</span> × normalize(vector_similarity) + <span class="value">0.3</span> × normalize(text_rank)<br>
+    <span class="keyword">score</span> *= exp(-<span class="value">ln(2)/30</span> × age_in_days) &nbsp;&nbsp;<span class="comment">// 半衰期 30 天</span><br>
+    <span class="keyword">MMR</span>(d) = <span class="value">λ</span> × score(d) - (1-<span class="value">λ</span>) × max_sim(d, selected) &nbsp;&nbsp;<span class="comment">// λ=0.7</span>
+  </div>
+</div>
+
+<!-- Section 5: Memory Lifecycle -->
+<div class="section">
+  <h2 class="section-title">记忆生命周期 <span class="badge">Lifecycle</span></h2>
+  <div class="lifecycle">
+    <div class="life-stage">
+      <span class="num">01</span>
+      <h4>产生</h4>
+      <p>对话触发边界检测，<br>生成 MemCell</p>
+    </div>
+    <span class="life-arrow">→</span>
+    <div class="life-stage">
+      <span class="num">02</span>
+      <h4>提取</h4>
+      <p>三个提取器并发运行，<br>生成知识条目</p>
+    </div>
+    <span class="life-arrow">→</span>
+    <div class="life-stage">
+      <span class="num">03</span>
+      <h4>存储</h4>
+      <p>向量化后写入<br>PostgreSQL + pgvector</p>
+    </div>
+    <span class="life-arrow">→</span>
+    <div class="life-stage">
+      <span class="num">04</span>
+      <h4>检索</h4>
+      <p>混合搜索召回，<br>注入对话上下文</p>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:1.5rem;">
+    <div class="card" style="display:inline-block;max-width:500px;text-align:left;">
+      <div class="card-header">⏳ 时间衰减机制</div>
+      <p>记忆不会被删除，但会随时间自然衰减。半衰期 30 天意味着一个月前的记忆权重降至 50%，两个月前降至 25%。新鲜的记忆自然获得更高优先级。</p>
+    </div>
+  </div>
+</div>
+
+</div>
+
+<footer>
+  <p>Replica — AI 记忆管理系统 · <a href="https://github.com/echonoshy/replica">GitHub</a></p>
+</footer>
+
+</body>
+</html>

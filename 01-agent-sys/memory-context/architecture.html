@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replica 蓝图 — 架构与数据流</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fdfbf7;
+  --fg: #111111;
+  --card: #ffffff;
+  --primary: #ff4911;
+  --secondary: #c4a1ff;
+  --accent: #ffd83d;
+  --success: #00e676;
+  --info: #2979ff;
+  --muted: #f0f0f0;
+  --muted-fg: #555555;
+  --destructive: #ff3366;
+  --border: #111111;
+  --sidebar: #f4f0ea;
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --shadow: 4px 4px 0px 0px var(--border);
+  --shadow-sm: 2px 2px 0px 0px var(--border);
+  --shadow-lg: 8px 8px 0px 0px var(--border);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg);
+  color: var(--fg);
+  line-height: 1.6;
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--fg); color: var(--bg);
+  padding: 0.75rem 2rem;
+  display: flex; align-items: center; gap: 1.5rem;
+  border-bottom: 3px solid var(--primary);
+}
+nav .logo { font-weight: 800; font-size: 1.25rem; letter-spacing: -0.03em; text-transform: uppercase; color: var(--accent); }
+nav a { color: var(--bg); text-decoration: none; font-weight: 600; font-size: 0.85rem; padding: 0.3rem 0.75rem; border: 2px solid transparent; transition: all 0.15s; }
+nav a:hover { border-color: var(--accent); color: var(--accent); }
+nav a.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+.hero { text-align: center; padding: 3rem 2rem; margin-bottom: 2rem; }
+.hero h1 { font-size: 3rem; font-weight: 800; letter-spacing: -0.04em; text-transform: uppercase; line-height: 1.1; margin-bottom: 0.5rem; }
+.hero h1 span { color: var(--primary); }
+.hero p { font-size: 1.1rem; color: var(--muted-fg); max-width: 600px; margin: 0 auto; }
+.section { margin-bottom: 3rem; }
+.section-title {
+  font-size: 1.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: -0.02em;
+  margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid var(--fg);
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.section-title .badge { display: inline-block; background: var(--primary); color: #fff; font-size: 0.7rem; padding: 0.15rem 0.5rem; font-weight: 700; border: 2px solid var(--border); }
+.card { background: var(--card); border: 2px solid var(--border); box-shadow: var(--shadow); padding: 1.5rem; margin-bottom: 1rem; }
+.card-header { font-weight: 800; font-size: 1.1rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+
+/* ── Architecture Overview ── */
+.arch-row {
+  display: flex; align-items: stretch; gap: 0; justify-content: center; flex-wrap: wrap;
+}
+.arch-box {
+  border: 2px solid var(--border); padding: 1.25rem 1.5rem; text-align: center;
+  min-width: 180px; position: relative; background: var(--card);
+}
+.arch-box h3 { font-weight: 800; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 0.25rem; }
+.arch-box p { font-size: 0.75rem; color: var(--muted-fg); font-family: var(--font-mono); }
+.arch-box.frontend { background: var(--accent); box-shadow: var(--shadow); }
+.arch-box.backend { background: var(--primary); color: #fff; box-shadow: var(--shadow); }
+.arch-box.backend p { color: rgba(255,255,255,0.8); }
+.arch-box.database { background: var(--secondary); box-shadow: var(--shadow); }
+.arch-box.llm { background: var(--success); box-shadow: var(--shadow); }
+.arch-arrow {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; font-weight: 800; color: var(--fg); padding: 0 0.5rem;
+}
+
+/* ── Directory Tree ── */
+.tree {
+  background: var(--fg); color: var(--bg); border: 2px solid var(--border);
+  padding: 1.5rem 2rem; font-family: var(--font-mono); font-size: 0.8rem;
+  line-height: 1.8; box-shadow: 4px 4px 0 var(--accent); overflow-x: auto;
+  white-space: pre;
+}
+.tree .dir { color: var(--accent); font-weight: 700; }
+.tree .file { color: var(--bg); }
+.tree .comment { color: var(--success); }
+
+/* ── Flow Diagrams ── */
+.flow { margin-bottom: 2rem; }
+.flow-title {
+  font-weight: 800; font-size: 1rem; text-transform: uppercase;
+  margin-bottom: 1rem; padding: 0.5rem 1rem;
+  background: var(--fg); color: var(--bg); display: inline-block;
+  border: 2px solid var(--border);
+}
+.flow-steps {
+  display: flex; align-items: center; gap: 0; flex-wrap: wrap; justify-content: center;
+}
+.flow-step {
+  background: var(--card); border: 2px solid var(--border); padding: 0.75rem 1rem;
+  text-align: center; min-width: 120px; box-shadow: var(--shadow-sm);
+}
+.flow-step h4 { font-weight: 800; font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.15rem; }
+.flow-step p { font-size: 0.7rem; color: var(--muted-fg); font-family: var(--font-mono); }
+.flow-step.start { background: var(--sidebar); border-left: 4px solid var(--primary); }
+.flow-step.process { background: var(--card); }
+.flow-step.highlight { background: var(--accent); }
+.flow-step.end { background: var(--success); }
+.flow-step.parallel { background: var(--secondary); }
+.flow-arrow { font-size: 1.2rem; font-weight: 800; color: var(--primary); padding: 0 0.15rem; flex-shrink: 0; }
+.flow-branch {
+  display: flex; flex-direction: column; gap: 0.5rem; align-items: center;
+}
+.flow-branch .flow-step { width: 100%; }
+
+/* ── ER Diagram ── */
+.er-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+}
+.er-entity {
+  border: 2px solid var(--border); background: var(--card); box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.er-entity-header {
+  background: var(--fg); color: var(--bg); padding: 0.5rem 1rem;
+  font-weight: 800; font-size: 0.85rem; text-transform: uppercase;
+  display: flex; align-items: center; gap: 0.5rem;
+}
+.er-entity-header .tag {
+  background: var(--accent); color: var(--fg); font-size: 0.6rem;
+  padding: 0.1rem 0.3rem; font-weight: 700;
+}
+.er-fields { padding: 0.75rem 1rem; }
+.er-field {
+  display: flex; justify-content: space-between; align-items: center;
+  padding: 0.2rem 0; font-size: 0.8rem; border-bottom: 1px solid var(--muted);
+}
+.er-field:last-child { border-bottom: none; }
+.er-field .name { font-family: var(--font-mono); font-weight: 600; }
+.er-field .type { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted-fg); }
+.er-field .pk { color: var(--primary); font-weight: 800; }
+.er-field .fk { color: var(--info); font-weight: 700; }
+.er-relations {
+  margin-top: 1.5rem; padding: 1rem; background: var(--sidebar);
+  border: 2px solid var(--border); font-size: 0.85rem;
+}
+.er-relations h4 { font-weight: 800; margin-bottom: 0.5rem; text-transform: uppercase; font-size: 0.85rem; }
+.er-rel { padding: 0.25rem 0; font-family: var(--font-mono); font-size: 0.8rem; }
+.er-rel .arrow { color: var(--primary); font-weight: 800; }
+
+/* ── API Table ── */
+.api-table {
+  width: 100%; border-collapse: collapse; border: 2px solid var(--border);
+  box-shadow: var(--shadow); font-size: 0.85rem;
+}
+.api-table th {
+  background: var(--fg); color: var(--bg); padding: 0.6rem 1rem;
+  text-align: left; font-weight: 800; text-transform: uppercase; font-size: 0.75rem;
+}
+.api-table td {
+  padding: 0.5rem 1rem; border-bottom: 1px solid var(--muted);
+  background: var(--card);
+}
+.api-table tr:hover td { background: var(--sidebar); }
+.method {
+  display: inline-block; font-family: var(--font-mono); font-weight: 800;
+  font-size: 0.7rem; padding: 0.1rem 0.4rem; border: 2px solid var(--border);
+  min-width: 50px; text-align: center;
+}
+.method.get { background: var(--success); }
+.method.post { background: var(--info); color: #fff; }
+.method.delete { background: var(--destructive); color: #fff; }
+.path { font-family: var(--font-mono); font-size: 0.8rem; }
+
+footer {
+  text-align: center; padding: 2rem; font-size: 0.8rem; color: var(--muted-fg);
+  border-top: 2px solid var(--border); margin-top: 2rem;
+}
+footer a { color: var(--primary); font-weight: 700; text-decoration: none; }
+
+@media (max-width: 900px) {
+  .arch-row { flex-direction: column; align-items: center; }
+  .arch-arrow { transform: rotate(90deg); }
+  .flow-steps { flex-direction: column; }
+  .flow-arrow { transform: rotate(90deg); }
+  .er-grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 2rem; }
+}
+@media (max-width: 600px) {
+  .container { padding: 1rem; }
+  .api-table { font-size: 0.75rem; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="logo">Replica 蓝图</span>
+  <a href="memory.html">记忆与上下文</a>
+  <a href="architecture.html" class="active">架构与数据流</a>
+  <a href="engineering.html">工程设计</a>
+</nav>
+
+<div class="container">
+
+<div class="hero">
+  <h1>项目<span>架构</span>与数据流</h1>
+  <p>从整体架构到数据模型，全面展示 Replica 的系统设计。</p>
+</div>
+
+<!-- Section 1: Architecture Overview -->
+<div class="section">
+  <h2 class="section-title">整体架构 <span class="badge">Overview</span></h2>
+  <div class="arch-row">
+    <div class="arch-box frontend">
+      <h3>Frontend</h3>
+      <p>React 19 + Vite 8</p>
+      <p>Tailwind CSS v4</p>
+      <p>:8780</p>
+    </div>
+    <div class="arch-arrow">⇄</div>
+    <div class="arch-box backend">
+      <h3>Backend</h3>
+      <p>FastAPI + SQLAlchemy</p>
+      <p>Python 3.13</p>
+      <p>:8790</p>
+    </div>
+    <div class="arch-arrow">⇄</div>
+    <div class="arch-box database">
+      <h3>Database</h3>
+      <p>PostgreSQL 17</p>
+      <p>pgvector</p>
+      <p>:5432</p>
+    </div>
+    <div class="arch-arrow" style="min-width:40px;">⇄</div>
+    <div class="arch-box llm">
+      <h3>LLM / Embedding</h3>
+      <p>vLLM / OpenRouter</p>
+      <p>OpenAI-compatible</p>
+      <p>:8001 / :8002</p>
+    </div>
+  </div>
+</div>
+
+<!-- Section 2: Directory Structure -->
+<div class="section">
+  <h2 class="section-title">目录结构 <span class="badge">Structure</span></h2>
+  <div class="tree">
+<span class="dir">replica/</span>
+├── <span class="dir">src/replica/</span>              <span class="comment"># Python 后端</span>
+│   ├── <span class="file">main.py</span>               <span class="comment"># FastAPI 入口，注册路由</span>
+│   ├── <span class="file">config.py</span>             <span class="comment"># YAML + Pydantic 配置</span>
+│   ├── <span class="dir">db/</span>                   <span class="comment"># 数据库层</span>
+│   │   └── <span class="file">database.py</span>       <span class="comment"># 引擎、会话工厂、Base</span>
+│   ├── <span class="dir">api/</span>                  <span class="comment"># API 路由层</span>
+│   │   ├── <span class="file">schemas.py</span>        <span class="comment"># Pydantic 请求/响应模型</span>
+│   │   ├── <span class="file">chat.py</span>           <span class="comment"># SSE 流式聊天</span>
+│   │   ├── <span class="file">users.py</span>          <span class="comment"># 用户 CRUD</span>
+│   │   ├── <span class="file">sessions.py</span>       <span class="comment"># 会话管理 + 手动提取/压缩</span>
+│   │   ├── <span class="file">messages.py</span>       <span class="comment"># 消息 CRUD + 自动压缩</span>
+│   │   ├── <span class="file">memory.py</span>         <span class="comment"># Evergreen + 知识搜索 + 上下文构建</span>
+│   │   ├── <span class="file">memorize.py</span>       <span class="comment"># 记忆摄入管道</span>
+│   │   ├── <span class="file">admin.py</span>          <span class="comment"># 数据库表查看</span>
+│   │   └── <span class="file">config.py</span>         <span class="comment"># 运行时配置查看/修改</span>
+│   ├── <span class="dir">models/</span>               <span class="comment"># SQLAlchemy ORM 模型</span>
+│   │   ├── <span class="file">user.py</span>           <span class="comment"># User</span>
+│   │   ├── <span class="file">session.py</span>        <span class="comment"># Session</span>
+│   │   ├── <span class="file">message.py</span>        <span class="comment"># Message + ExtractionStatus</span>
+│   │   ├── <span class="file">memcell.py</span>        <span class="comment"># MemCell 原子记忆单元</span>
+│   │   ├── <span class="file">knowledge_entry.py</span> <span class="comment"># 统一知识表 (episode/event/foresight)</span>
+│   │   ├── <span class="file">evergreen_memory.py</span> <span class="comment"># 长期事实记忆</span>
+│   │   └── <span class="file">user_profile.py</span>   <span class="comment"># 用户画像模型 (deferred)</span>
+│   ├── <span class="dir">services/</span>             <span class="comment"># 业务逻辑层</span>
+│   │   ├── <span class="file">memorize_service.py</span>  <span class="comment"># 记忆摄入管道编排</span>
+│   │   ├── <span class="file">memory_service.py</span>    <span class="comment"># 混合检索 (向量+全文+MMR)</span>
+│   │   ├── <span class="file">context_service.py</span>   <span class="comment"># 三层上下文组装</span>
+│   │   ├── <span class="file">compaction_service.py</span> <span class="comment"># 简单 Token 压缩</span>
+│   │   ├── <span class="file">semantic_compaction_service.py</span> <span class="comment"># LLM 语义压缩</span>
+│   │   ├── <span class="file">extraction_service.py</span> <span class="comment"># 会话记忆提取</span>
+│   │   ├── <span class="file">auto_extraction_service.py</span> <span class="comment"># 定时自动提取</span>
+│   │   ├── <span class="file">embedding_service.py</span> <span class="comment"># 向量化 + Token 计数</span>
+│   │   ├── <span class="file">retrieval_utils.py</span>   <span class="comment"># 检索工具函数</span>
+│   │   └── <span class="file">task_manager.py</span>      <span class="comment"># 异步任务状态管理</span>
+│   ├── <span class="dir">extractors/</span>           <span class="comment"># 记忆提取器</span>
+│   │   ├── <span class="file">__init__.py</span>       <span class="comment"># 数据类型定义 (MemCellData, EpisodeMemory...)</span>
+│   │   ├── <span class="file">memcell_extractor.py</span> <span class="comment"># 边界检测 → MemCell</span>
+│   │   ├── <span class="file">episode_extractor.py</span> <span class="comment"># 情节记忆提取</span>
+│   │   ├── <span class="file">event_log_extractor.py</span> <span class="comment"># 事件日志提取</span>
+│   │   ├── <span class="file">foresight_extractor.py</span> <span class="comment"># 前瞻预测提取</span>
+│   │   └── <span class="file">profile_extractor.py</span> <span class="comment"># 用户画像提取 (deferred)</span>
+│   ├── <span class="dir">providers/</span>            <span class="comment"># 可插拔 Provider</span>
+│   │   ├── <span class="file">llm_provider.py</span>   <span class="comment"># LLM 工厂 (vLLM/OpenRouter)</span>
+│   │   └── <span class="file">embedding_provider.py</span> <span class="comment"># Embedding 工厂</span>
+│   └── <span class="dir">prompts/</span>              <span class="comment"># 提示词模板</span>
+│       ├── <span class="dir">en/</span>               <span class="comment"># 英文 (conv, episode, event_log, foresight, profile, compaction)</span>
+│       └── <span class="dir">zh/</span>               <span class="comment"># 中文 (同结构镜像)</span>
+├── <span class="dir">web/src/</span>                  <span class="comment"># React 前端</span>
+│   ├── <span class="file">main.tsx</span>              <span class="comment"># 应用入口</span>
+│   ├── <span class="file">router.tsx</span>            <span class="comment"># 路由定义 (/ → ChatView, /admin → AdminView)</span>
+│   ├── <span class="dir">views/</span>                <span class="comment"># 页面视图</span>
+│   │   ├── <span class="file">ChatView.tsx</span>      <span class="comment"># 主聊天界面 (三栏布局)</span>
+│   │   └── <span class="file">AdminView.tsx</span>     <span class="comment"># 数据库管理面板</span>
+│   ├── <span class="dir">components/</span>           <span class="comment"># UI 组件</span>
+│   │   ├── <span class="file">ChatPanel.tsx</span>     <span class="comment"># 聊天消息面板 + SSE 流式渲染</span>
+│   │   ├── <span class="file">SessionSidebar.tsx</span> <span class="comment"># 会话列表侧边栏</span>
+│   │   ├── <span class="file">MemoryPanel.tsx</span>   <span class="comment"># 记忆上下文展示面板</span>
+│   │   ├── <span class="file">TokenProgress.tsx</span> <span class="comment"># Token 用量进度条</span>
+│   │   ├── <span class="file">ApiMonitor.tsx</span>    <span class="comment"># API 状态监控</span>
+│   │   ├── <span class="file">JsonViewer.tsx</span>    <span class="comment"># JSON 数据查看器</span>
+│   │   ├── <span class="file">KonamiCode.tsx</span>    <span class="comment"># 彩蛋组件</span>
+│   │   └── <span class="dir">ui/</span>               <span class="comment"># 基础 UI 组件 (button, card, dialog, input...)</span>
+│   ├── <span class="dir">api/</span>                  <span class="comment"># API 客户端层</span>
+│   │   ├── <span class="file">client.ts</span>         <span class="comment"># HTTP 客户端基础配置</span>
+│   │   ├── <span class="file">chat.ts</span>           <span class="comment"># 聊天 API (SSE)</span>
+│   │   ├── <span class="file">memory.ts</span>         <span class="comment"># 记忆 API</span>
+│   │   ├── <span class="file">sessions.ts</span>       <span class="comment"># 会话 API</span>
+│   │   ├── <span class="file">users.ts</span>          <span class="comment"># 用户 API</span>
+│   │   ├── <span class="file">messages.ts</span>       <span class="comment"># 消息 API</span>
+│   │   ├── <span class="file">memorize.ts</span>       <span class="comment"># 记忆摄入 API</span>
+│   │   ├── <span class="file">admin.ts</span>          <span class="comment"># 管理 API</span>
+│   │   └── <span class="file">health.ts</span>         <span class="comment"># 健康检查 API</span>
+│   ├── <span class="dir">store/</span>                <span class="comment"># 状态管理</span>
+│   │   └── <span class="file">app.ts</span>            <span class="comment"># Zustand store (用户/会话/消息状态)</span>
+│   ├── <span class="dir">lib/</span>                  <span class="comment"># 工具库</span>
+│   │   ├── <span class="file">utils.ts</span>          <span class="comment"># 通用工具 (cn 类名合并等)</span>
+│   │   └── <span class="file">clipboard.ts</span>      <span class="comment"># 剪贴板操作</span>
+│   └── <span class="dir">types/</span>                <span class="comment"># TypeScript 类型定义</span>
+│       └── <span class="file">index.ts</span>          <span class="comment"># 全局类型 (User, Session, Message...)</span>
+├── <span class="dir">config/</span>                   <span class="comment"># settings.yaml</span>
+├── <span class="dir">alembic/</span>                  <span class="comment"># 数据库迁移</span>
+└── <span class="dir">docs/</span>                     <span class="comment"># 文档 + 蓝图</span>
+  </div>
+</div>
+
+<!-- Section 3: Data Flows -->
+<div class="section">
+  <h2 class="section-title">核心数据流 <span class="badge">Data Flow</span></h2>
+
+  <!-- Chat Flow -->
+  <div class="flow">
+    <div class="flow-title">聊天流 — Chat Flow</div>
+    <div class="flow-steps">
+      <div class="flow-step start">
+        <h4>用户消息</h4>
+        <p>POST /chat</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step process">
+        <h4>保存消息</h4>
+        <p>Message → DB</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step highlight">
+        <h4>构建上下文</h4>
+        <p>3-layer context</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step process">
+        <h4>调用 LLM</h4>
+        <p>SSE streaming</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step process">
+        <h4>保存回复</h4>
+        <p>assistant msg</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step end">
+        <h4>压缩检查</h4>
+        <p>auto compact</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Memory Extraction Flow -->
+  <div class="flow">
+    <div class="flow-title">记忆提取流 — Extraction Pipeline</div>
+    <div class="flow-steps">
+      <div class="flow-step start">
+        <h4>对话消息</h4>
+        <p>raw messages</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step process">
+        <h4>边界检测</h4>
+        <p>topic boundary</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step highlight">
+        <h4>MemCell</h4>
+        <p>原子记忆单元</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-branch">
+        <div class="flow-step parallel">
+          <h4>Episode 提取</h4>
+          <p>情节记忆</p>
+        </div>
+        <div class="flow-step parallel">
+          <h4>EventLog 提取</h4>
+          <p>原子事实</p>
+        </div>
+        <div class="flow-step parallel">
+          <h4>Foresight 提取</h4>
+          <p>前瞻预测</p>
+        </div>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step process">
+        <h4>向量化</h4>
+        <p>embedding</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step end">
+        <h4>KnowledgeEntry</h4>
+        <p>统一知识库</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Compaction Flow -->
+  <div class="flow">
+    <div class="flow-title">语义压缩流 — Semantic Compaction</div>
+    <div class="flow-steps">
+      <div class="flow-step start">
+        <h4>Token 超阈值</h4>
+        <p>≥ 64000 tokens</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step process">
+        <h4>获取锁</h4>
+        <p>FOR UPDATE</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step process">
+        <h4>消息分段</h4>
+        <p>20 msgs/segment</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step highlight">
+        <h4>LLM 摘要</h4>
+        <p>并行 summarize</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step process">
+        <h4>创建摘要消息</h4>
+        <p>compaction_summary</p>
+      </div>
+      <span class="flow-arrow">→</span>
+      <div class="flow-step end">
+        <h4>标记已压缩</h4>
+        <p>is_compacted=true</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section 4: Data Models -->
+<div class="section">
+  <h2 class="section-title">数据模型 <span class="badge">ER Diagram</span></h2>
+  <div class="er-grid">
+    <div class="er-entity">
+      <div class="er-entity-header">User <span class="tag">users</span></div>
+      <div class="er-fields">
+        <div class="er-field"><span class="name pk">id</span><span class="type">UUID PK</span></div>
+        <div class="er-field"><span class="name">external_id</span><span class="type">VARCHAR</span></div>
+        <div class="er-field"><span class="name">name</span><span class="type">VARCHAR</span></div>
+        <div class="er-field"><span class="name">metadata</span><span class="type">JSONB</span></div>
+        <div class="er-field"><span class="name">created_at</span><span class="type">TIMESTAMPTZ</span></div>
+      </div>
+    </div>
+    <div class="er-entity">
+      <div class="er-entity-header">Session <span class="tag">sessions</span></div>
+      <div class="er-fields">
+        <div class="er-field"><span class="name pk">id</span><span class="type">UUID PK</span></div>
+        <div class="er-field"><span class="name fk">user_id</span><span class="type">UUID FK→users</span></div>
+        <div class="er-field"><span class="name">status</span><span class="type">ENUM active|deleted</span></div>
+        <div class="er-field"><span class="name">token_count</span><span class="type">INT</span></div>
+        <div class="er-field"><span class="name">compaction_count</span><span class="type">INT</span></div>
+      </div>
+    </div>
+    <div class="er-entity">
+      <div class="er-entity-header">Message <span class="tag">messages</span></div>
+      <div class="er-fields">
+        <div class="er-field"><span class="name pk">id</span><span class="type">UUID PK</span></div>
+        <div class="er-field"><span class="name fk">session_id</span><span class="type">UUID FK→sessions</span></div>
+        <div class="er-field"><span class="name">role</span><span class="type">ENUM user|assistant|system</span></div>
+        <div class="er-field"><span class="name">content</span><span class="type">TEXT</span></div>
+        <div class="er-field"><span class="name">token_count</span><span class="type">INT</span></div>
+        <div class="er-field"><span class="name">message_type</span><span class="type">ENUM message|summary</span></div>
+        <div class="er-field"><span class="name">is_compacted</span><span class="type">BOOL</span></div>
+        <div class="er-field"><span class="name">extraction_status</span><span class="type">ENUM pending|extracted</span></div>
+      </div>
+    </div>
+    <div class="er-entity">
+      <div class="er-entity-header">MemCell <span class="tag">memcells</span></div>
+      <div class="er-fields">
+        <div class="er-field"><span class="name pk">id</span><span class="type">UUID PK</span></div>
+        <div class="er-field"><span class="name">user_id</span><span class="type">VARCHAR</span></div>
+        <div class="er-field"><span class="name">timestamp</span><span class="type">TIMESTAMPTZ</span></div>
+        <div class="er-field"><span class="name">summary</span><span class="type">TEXT</span></div>
+        <div class="er-field"><span class="name">original_data</span><span class="type">JSONB</span></div>
+        <div class="er-field"><span class="name">episode</span><span class="type">TEXT</span></div>
+        <div class="er-field"><span class="name">participants</span><span class="type">ARRAY</span></div>
+      </div>
+    </div>
+    <div class="er-entity">
+      <div class="er-entity-header">KnowledgeEntry <span class="tag">knowledge_entries</span></div>
+      <div class="er-fields">
+        <div class="er-field"><span class="name pk">id</span><span class="type">UUID PK</span></div>
+        <div class="er-field"><span class="name">user_id</span><span class="type">VARCHAR</span></div>
+        <div class="er-field"><span class="name">entry_type</span><span class="type">ENUM episode|event|foresight</span></div>
+        <div class="er-field"><span class="name">title</span><span class="type">TEXT</span></div>
+        <div class="er-field"><span class="name">content</span><span class="type">TEXT</span></div>
+        <div class="er-field"><span class="name">embedding</span><span class="type">VECTOR(1024)</span></div>
+        <div class="er-field"><span class="name fk">memcell_id</span><span class="type">UUID FK→memcells</span></div>
+        <div class="er-field"><span class="name">metadata</span><span class="type">JSONB</span></div>
+      </div>
+    </div>
+    <div class="er-entity">
+      <div class="er-entity-header">EvergreenMemory <span class="tag">evergreen_memories</span></div>
+      <div class="er-fields">
+        <div class="er-field"><span class="name pk">id</span><span class="type">UUID PK</span></div>
+        <div class="er-field"><span class="name fk">user_id</span><span class="type">UUID FK→users</span></div>
+        <div class="er-field"><span class="name">category</span><span class="type">ENUM fact|preference|...</span></div>
+        <div class="er-field"><span class="name">content</span><span class="type">TEXT</span></div>
+        <div class="er-field"><span class="name">source</span><span class="type">ENUM manual|extract</span></div>
+        <div class="er-field"><span class="name">confidence</span><span class="type">FLOAT</span></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="er-relations">
+    <h4>实体关系</h4>
+    <div class="er-rel">User <span class="arrow">1 ──→ N</span> Session <span class="arrow">1 ──→ N</span> Message</div>
+    <div class="er-rel">User <span class="arrow">1 ──→ N</span> EvergreenMemory</div>
+    <div class="er-rel">MemCell <span class="arrow">1 ──→ N</span> KnowledgeEntry</div>
+    <div class="er-rel">Message <span class="arrow">──→</span> Message <span style="color:var(--muted-fg)">(parent_id 自引用，用于压缩摘要链接)</span></div>
+  </div>
+</div>
+
+<!-- Section 5: API Routes -->
+<div class="section">
+  <h2 class="section-title">API 路由总览 <span class="badge">REST API</span></h2>
+  <table class="api-table">
+    <thead>
+      <tr><th>方法</th><th>路径</th><th>说明</th><th>模块</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><span class="method get">GET</span></td><td class="path">/health</td><td>健康检查</td><td>main</td></tr>
+      <tr><td><span class="method get">GET</span></td><td class="path">/v1/users</td><td>用户列表</td><td>users</td></tr>
+      <tr><td><span class="method post">POST</span></td><td class="path">/v1/users</td><td>创建用户</td><td>users</td></tr>
+      <tr><td><span class="method get">GET</span></td><td class="path">/v1/users/{id}</td><td>获取用户</td><td>users</td></tr>
+      <tr><td><span class="method delete">DEL</span></td><td class="path">/v1/users/{id}</td><td>删除用户及所有关联数据</td><td>users</td></tr>
+      <tr><td><span class="method post">POST</span></td><td class="path">/v1/users/{id}/sessions</td><td>创建会话</td><td>sessions</td></tr>
+      <tr><td><span class="method get">GET</span></td><td class="path">/v1/users/{id}/sessions</td><td>会话列表</td><td>sessions</td></tr>
+      <tr><td><span class="method delete">DEL</span></td><td class="path">/v1/sessions/{id}</td><td>删除会话</td><td>sessions</td></tr>
+      <tr><td><span class="method post">POST</span></td><td class="path">/v1/sessions/{id}/chat</td><td>SSE 流式聊天</td><td>chat</td></tr>
+      <tr><td><span class="method post">POST</span></td><td class="path">/v1/sessions/{id}/messages</td><td>添加消息</td><td>messages</td></tr>
+      <tr><td><span class="method get">GET</span></td><td class="path">/v1/sessions/{id}/messages</td><td>消息列表</td><td>messages</td></tr>
+      <tr><td><span class="method post">POST</span></td><td class="path">/v1/sessions/{id}/extract-memory</td><td>手动提取记忆</td><td>sessions</td></tr>
+      <tr><td><span class="method post">POST</span></td><td class="path">/v1/sessions/{id}/compact</td><td>手动语义压缩</td><td>sessions</td></tr>
+      <tr><td><span class="method get">GET</span></td><td class="path">/v1/tasks/{id}</td><td>异步任务状态</td><td>sessions</td></tr>
+      <tr><td><span class="method post">POST</span></td><td class="path">/v1/memories</td><td>记忆摄入管道</td><td>memorize</td></tr>
+      <tr><td><span class="method get">GET</span></td><td class="path">/v1/users/{id}/evergreen</td><td>常青记忆列表</td><td>memory</td></tr>
+      <tr><td><span class="method post">POST</span></td><td class="path">/v1/users/{id}/evergreen</td><td>创建常青记忆</td><td>memory</td></tr>
+      <tr><td><span class="method post">POST</span></td><td class="path">/v1/knowledge/search</td><td>知识搜索</td><td>memory</td></tr>
+      <tr><td><span class="method get">GET</span></td><td class="path">/v1/users/{id}/knowledge</td><td>知识条目列表</td><td>memory</td></tr>
+      <tr><td><span class="method post">POST</span></td><td class="path">/v1/context/build</td><td>构建上下文</td><td>memory</td></tr>
+      <tr><td><span class="method get">GET</span></td><td class="path">/v1/admin/tables</td><td>数据库表列表</td><td>admin</td></tr>
+      <tr><td><span class="method get">GET</span></td><td class="path">/v1/admin/tables/{name}</td><td>表数据查看</td><td>admin</td></tr>
+    </tbody>
+  </table>
+</div>
+
+</div>
+
+<footer>
+  <p>Replica — AI 记忆管理系统 · <a href="https://github.com/echonoshy/replica">GitHub</a></p>
+</footer>
+
+</body>
+</html>

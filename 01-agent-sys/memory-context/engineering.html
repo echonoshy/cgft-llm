@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replica 蓝图 — 工程设计</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fdfbf7;
+  --fg: #111111;
+  --card: #ffffff;
+  --primary: #ff4911;
+  --secondary: #c4a1ff;
+  --accent: #ffd83d;
+  --success: #00e676;
+  --info: #2979ff;
+  --muted: #f0f0f0;
+  --muted-fg: #555555;
+  --destructive: #ff3366;
+  --border: #111111;
+  --sidebar: #f4f0ea;
+  --font-sans: 'Space Grotesk', system-ui, sans-serif;
+  --font-mono: 'Space Mono', monospace;
+  --shadow: 4px 4px 0px 0px var(--border);
+  --shadow-sm: 2px 2px 0px 0px var(--border);
+}
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg); color: var(--fg);
+  line-height: 1.6;
+  background-image: radial-gradient(var(--border) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+nav {
+  position: sticky; top: 0; z-index: 100;
+  background: var(--fg); color: var(--bg);
+  padding: 0.75rem 2rem;
+  display: flex; align-items: center; gap: 1.5rem;
+  border-bottom: 3px solid var(--primary);
+}
+nav .logo { font-weight: 800; font-size: 1.25rem; letter-spacing: -0.03em; text-transform: uppercase; color: var(--accent); }
+nav a { color: var(--bg); text-decoration: none; font-weight: 600; font-size: 0.85rem; padding: 0.3rem 0.75rem; border: 2px solid transparent; transition: all 0.15s; }
+nav a:hover { border-color: var(--accent); color: var(--accent); }
+nav a.active { background: var(--primary); color: #fff; border-color: var(--primary); }
+.container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+.hero { text-align: center; padding: 3rem 2rem; margin-bottom: 2rem; }
+.hero h1 { font-size: 3rem; font-weight: 800; letter-spacing: -0.04em; text-transform: uppercase; line-height: 1.1; margin-bottom: 0.5rem; }
+.hero h1 span { color: var(--primary); }
+.hero p { font-size: 1.1rem; color: var(--muted-fg); max-width: 600px; margin: 0 auto; }
+.section { margin-bottom: 3rem; }
+.section-title {
+  font-size: 1.5rem; font-weight: 800; text-transform: uppercase; letter-spacing: -0.02em;
+  margin-bottom: 1.5rem; padding-bottom: 0.5rem; border-bottom: 3px solid var(--fg);
+  display: flex; align-items: center; gap: 0.75rem;
+}
+.section-title .badge { display: inline-block; background: var(--primary); color: #fff; font-size: 0.7rem; padding: 0.15rem 0.5rem; font-weight: 700; border: 2px solid var(--border); }
+.card { background: var(--card); border: 2px solid var(--border); box-shadow: var(--shadow); padding: 1.5rem; margin-bottom: 1rem; }
+.card-header { font-weight: 800; font-size: 1.1rem; margin-bottom: 0.75rem; display: flex; align-items: center; gap: 0.5rem; }
+.card p, .card li { color: var(--muted-fg); font-size: 0.9rem; }
+.card ul { padding-left: 1.25rem; margin-top: 0.5rem; }
+.card li { margin-bottom: 0.25rem; }
+
+/* ── Tech Stack Grid ── */
+.stack-grid {
+  display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem;
+}
+.stack-item {
+  background: var(--card); border: 2px solid var(--border);
+  box-shadow: var(--shadow-sm); padding: 1.25rem;
+  display: flex; gap: 1rem; align-items: flex-start;
+}
+.stack-icon {
+  width: 48px; height: 48px; border: 2px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.5rem; flex-shrink: 0; font-weight: 800;
+}
+.stack-item h3 { font-weight: 800; font-size: 0.9rem; text-transform: uppercase; margin-bottom: 0.15rem; }
+.stack-item .ver { font-family: var(--font-mono); font-size: 0.7rem; color: var(--muted-fg); margin-bottom: 0.25rem; }
+.stack-item p { font-size: 0.8rem; color: var(--muted-fg); }
+
+/* ── Code Block ── */
+.code-block {
+  background: var(--fg); color: var(--bg); border: 2px solid var(--border);
+  padding: 1.25rem 1.5rem; font-family: var(--font-mono); font-size: 0.8rem;
+  line-height: 1.8; box-shadow: 4px 4px 0 var(--accent); overflow-x: auto;
+  margin-top: 1rem;
+}
+.code-block .comment { color: var(--success); }
+.code-block .keyword { color: var(--accent); }
+.code-block .value { color: var(--secondary); }
+.code-block .type { color: var(--primary); }
+
+/* ── Pattern Diagram ── */
+.pattern-row {
+  display: flex; align-items: stretch; gap: 0; justify-content: center; flex-wrap: wrap;
+}
+.pattern-box {
+  border: 2px solid var(--border); padding: 1rem 1.25rem; text-align: center;
+  min-width: 150px; background: var(--card);
+}
+.pattern-box h4 { font-weight: 800; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 0.15rem; }
+.pattern-box p { font-size: 0.7rem; color: var(--muted-fg); font-family: var(--font-mono); }
+.pattern-box.abstract { background: var(--sidebar); border-style: dashed; }
+.pattern-box.impl { background: var(--card); }
+.pattern-box.factory { background: var(--accent); box-shadow: var(--shadow-sm); }
+.pattern-arrow {
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; font-weight: 800; color: var(--primary); padding: 0 0.25rem;
+}
+.pattern-col {
+  display: flex; flex-direction: column; gap: 0.5rem;
+}
+.pattern-col .pattern-box { width: 100%; }
+
+/* ── Config Layers ── */
+.config-layers {
+  display: flex; flex-direction: column; gap: 0;
+}
+.config-layer {
+  display: flex; align-items: stretch; border: 2px solid var(--border); background: var(--card);
+}
+.config-layer + .config-layer { border-top: none; }
+.config-num {
+  width: 50px; display: flex; align-items: center; justify-content: center;
+  font-weight: 800; font-family: var(--font-mono); font-size: 1.2rem;
+  border-right: 2px solid var(--border); flex-shrink: 0;
+}
+.config-layer:nth-child(1) .config-num { background: var(--primary); color: #fff; }
+.config-layer:nth-child(2) .config-num { background: var(--accent); }
+.config-layer:nth-child(3) .config-num { background: var(--secondary); }
+.config-content { padding: 0.75rem 1.25rem; flex: 1; }
+.config-content h4 { font-weight: 800; font-size: 0.85rem; text-transform: uppercase; }
+.config-content p { font-size: 0.8rem; color: var(--muted-fg); }
+.config-content code { font-family: var(--font-mono); background: var(--muted); padding: 0.1rem 0.3rem; border: 1px solid var(--border); font-size: 0.75rem; }
+
+/* ── Concurrency Diagram ── */
+.conc-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem;
+}
+.conc-card {
+  background: var(--card); border: 2px solid var(--border);
+  box-shadow: var(--shadow-sm); padding: 1.25rem; text-align: center;
+}
+.conc-card h4 { font-weight: 800; font-size: 0.85rem; text-transform: uppercase; margin-bottom: 0.5rem; }
+.conc-card p { font-size: 0.8rem; color: var(--muted-fg); }
+.conc-card .mechanism {
+  display: inline-block; margin-top: 0.5rem; padding: 0.25rem 0.75rem;
+  background: var(--fg); color: var(--bg); font-family: var(--font-mono);
+  font-size: 0.7rem; font-weight: 700; border: 2px solid var(--border);
+}
+
+/* ── Frontend Arch ── */
+.fe-grid {
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem;
+}
+.fe-box {
+  background: var(--card); border: 2px solid var(--border);
+  box-shadow: var(--shadow-sm); padding: 1rem; text-align: center;
+}
+.fe-box h4 { font-weight: 800; font-size: 0.8rem; text-transform: uppercase; margin-bottom: 0.25rem; }
+.fe-box p { font-size: 0.75rem; color: var(--muted-fg); }
+.fe-box.view { border-top: 4px solid var(--primary); }
+.fe-box.component { border-top: 4px solid var(--secondary); }
+.fe-box.store { border-top: 4px solid var(--accent); }
+.fe-box.api { border-top: 4px solid var(--success); }
+
+footer {
+  text-align: center; padding: 2rem; font-size: 0.8rem; color: var(--muted-fg);
+  border-top: 2px solid var(--border); margin-top: 2rem;
+}
+footer a { color: var(--primary); font-weight: 700; text-decoration: none; }
+
+@media (max-width: 900px) {
+  .stack-grid { grid-template-columns: 1fr; }
+  .pattern-row { flex-direction: column; align-items: center; }
+  .pattern-arrow { transform: rotate(90deg); }
+  .conc-grid { grid-template-columns: 1fr; }
+  .fe-grid { grid-template-columns: repeat(2, 1fr); }
+  .hero h1 { font-size: 2rem; }
+}
+@media (max-width: 600px) {
+  .container { padding: 1rem; }
+  .fe-grid { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <span class="logo">Replica 蓝图</span>
+  <a href="memory.html">记忆与上下文</a>
+  <a href="architecture.html">架构与数据流</a>
+  <a href="engineering.html" class="active">工程设计</a>
+</nav>
+
+<div class="container">
+
+<div class="hero">
+  <h1><span>工程</span>设计</h1>
+  <p>技术选型、设计模式、并发控制和系统可靠性的工程决策。</p>
+</div>
+
+<!-- Section 1: Tech Stack -->
+<div class="section">
+  <h2 class="section-title">技术栈 <span class="badge">Tech Stack</span></h2>
+  <div class="stack-grid">
+    <div class="stack-item">
+      <div class="stack-icon" style="background:var(--accent);">Py</div>
+      <div>
+        <h3>Python 后端</h3>
+        <div class="ver">Python 3.13 + FastAPI + SQLAlchemy 2.0</div>
+        <p>异步优先架构。FastAPI 提供自动 OpenAPI 文档和类型验证，SQLAlchemy 2.0 的 async 支持配合 asyncpg 驱动。</p>
+      </div>
+    </div>
+    <div class="stack-item">
+      <div class="stack-icon" style="background:var(--secondary);">PG</div>
+      <div>
+        <h3>PostgreSQL + pgvector</h3>
+        <div class="ver">PostgreSQL 17 + pgvector extension</div>
+        <p>关系型数据与向量索引统一存储。无需额外的向量数据库，降低运维复杂度。支持 cosine distance 索引加速。</p>
+      </div>
+    </div>
+    <div class="stack-item">
+      <div class="stack-icon" style="background:var(--success);">AI</div>
+      <div>
+        <h3>LLM / Embedding</h3>
+        <div class="ver">vLLM / OpenRouter — OpenAI-compatible API</div>
+        <p>通过 Provider 工厂模式抽象，支持本地 vLLM 部署和云端 OpenRouter。统一的 OpenAI 兼容协议。</p>
+      </div>
+    </div>
+    <div class="stack-item">
+      <div class="stack-icon" style="background:var(--primary);color:#fff;">Re</div>
+      <div>
+        <h3>React 前端</h3>
+        <div class="ver">React 19 + Vite 8 + Tailwind CSS v4 + Bun</div>
+        <p>Neo-brutalist 设计风格。Tailwind v4 CSS-first 配置，Zustand 状态管理，SSE 流式渲染。</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Section 2: Provider Factory Pattern -->
+<div class="section">
+  <h2 class="section-title">Provider 工厂模式 <span class="badge">Design Pattern</span></h2>
+  <div class="card">
+    <div class="card-header">可插拔的 LLM 和 Embedding 提供者</div>
+    <p>通过抽象基类 + 工厂注册表实现 Provider 的热插拔，新增 Provider 只需实现接口并注册。</p>
+  </div>
+
+  <div class="pattern-row">
+    <div class="pattern-box abstract">
+      <h4>LLMProvider</h4>
+      <p>abstract base class</p>
+      <p>generate(prompt) → str</p>
+    </div>
+    <div class="pattern-arrow">←</div>
+    <div class="pattern-col">
+      <div class="pattern-box impl">
+        <h4>VLLMProvider</h4>
+        <p>OpenAI-compatible</p>
+      </div>
+      <div class="pattern-box impl">
+        <h4>OpenRouterProvider</h4>
+        <p>extends VLLM</p>
+      </div>
+    </div>
+    <div class="pattern-arrow">←</div>
+    <div class="pattern-box factory">
+      <h4>Factory</h4>
+      <p>_PROVIDER_REGISTRY</p>
+      <p>get_llm_provider()</p>
+    </div>
+    <div class="pattern-arrow">←</div>
+    <div class="pattern-box" style="background:var(--sidebar);">
+      <h4>Config</h4>
+      <p>settings.llm.provider</p>
+      <p>"vllm" | "openrouter"</p>
+    </div>
+  </div>
+
+  <div class="code-block">
+    <span class="comment"># providers/llm_provider.py</span><br>
+    <span class="keyword">class</span> <span class="type">LLMProvider</span>(ABC):<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">async def</span> generate(self, prompt, *, temperature, max_tokens) -> <span class="type">str</span>: ...<br><br>
+    <span class="keyword">_PROVIDER_REGISTRY</span> = {<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="value">"vllm"</span>: VLLMProvider,<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="value">"openai"</span>: VLLMProvider, &nbsp;<span class="comment"># 同协议</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="value">"openrouter"</span>: OpenRouterProvider,<br>
+    }<br><br>
+    <span class="keyword">def</span> get_llm_provider() -> <span class="type">LLMProvider</span>:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;cls = _PROVIDER_REGISTRY[settings.llm.provider]<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span> cls(settings.llm) &nbsp;<span class="comment"># 单例缓存</span>
+  </div>
+</div>
+
+<!-- Section 3: Async Task Management -->
+<div class="section">
+  <h2 class="section-title">异步任务管理 <span class="badge">Async Tasks</span></h2>
+  <div class="conc-grid">
+    <div class="conc-card">
+      <h4>后台语义压缩</h4>
+      <p>聊天后自动检查 Token 阈值，超过时 fire-and-forget 启动后台压缩任务，不阻塞用户响应。</p>
+      <span class="mechanism">asyncio.create_task()</span>
+    </div>
+    <div class="conc-card">
+      <h4>手动压缩任务</h4>
+      <p>API 立即返回 task_id，客户端轮询 GET /tasks/{id} 获取进度。支持 processing / completed / failed 状态。</p>
+      <span class="mechanism">TaskManager</span>
+    </div>
+    <div class="conc-card">
+      <h4>自动提取调度器</h4>
+      <p>每小时扫描不活跃会话（24h+），自动提取未处理消息的记忆。后台 while True 循环。</p>
+      <span class="mechanism">asyncio.sleep(3600)</span>
+    </div>
+  </div>
+
+  <div class="code-block">
+    <span class="comment"># 异步任务生命周期</span><br>
+    <span class="keyword">1.</span> API 收到请求 → 创建 Task(status=<span class="value">pending</span>)<br>
+    <span class="keyword">2.</span> asyncio.create_task() → status=<span class="value">processing</span><br>
+    <span class="keyword">3.</span> 后台任务独立 DB session → 避免连接冲突<br>
+    <span class="keyword">4.</span> 完成 → status=<span class="value">completed</span> + result JSON<br>
+    <span class="keyword">5.</span> 失败 → status=<span class="value">failed</span> + error message
+  </div>
+</div>
+
+<!-- Section 4: Concurrency Control -->
+<div class="section">
+  <h2 class="section-title">并发控制 <span class="badge">Concurrency</span></h2>
+  <div class="card">
+    <div class="card-header">防止重复压缩的锁机制</div>
+    <p>多个请求可能同时触发同一会话的压缩。系统使用 PostgreSQL 行级锁确保同一时刻只有一个压缩任务在执行。</p>
+    <ul>
+      <li><code style="font-family:var(--font-mono);background:var(--muted);padding:0.1rem 0.3rem;border:1px solid var(--border);font-size:0.8rem;">SELECT ... FOR UPDATE</code> — 获取会话行的排他锁</li>
+      <li><code style="font-family:var(--font-mono);background:var(--muted);padding:0.1rem 0.3rem;border:1px solid var(--border);font-size:0.8rem;">skip_locked=True</code> — 如果已被锁定，立即跳过而不等待</li>
+      <li>后台任务使用独立的 <code style="font-family:var(--font-mono);background:var(--muted);padding:0.1rem 0.3rem;border:1px solid var(--border);font-size:0.8rem;">async_session()</code> 避免与请求共享连接</li>
+    </ul>
+  </div>
+
+  <div class="code-block">
+    <span class="comment"># 并发安全的压缩检查</span><br>
+    <span class="keyword">locked</span> = <span class="keyword">await</span> db.execute(<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;select(Session)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;.where(Session.id == session.id)<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;.<span class="type">with_for_update</span>(<span class="value">skip_locked=True</span>)<br>
+    )<br>
+    <span class="keyword">if</span> locked.scalar_one_or_none() <span class="keyword">is</span> <span class="value">None</span>:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="comment"># 已被其他任务锁定，安全跳过</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;<span class="keyword">return</span>
+  </div>
+</div>
+
+<!-- Section 5: Config System -->
+<div class="section">
+  <h2 class="section-title">配置系统 <span class="badge">Configuration</span></h2>
+  <div class="config-layers">
+    <div class="config-layer">
+      <div class="config-num">1</div>
+      <div class="config-content">
+        <h4>YAML 基础配置</h4>
+        <p><code>config/settings.yaml</code> — 所有配置的主要来源。分为 llm / embedding / memory / compaction / chunking / search 六个区块。</p>
+      </div>
+    </div>
+    <div class="config-layer">
+      <div class="config-num">2</div>
+      <div class="config-content">
+        <h4>Pydantic Settings 验证</h4>
+        <p><code>Settings(BaseSettings)</code> — 嵌套 BaseModel 子配置，提供类型验证、默认值和属性访问器。</p>
+      </div>
+    </div>
+    <div class="config-layer">
+      <div class="config-num">3</div>
+      <div class="config-content">
+        <h4>环境变量覆盖</h4>
+        <p>前缀 <code>REPLICA_</code> 的环境变量可覆盖任何配置项。优先级：环境变量 > YAML > 默认值。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="code-block">
+    <span class="comment"># config/settings.yaml 结构</span><br>
+    <span class="keyword">database</span>:<br>
+    &nbsp;&nbsp;<span class="value">url</span>: postgresql+asyncpg://...<br>
+    <span class="keyword">llm</span>:<br>
+    &nbsp;&nbsp;<span class="value">provider</span>: vllm<br>
+    &nbsp;&nbsp;<span class="value">model</span>: Qwen/Qwen3-4B<br>
+    &nbsp;&nbsp;<span class="value">temperature</span>: 0.3<br>
+    <span class="keyword">embedding</span>:<br>
+    &nbsp;&nbsp;<span class="value">provider</span>: vllm<br>
+    &nbsp;&nbsp;<span class="value">model</span>: Qwen/Qwen3-Embedding-4B<br>
+    &nbsp;&nbsp;<span class="value">dimensions</span>: 1024<br>
+    <span class="keyword">memory</span>:<br>
+    &nbsp;&nbsp;<span class="value">language</span>: en<br>
+    &nbsp;&nbsp;<span class="value">min_messages_for_extraction</span>: 3<br>
+    <span class="keyword">search</span>:<br>
+    &nbsp;&nbsp;<span class="value">vector_weight</span>: 0.7<br>
+    &nbsp;&nbsp;<span class="value">mmr_enabled</span>: true
+  </div>
+</div>
+
+<!-- Section 6: Database Migration -->
+<div class="section">
+  <h2 class="section-title">数据库迁移 <span class="badge">Alembic</span></h2>
+  <div class="card">
+    <div class="card-header">Alembic 版本化迁移</div>
+    <p>使用 Alembic 管理数据库 schema 变更，确保开发和生产环境的数据库结构一致。</p>
+    <ul>
+      <li>迁移脚本存储在 <code style="font-family:var(--font-mono);background:var(--muted);padding:0.1rem 0.3rem;border:1px solid var(--border);font-size:0.8rem;">alembic/versions/</code></li>
+      <li>自动检测 SQLAlchemy 模型变更生成迁移</li>
+      <li>pgvector extension 在应用启动时自动创建</li>
+      <li>支持 upgrade / downgrade 双向迁移</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Section 7: Frontend Architecture -->
+<div class="section">
+  <h2 class="section-title">前端架构 <span class="badge">Frontend</span></h2>
+  <div class="fe-grid">
+    <div class="fe-box view">
+      <h4>Views</h4>
+      <p>ChatView — 主聊天界面<br>AdminView — 数据库管理</p>
+    </div>
+    <div class="fe-box component">
+      <h4>Components</h4>
+      <p>SessionSidebar<br>ChatPanel<br>MemoryPanel<br>TokenProgress</p>
+    </div>
+    <div class="fe-box store">
+      <h4>Store</h4>
+      <p>Zustand app store<br>用户、会话、消息状态<br>选中态管理</p>
+    </div>
+    <div class="fe-box api">
+      <h4>API Layer</h4>
+      <p>chat / memory / sessions<br>users / admin / health<br>SSE 流式客户端</p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:1rem;">
+    <div class="card-header">前端关键设计决策</div>
+    <ul>
+      <li><strong>SSE 流式渲染</strong> — 聊天使用 Server-Sent Events，逐 token 渲染，用户体验流畅</li>
+      <li><strong>三栏布局</strong> — 左侧会话列表 + 中间聊天面板 + 右侧记忆面板，可拖拽调整宽度</li>
+      <li><strong>Neo-Brutalist 设计</strong> — 粗边框、硬阴影、高对比度配色、点阵背景，风格鲜明</li>
+      <li><strong>Tailwind CSS v4</strong> — CSS-first 配置，@theme 指令定义设计 token，零 JS 配置文件</li>
+      <li><strong>实时上下文展示</strong> — 聊天时实时显示使用了哪些 Evergreen 和 Knowledge 条目</li>
+    </ul>
+  </div>
+</div>
+
+<!-- Section 8: Memory Extraction Pipeline Detail -->
+<div class="section">
+  <h2 class="section-title">提取器并发设计 <span class="badge">Extractors</span></h2>
+  <div class="card">
+    <div class="card-header">三提取器并发执行</div>
+    <p>从 MemCell 中并发提取三种类型的知识，最大化利用 LLM 调用时间。每个提取器独立运行，互不依赖。</p>
+  </div>
+
+  <div class="code-block">
+    <span class="comment"># memorize_service.py — 并发提取</span><br>
+    <span class="keyword">episode</span>, <span class="keyword">event_log</span>, <span class="keyword">foresights</span> = <span class="keyword">await</span> asyncio.gather(<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;self.episode_extractor.<span class="type">extract_memory</span>(req), &nbsp;&nbsp;<span class="comment"># → 情节记忆</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;self.event_log_extractor.<span class="type">extract_memory</span>(req), <span class="comment"># → 原子事实列表</span><br>
+    &nbsp;&nbsp;&nbsp;&nbsp;self.foresight_extractor.<span class="type">extract_memory</span>(req), <span class="comment"># → 前瞻预测列表</span><br>
+    )<br><br>
+    <span class="comment"># 全部写入统一的 knowledge_entries 表</span><br>
+    <span class="keyword">for</span> result <span class="keyword">in</span> [episode, *event_log.facts, *foresights]:<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;db.add(KnowledgeEntry(<span class="value">...</span>))
+  </div>
+</div>
+
+<!-- Section 9: Prompt System -->
+<div class="section">
+  <h2 class="section-title">多语言提示词 <span class="badge">Prompts</span></h2>
+  <div class="card">
+    <div class="card-header">双语提示词模板系统</div>
+    <p>所有 LLM 提示词按功能和语言组织，支持中英文切换。通过 <code style="font-family:var(--font-mono);background:var(--muted);padding:0.1rem 0.3rem;border:1px solid var(--border);font-size:0.8rem;">settings.memory.language</code> 配置切换。</p>
+    <ul>
+      <li><strong>prompts/en/</strong> — 英文提示词（conv, episode, event_log, foresight, profile, compaction）</li>
+      <li><strong>prompts/zh/</strong> — 中文提示词（同结构镜像）</li>
+      <li>每个提取器根据语言设置动态加载对应模板</li>
+      <li>提示词使用 Python f-string 模板，变量通过 .format() 注入</li>
+    </ul>
+  </div>
+</div>
+
+</div>
+
+<footer>
+  <p>Replica — AI 记忆管理系统 · <a href="https://github.com/echonoshy/replica">GitHub</a></p>
+</footer>
+
+</body>
+</html>

@@ -44,6 +44,7 @@
 
 | 序号 | 项目 | 代码文档 | 视频教程 | 时长 |
 | :--- | :--- | :--- | :--- | :--- |
+| 2 | AI记忆与上下文 | [文档][ref_agent_2_doc] | [![bilibili][img_agent_2_bili]][ref_agent_2_bili] [![youtube][img_agent_2_yt]][ref_agent_2_yt] | <kbd><small>26:43</small></kbd> |
 | 1 | Agent 服务架构设计 | [文档][ref_agent_1_doc] | [![bilibili][img_agent_1_bili]][ref_agent_1_bili] [![youtube][img_agent_1_yt]][ref_agent_1_yt] | <kbd><small>7:32</small></kbd> |
 
 ## 💡 2. 大模型核心技术
@@ -135,6 +136,12 @@
 [ref_how_to_ask]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
 
 <!-- Agent 智能体系统 -->
+[img_agent_2_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1HFDSBPEBq
+[img_agent_2_yt]: https://img.shields.io/youtube/views/_NBTg4G2WO4?style=social
+[ref_agent_2_doc]: https://htmlpreview.github.io/?https://github.com/echonoshy/cgft-llm/blob/master/01-agent-sys/memory-context/memory.html
+[ref_agent_2_bili]: https://www.bilibili.com/video/BV1HFDSBPEBq
+[ref_agent_2_yt]: https://youtu.be/_NBTg4G2WO4
+
 [img_agent_1_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1A8DeBbE5f
 [img_agent_1_yt]: https://img.shields.io/youtube/views/WkAFAzAKM1s?style=social
 [ref_agent_1_doc]: https://htmlpreview.github.io/?https://github.com/echonoshy/cgft-llm/blob/master/01-agent-sys/agent-service-architecture.html
