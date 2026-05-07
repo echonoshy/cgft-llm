@@ -8,10 +8,15 @@
   ![GitHub forks][img_github_forks]
   ![GitHub watchers][img_github_watchers]
   ![GitHub repo size][img_github_size]
-  ![GitHub language count][img_github_lang_count]
-  ![GitHub top language][img_github_top_lang]
   ![GitHub last commit][img_github_last_commit]
-  
+
+  <br>
+
+  **多平台同步与生态收录**
+
+  本项目不仅在 GitHub 持续迭代，也已同步入驻 [AtomGit][ref_atomgit] 开源社区（[![AtomGit Star][img_atomgit_star]][ref_atomgit]）。  
+  同时，我们很荣幸被 [ShyPD AI Tools][ref_shypd] 收录，与众多优秀的 AI 工具共同探索前沿技术。
+
 </div>
 
 # 📌 动手做大模型系列
@@ -123,13 +128,14 @@
 <!-- 底部链接引用区，使源码保持整洁 -->
 
 <!-- GitHub 徽章 -->
-[img_github_stars]: https://img.shields.io/github/stars/echonoshy/cgft-llm?style=social
-[img_github_forks]: https://img.shields.io/github/forks/echonoshy/cgft-llm?style=social
-[img_github_watchers]: https://img.shields.io/github/watchers/echonoshy/cgft-llm?style=social
-[img_github_size]: https://img.shields.io/github/repo-size/echonoshy/cgft-llm
-[img_github_lang_count]: https://img.shields.io/github/languages/count/echonoshy/cgft-llm
-[img_github_top_lang]: https://img.shields.io/github/languages/top/echonoshy/cgft-llm
-[img_github_last_commit]: https://img.shields.io/github/last-commit/echonoshy/cgft-llm?color=red
+[img_github_stars]: https://img.shields.io/github/stars/echonoshy/cgft-llm?style=flat-square
+[img_github_forks]: https://img.shields.io/github/forks/echonoshy/cgft-llm?style=flat-square
+[img_github_watchers]: https://img.shields.io/github/watchers/echonoshy/cgft-llm?style=flat-square
+[img_github_size]: https://img.shields.io/github/repo-size/echonoshy/cgft-llm?style=flat-square
+[img_github_last_commit]: https://img.shields.io/github/last-commit/echonoshy/cgft-llm?style=flat-square&color=red
+[img_atomgit_star]: https://atomgit.com/echonoshy/cgft-llm/star/badge.svg
+[ref_atomgit]: https://atomgit.com/echonoshy/cgft-llm
+[ref_shypd]: https://shypd.ai/tools/cgft-llm
 
 <!-- 通用链接 -->
 [img_feishu]: https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6-%E9%AD%94%E7%8E%8B%E5%A4%A7%E4%BA%BA%E7%94%B3%E8%AF%B7%E6%B7%BB%E5%8A%A0%E4%BD%A0%E4%B8%BA%E8%81%94%E7%B3%BB%E4%BA%BA-00D6B9?style=flat-square
