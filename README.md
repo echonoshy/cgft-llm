@@ -144,10 +144,10 @@
 
 <!-- Agent 智能体系统 -->
 [img_agent_3_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1TqRvB7E31
-[img_agent_3_yt]: https://img.shields.io/youtube/views/ZdY8I1xBZ_s?style=social
+[img_agent_3_yt]: https://img.shields.io/youtube/views/zpcU3JKKXF4?style=social
 [ref_agent_3_doc]: https://echonoshy.github.io/ripple/pages/agent-system-architecture.html
 [ref_agent_3_bili]: https://www.bilibili.com/video/BV1TqRvB7E31
-[ref_agent_3_yt]: https://youtu.be/zpcU3JKKXF4
+[ref_agent_3_yt]: https://www.youtube.com/watch?v=zpcU3JKKXF4
 
 [img_agent_2_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1HFDSBPEBq
 [img_agent_2_yt]: https://img.shields.io/youtube/views/_NBTg4G2WO4?style=social
