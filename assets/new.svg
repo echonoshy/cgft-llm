@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="20" viewBox="0 0 48 20" role="img" aria-labelledby="title">
+  <title id="title">NEW</title>
+  <rect x="8" y="1" width="40" height="18" rx="5" fill="#F3BD4D"/>
+  <text x="28" y="14" text-anchor="middle" fill="#202B50"
+        font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" letter-spacing=".6">NEW</text>
+</svg>

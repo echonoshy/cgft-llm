@@ -45,7 +45,7 @@
 
 ---
 
-## 📚 Agent 记忆深度拆解
+## 📚 Agent 记忆深度拆解![最新系列][img_new]
 
 五集精读 Anthropic 的 [《The components of agent memory》][ref_memory_article]。从一次会话结束后留下的笔记，讲到多个 Agent 怎样共同维护一份 Wiki。也可以在 [B 站合集][ref_memory_collection] 连续观看。
 
@@ -151,6 +151,7 @@ YouTube 播放量由 [Return YouTube Dislike][ref_yt_counts] 提供，数字会�
 [ref_how_to_ask]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
 
 <!-- Anthropic 研究精读 -->
+[img_new]: assets/new.svg
 [ref_memory_article]: https://www.anthropic.com/research/components-of-agent-memory
 [ref_memory_collection]: https://space.bilibili.com/65742859/lists/9574988?type=season
 
