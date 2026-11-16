@@ -19,16 +19,12 @@
 
 </div>
 
-# 📌 动手做大模型系列
+# <img src="assets/cgft-llm-logo.png" width="48" height="48" align="middle" alt="" /> 动手做大模型系列
 
 如果你在实操的过程中遇到问题，请在对应的视频下方留言。
 复现遇到bug，请描述：
 1. 运行环境
 2. 对应的代码、日志和报错截图
-
-<p align="center">
-  <img src="assets/cgft-llm-logo.png" width="128" alt="cgft-llm 帆船 Logo"/>
-</p>
 
 💬 如果你有好玩的想法，欢迎来找我聊聊：  
 [![Feishu][img_feishu]][ref_feishu]
@@ -53,13 +49,13 @@
 
 五集精读 Anthropic 的 [《The components of agent memory》][ref_memory_article]。从一次会话结束后留下的笔记，讲到多个 Agent 怎样共同维护一份 Wiki。也可以在 [B 站合集][ref_memory_collection] 连续观看。
 
-| 期数 | 主题 · 原文 | 视频教程 · 时长 |
-| :---: | :--- | :--- |
-| 1/5 | [会话结束后，记忆去哪了？][ref_memory_article] | [![B站播放量][img_memory_1_bili]][ref_memory_1_bili] [![YouTube 播放量][img_memory_1_yt]][ref_memory_1_yt] <kbd>15:51</kbd> |
-| 2/5 | [哪些经验值得写进笔记？][ref_memory_2_doc] | [![B站播放量][img_memory_2_bili]][ref_memory_2_bili] [![YouTube 播放量][img_memory_2_yt]][ref_memory_2_yt] <kbd>11:38</kbd> |
-| 3/5 | [Dreaming 如何纠正错误记忆？][ref_memory_3_doc] | [![B站播放量][img_memory_3_bili]][ref_memory_3_bili] [![YouTube 播放量][img_memory_3_yt]][ref_memory_3_yt] <kbd>6:01</kbd> |
-| 4/5 | [有了搜索，为何还要 Wiki？][ref_memory_4_doc] | [![B站播放量][img_memory_4_bili]][ref_memory_4_bili] [![YouTube 播放量][img_memory_4_yt]][ref_memory_4_yt] <kbd>9:35</kbd> |
-| 5/5 | [多个 Agent 一起写 Wiki，为何会漏记？][ref_memory_5_doc] | [![B站播放量][img_memory_5_bili]][ref_memory_5_bili] [![YouTube 播放量][img_memory_5_yt]][ref_memory_5_yt] <kbd>6:03</kbd> |
+| 期数 | 主题 · 原文 | 视频教程 | 时长 |
+| :---: | :--- | :--- | :---: |
+| 1/5 | [会话结束后，记忆去哪了？][ref_memory_article] | [![B站播放量][img_memory_1_bili]][ref_memory_1_bili] [![YouTube 播放量][img_memory_1_yt]][ref_memory_1_yt] | <kbd>15:51</kbd> |
+| 2/5 | [哪些经验值得写进笔记？][ref_memory_2_doc] | [![B站播放量][img_memory_2_bili]][ref_memory_2_bili] [![YouTube 播放量][img_memory_2_yt]][ref_memory_2_yt] | <kbd>11:38</kbd> |
+| 3/5 | [Dreaming 如何纠正错误记忆？][ref_memory_3_doc] | [![B站播放量][img_memory_3_bili]][ref_memory_3_bili] [![YouTube 播放量][img_memory_3_yt]][ref_memory_3_yt] | <kbd>6:01</kbd> |
+| 4/5 | [有了搜索，为何还要 Wiki？][ref_memory_4_doc] | [![B站播放量][img_memory_4_bili]][ref_memory_4_bili] [![YouTube 播放量][img_memory_4_yt]][ref_memory_4_yt] | <kbd>9:35</kbd> |
+| 5/5 | [多个 Agent 一起写 Wiki，为何会漏记？][ref_memory_5_doc] | [![B站播放量][img_memory_5_bili]][ref_memory_5_bili] [![YouTube 播放量][img_memory_5_yt]][ref_memory_5_yt] | <kbd>6:03</kbd> |
 
 ## 📒 1. Agent 智能体系统
 > 探索 Agent 架构设计与系统落地，最新连载中...
