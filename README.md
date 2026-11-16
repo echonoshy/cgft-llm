@@ -19,7 +19,7 @@
 
 </div>
 
-# <img src="assets/cgft-llm-logo.png" width="48" height="48" align="middle" alt="" /> 动手做大模型系列
+# <sup><img src="assets/cgft-llm-logo.png" width="64" height="64" align="middle" alt="" /></sup> 动手做大模型系列
 
 如果你在实操的过程中遇到问题，请在对应的视频下方留言。
 复现遇到bug，请描述：
