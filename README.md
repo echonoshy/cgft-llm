@@ -39,6 +39,7 @@
 ---
 
 ### 📑 快速导航
+- [Anthropic 研究精读 · Agent 记忆深度拆解](#-agent-记忆深度拆解)
 - [1. Agent 智能体系统](#-1-agent-智能体系统)
 - [2. 大模型核心技术](#-2-大模型核心技术)
 - [3. 动手加入开源](#-3-动手加入开源)
@@ -47,6 +48,18 @@
 - [6. 番外篇](#-6-番外篇)
 
 ---
+
+## 📚 Agent 记忆深度拆解
+
+五集精读 Anthropic 的 [《The components of agent memory》][ref_memory_article]。从一次会话结束后留下的笔记，讲到多个 Agent 怎样共同维护一份 Wiki。也可以在 [B 站合集][ref_memory_collection] 连续观看。
+
+| 期数 | 主题 · 原文 | 视频教程 · 时长 |
+| :---: | :--- | :--- |
+| 1/5 | [会话结束后，记忆去哪了？][ref_memory_article] | [![B站播放量][img_memory_1_bili]][ref_memory_1_bili] [![YouTube 播放量][img_memory_1_yt]][ref_memory_1_yt] <kbd>15:51</kbd> |
+| 2/5 | [哪些经验值得写进笔记？][ref_memory_2_doc] | [![B站播放量][img_memory_2_bili]][ref_memory_2_bili] [![YouTube 播放量][img_memory_2_yt]][ref_memory_2_yt] <kbd>11:38</kbd> |
+| 3/5 | [Dreaming 如何纠正错误记忆？][ref_memory_3_doc] | [![B站播放量][img_memory_3_bili]][ref_memory_3_bili] [![YouTube 播放量][img_memory_3_yt]][ref_memory_3_yt] <kbd>6:01</kbd> |
+| 4/5 | [有了搜索，为何还要 Wiki？][ref_memory_4_doc] | [![B站播放量][img_memory_4_bili]][ref_memory_4_bili] [![YouTube 播放量][img_memory_4_yt]][ref_memory_4_yt] <kbd>9:35</kbd> |
+| 5/5 | [多个 Agent 一起写 Wiki，为何会漏记？][ref_memory_5_doc] | [![B站播放量][img_memory_5_bili]][ref_memory_5_bili] [![YouTube 播放量][img_memory_5_yt]][ref_memory_5_yt] <kbd>6:03</kbd> |
 
 ## 📒 1. Agent 智能体系统
 > 探索 Agent 架构设计与系统落地，最新连载中...
@@ -65,12 +78,6 @@
 | 21 | fastmcp 实现mcp服务端和客户端 | [文档](#) | [![bilibili][img_llm_21_bili]][ref_llm_21_bili] [![YouTube 播放量][img_llm_21_yt]][ref_llm_21_yt] | <kbd><small>26:01</small></kbd> |
 | 20 | langfuse llm服务监控平台 | [文档][ref_llm_20_doc] | [![bilibili][img_llm_20_bili]][ref_llm_20_bili] [![YouTube 播放量][img_llm_20_yt]][ref_llm_20_yt] | <kbd><small>26:15</small></kbd> |
 | 19 | 构建高效RAG知识库 | [文档][ref_llm_19_doc] | [![bilibili][img_llm_19_bili]][ref_llm_19_bili] [![YouTube 播放量][img_llm_19_yt]][ref_llm_19_yt] | <kbd><small>37:41</small></kbd> |
-
-<details>
-<summary><b>点击展开查看往期 1~18 期内容</b></summary>
-
-| 序号 | 项目 | 代码文档 | 视频教程 | 时长 |
-| :--- | :--- | :--- | :--- | :--- |
 | 18 | milvus向量数据库 | [文档][ref_llm_18_doc] | [![bilibili][img_llm_18_bili]][ref_llm_18_bili] [![YouTube 播放量][img_llm_18_yt]][ref_llm_18_yt] | <kbd><small>28:13</small></kbd> |
 | 17 | tool-call原理及极简browser-use实现 | [文档][ref_llm_17_doc] | [![bilibili][img_llm_17_bili]][ref_llm_17_bili] [![YouTube 播放量][img_llm_17_yt]][ref_llm_17_yt] | <kbd><small>14:47</small></kbd> |
 | 16 | deepseek-r1模型微调和训练数据构造 | [文档][ref_llm_16_doc] | [![bilibili][img_llm_16_bili]][ref_llm_16_bili] [![YouTube 播放量][img_llm_16_yt]][ref_llm_16_yt] | <kbd><small>14:01</small></kbd> |
@@ -89,8 +96,6 @@
 | 3 | llama.cpp进行轻量化部署和量化 | [文档][ref_llm_03_doc] | [![bilibili][img_llm_03_bili]][ref_llm_03_bili] [![YouTube 播放量][img_llm_03_yt]][ref_llm_03_yt] | <kbd><small>46:37</small></kbd> |
 | 2 | 训练数据整理以及微调优化建议 | [文档][ref_llm_02_doc] | [![bilibili][img_llm_02_bili]][ref_llm_02_bili] [![YouTube 播放量][img_llm_02_yt]][ref_llm_02_yt] | <kbd><small>20:13</small></kbd> |
 | 1 | 使用llama-factory微调llama3 | [文档][ref_llm_01_doc] | [![bilibili][img_llm_01_bili]][ref_llm_01_bili] [![YouTube 播放量][img_llm_01_yt]][ref_llm_01_yt] | <kbd><small>35:28</small></kbd> |
-
-</details>
 
 ## 🛠️ 3. 动手加入开源
 > 主要讲开源项目规范的一些内容。
@@ -148,6 +153,39 @@ YouTube 播放量由 [Return YouTube Dislike][ref_yt_counts] 提供，数字会�
 [img_feishu]: https://img.shields.io/badge/%E9%A3%9E%E4%B9%A6-%E9%AD%94%E7%8E%8B%E5%A4%A7%E4%BA%BA%E7%94%B3%E8%AF%B7%E6%B7%BB%E5%8A%A0%E4%BD%A0%E4%B8%BA%E8%81%94%E7%B3%BB%E4%BA%BA-00D6B9?style=flat-square
 [ref_feishu]: https://www.feishu.cn/invitation/page/add_contact/?token=7c0pc01a-60b9-4c7e-bcc4-ed5a2cab4625
 [ref_how_to_ask]: https://github.com/ryanhanwu/How-To-Ask-Questions-The-Smart-Way/blob/main/README-zh_CN.md
+
+<!-- Anthropic 研究精读 -->
+[ref_memory_article]: https://www.anthropic.com/research/components-of-agent-memory
+[ref_memory_collection]: https://space.bilibili.com/65742859/lists/9574988?type=season
+
+[img_memory_1_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1KSsL6HERw
+[img_memory_1_yt]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Freturnyoutubedislikeapi.com%2Fvotes%3Fvideoid%3Da-THsz6pXFc&query=%24.viewCount&label=YouTube&style=social&logo=youtube&logoColor=red&cacheSeconds=3600
+[ref_memory_1_bili]: https://www.bilibili.com/video/BV1KSsL6HERw/
+[ref_memory_1_yt]: https://youtu.be/a-THsz6pXFc
+
+[ref_memory_2_doc]: https://www.anthropic.com/research/components-of-agent-memory#claude-has-learned-to-judge-salience
+[img_memory_2_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1TSsL6HEGB
+[img_memory_2_yt]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Freturnyoutubedislikeapi.com%2Fvotes%3Fvideoid%3DqWW0Ampzpps&query=%24.viewCount&label=YouTube&style=social&logo=youtube&logoColor=red&cacheSeconds=3600
+[ref_memory_2_bili]: https://www.bilibili.com/video/BV1TSsL6HEGB/
+[ref_memory_2_yt]: https://youtu.be/qWW0Ampzpps
+
+[ref_memory_3_doc]: https://www.anthropic.com/research/components-of-agent-memory#dreaming-can-correct-memory
+[img_memory_3_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1KSsL6HE4a
+[img_memory_3_yt]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Freturnyoutubedislikeapi.com%2Fvotes%3Fvideoid%3D7_1A8MRYGls&query=%24.viewCount&label=YouTube&style=social&logo=youtube&logoColor=red&cacheSeconds=3600
+[ref_memory_3_bili]: https://www.bilibili.com/video/BV1KSsL6HE4a/
+[ref_memory_3_yt]: https://youtu.be/7_1A8MRYGls
+
+[ref_memory_4_doc]: https://www.anthropic.com/research/components-of-agent-memory#dreaming-can-build-new-memory-representations
+[img_memory_4_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV14SsL6HEaQ
+[img_memory_4_yt]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Freturnyoutubedislikeapi.com%2Fvotes%3Fvideoid%3D8Lrg4Ys5BIU&query=%24.viewCount&label=YouTube&style=social&logo=youtube&logoColor=red&cacheSeconds=3600
+[ref_memory_4_bili]: https://www.bilibili.com/video/BV14SsL6HEaQ/
+[ref_memory_4_yt]: https://youtu.be/8Lrg4Ys5BIU
+
+[ref_memory_5_doc]: https://www.anthropic.com/research/components-of-agent-memory#dreaming-can-promote-notes-up-the-memory-hierarchy
+[img_memory_5_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV12SsL6HEzc
+[img_memory_5_yt]: https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Freturnyoutubedislikeapi.com%2Fvotes%3Fvideoid%3D4uGGzNV-dXM&query=%24.viewCount&label=YouTube&style=social&logo=youtube&logoColor=red&cacheSeconds=3600
+[ref_memory_5_bili]: https://www.bilibili.com/video/BV12SsL6HEzc/
+[ref_memory_5_yt]: https://youtu.be/4uGGzNV-dXM
 
 <!-- Agent 智能体系统 -->
 [img_agent_3_bili]: https://img.shields.io/badge/dynamic/json?label=B%E7%AB%99&style=social&logo=bilibili&query=data.stat.view&url=https%3A%2F%2Fapi.bilibili.com%2Fx%2Fweb-interface%2Fview%3Fbvid%3DBV1TqRvB7E31
